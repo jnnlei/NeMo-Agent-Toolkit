@@ -1,0 +1,642 @@
+{
+  "nested_stack_analysis": {
+    "concurrency": {
+      "timeline_segments": [
+        [
+          1763630350.6736236,
+          1763630350.7076547,
+          1
+        ],
+        [
+          1763630350.7076547,
+          1763630359.4241838,
+          2
+        ],
+        [
+          1763630359.4241838,
+          1763630359.4847193,
+          1
+        ],
+        [
+          1763630359.4847193,
+          1763630359.492217,
+          2
+        ],
+        [
+          1763630359.492217,
+          1763630361.1820805,
+          3
+        ],
+        [
+          1763630361.1820805,
+          1763630361.1906714,
+          2
+        ],
+        [
+          1763630361.1906714,
+          1763630361.2225416,
+          1
+        ],
+        [
+          1763630361.2225416,
+          1763630368.4405017,
+          2
+        ],
+        [
+          1763630368.4405017,
+          1763630368.4729962,
+          1
+        ],
+        [
+          1763630368.4729962,
+          1763630369.8594155,
+          0
+        ],
+        [
+          1763630369.8594155,
+          1763630369.875079,
+          1
+        ],
+        [
+          1763630369.875079,
+          1763630373.8847468,
+          2
+        ],
+        [
+          1763630373.8847468,
+          1763630373.907865,
+          1
+        ],
+        [
+          1763630373.907865,
+          1763630373.9153721,
+          2
+        ],
+        [
+          1763630373.9153721,
+          1763630375.6613579,
+          3
+        ],
+        [
+          1763630375.6613579,
+          1763630375.668329,
+          2
+        ],
+        [
+          1763630375.668329,
+          1763630375.69248,
+          1
+        ],
+        [
+          1763630375.69248,
+          1763630384.1978757,
+          2
+        ],
+        [
+          1763630384.1978757,
+          1763630384.2282262,
+          1
+        ],
+        [
+          1763630384.2282262,
+          1763630384.320802,
+          0
+        ],
+        [
+          1763630384.320802,
+          1763630384.3563085,
+          1
+        ],
+        [
+          1763630384.3563085,
+          1763630394.9684432,
+          2
+        ],
+        [
+          1763630394.9684432,
+          1763630394.9999795,
+          1
+        ],
+        [
+          1763630394.9999795,
+          1763630395.0010533,
+          2
+        ],
+        [
+          1763630395.0010533,
+          1763630396.9859393,
+          3
+        ],
+        [
+          1763630396.9859393,
+          1763630396.992604,
+          2
+        ],
+        [
+          1763630396.992604,
+          1763630397.012675,
+          1
+        ],
+        [
+          1763630397.012675,
+          1763630405.7337134,
+          2
+        ],
+        [
+          1763630405.7337134,
+          1763630405.7611337,
+          1
+        ],
+        [
+          1763630405.7611337,
+          1763630405.8739333,
+          0
+        ],
+        [
+          1763630405.8739333,
+          1763630405.8881967,
+          1
+        ],
+        [
+          1763630405.8881967,
+          1763630410.8332496,
+          2
+        ],
+        [
+          1763630410.8332496,
+          1763630410.856793,
+          1
+        ],
+        [
+          1763630410.856793,
+          1763630410.8581314,
+          2
+        ],
+        [
+          1763630410.8581314,
+          1763630410.8597057,
+          3
+        ],
+        [
+          1763630410.8597057,
+          1763630411.327779,
+          4
+        ],
+        [
+          1763630411.327779,
+          1763630411.3284376,
+          3
+        ],
+        [
+          1763630411.3284376,
+          1763630411.329469,
+          2
+        ],
+        [
+          1763630411.329469,
+          1763630411.3435776,
+          1
+        ],
+        [
+          1763630411.3435776,
+          1763630418.4160032,
+          2
+        ],
+        [
+          1763630418.4160032,
+          1763630418.4472287,
+          1
+        ],
+        [
+          1763630418.4472287,
+          1763630418.4486012,
+          2
+        ],
+        [
+          1763630418.4486012,
+          1763630418.4501178,
+          3
+        ],
+        [
+          1763630418.4501178,
+          1763630418.7004426,
+          4
+        ],
+        [
+          1763630418.7004426,
+          1763630418.7011068,
+          3
+        ],
+        [
+          1763630418.7011068,
+          1763630418.7022333,
+          2
+        ],
+        [
+          1763630418.7022333,
+          1763630418.737131,
+          1
+        ],
+        [
+          1763630418.737131,
+          1763630427.73385,
+          2
+        ],
+        [
+          1763630427.73385,
+          1763630427.772011,
+          1
+        ]
+      ],
+      "p50": 2.0,
+      "p90": 2.0,
+      "p95": 3.0,
+      "p99": 3.0
+    },
+    "node_metrics": {
+      "5ce1fd8f-33f4-4603-8bba-55f2c3fc3fe0": {
+        "uuid": "5ce1fd8f-33f4-4603-8bba-55f2c3fc3fe0",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630350.6736236,
+        "end_time": 1763630368.4729962,
+        "duration": 17.799372673034668,
+        "self_time": 0.15893125534057617,
+        "subtree_time": 17.799372673034668,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 17.799372673034668
+      },
+      "bee0cf1f-d739-4f65-9fa8-ec20477d8793": {
+        "uuid": "bee0cf1f-d739-4f65-9fa8-ec20477d8793",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630350.7076547,
+        "end_time": 1763630359.4241838,
+        "duration": 8.716529130935669,
+        "self_time": 8.716529130935669,
+        "subtree_time": 8.716529130935669,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.716529130935669
+      },
+      "e24e4077-f49e-493d-899a-77506d89d3c5": {
+        "uuid": "e24e4077-f49e-493d-899a-77506d89d3c5",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630359.4847193,
+        "end_time": 1763630361.1906714,
+        "duration": 1.7059521675109863,
+        "self_time": 0.01608872413635254,
+        "subtree_time": 1.7059521675109863,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.7059521675109863
+      },
+      "3c7df648-95fd-4af6-8896-e7f08e2c9c49": {
+        "uuid": "3c7df648-95fd-4af6-8896-e7f08e2c9c49",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630359.492217,
+        "end_time": 1763630361.1820805,
+        "duration": 1.6898634433746338,
+        "self_time": 1.6898634433746338,
+        "subtree_time": 1.6898634433746338,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.6898634433746338
+      },
+      "89cbe7fc-8e91-4916-85a6-cc369a927de8": {
+        "uuid": "89cbe7fc-8e91-4916-85a6-cc369a927de8",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630361.2225416,
+        "end_time": 1763630368.4405017,
+        "duration": 7.2179601192474365,
+        "self_time": 7.2179601192474365,
+        "subtree_time": 7.2179601192474365,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 7.2179601192474365
+      },
+      "8171d511-44e6-4b9c-b263-eeda77acdbd8": {
+        "uuid": "8171d511-44e6-4b9c-b263-eeda77acdbd8",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630369.8594155,
+        "end_time": 1763630384.2282262,
+        "duration": 14.368810653686523,
+        "self_time": 0.09328317642211914,
+        "subtree_time": 14.368810653686523,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 14.368810653686523
+      },
+      "17325eb7-9079-4336-a3b7-28a54aee3169": {
+        "uuid": "17325eb7-9079-4336-a3b7-28a54aee3169",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630369.875079,
+        "end_time": 1763630373.8847468,
+        "duration": 4.009667873382568,
+        "self_time": 4.009667873382568,
+        "subtree_time": 4.009667873382568,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 4.009667873382568
+      },
+      "2ebab107-e5e5-41c2-b613-6c02b5668a21": {
+        "uuid": "2ebab107-e5e5-41c2-b613-6c02b5668a21",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630373.907865,
+        "end_time": 1763630375.668329,
+        "duration": 1.7604639530181885,
+        "self_time": 0.014478206634521484,
+        "subtree_time": 1.7604639530181885,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.7604639530181885
+      },
+      "3b5c7f3b-b25d-45c8-aa57-3727eae64711": {
+        "uuid": "3b5c7f3b-b25d-45c8-aa57-3727eae64711",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630373.9153721,
+        "end_time": 1763630375.6613579,
+        "duration": 1.745985746383667,
+        "self_time": 1.745985746383667,
+        "subtree_time": 1.745985746383667,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.745985746383667
+      },
+      "e4324c5f-06ac-48f5-aec6-05acb249312d": {
+        "uuid": "e4324c5f-06ac-48f5-aec6-05acb249312d",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630375.69248,
+        "end_time": 1763630384.1978757,
+        "duration": 8.505395650863647,
+        "self_time": 8.505395650863647,
+        "subtree_time": 8.505395650863647,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.505395650863647
+      },
+      "fa9dd6e7-b8db-4e04-8426-a8ee01095695": {
+        "uuid": "fa9dd6e7-b8db-4e04-8426-a8ee01095695",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630384.320802,
+        "end_time": 1763630405.7611337,
+        "duration": 21.44033169746399,
+        "self_time": 0.11453413963317871,
+        "subtree_time": 21.44033169746399,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 21.44033169746399
+      },
+      "be5801cf-7c91-4e40-a87e-0063117ec7bf": {
+        "uuid": "be5801cf-7c91-4e40-a87e-0063117ec7bf",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630384.3563085,
+        "end_time": 1763630394.9684432,
+        "duration": 10.6121346950531,
+        "self_time": 10.6121346950531,
+        "subtree_time": 10.6121346950531,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 10.6121346950531
+      },
+      "4c61612e-68fc-4aad-a2ff-19fc4a48ff0e": {
+        "uuid": "4c61612e-68fc-4aad-a2ff-19fc4a48ff0e",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630394.9999795,
+        "end_time": 1763630396.992604,
+        "duration": 1.9926245212554932,
+        "self_time": 0.007738590240478516,
+        "subtree_time": 1.9926245212554932,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.9926245212554932
+      },
+      "02331356-3213-4fbd-9798-e5840905fdc3": {
+        "uuid": "02331356-3213-4fbd-9798-e5840905fdc3",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool_with_rerank",
+        "start_time": 1763630395.0010533,
+        "end_time": 1763630396.9859393,
+        "duration": 1.9848859310150146,
+        "self_time": 1.9848859310150146,
+        "subtree_time": 1.9848859310150146,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 1.9848859310150146
+      },
+      "cc5fb1a9-4d69-40a1-8757-7b35e5ffe6e7": {
+        "uuid": "cc5fb1a9-4d69-40a1-8757-7b35e5ffe6e7",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630397.012675,
+        "end_time": 1763630405.7337134,
+        "duration": 8.721038341522217,
+        "self_time": 8.721038341522217,
+        "subtree_time": 8.721038341522217,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.721038341522217
+      },
+      "c2ffb907-cc7e-44a2-b62f-a7a918d80902": {
+        "uuid": "c2ffb907-cc7e-44a2-b62f-a7a918d80902",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630405.8739333,
+        "end_time": 1763630427.772011,
+        "duration": 21.898077726364136,
+        "self_time": 0.15619969367980957,
+        "subtree_time": 21.898077726364136,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 21.898077726364136
+      },
+      "a35194c4-ac3b-4e3f-b75a-b794c909bc70": {
+        "uuid": "a35194c4-ac3b-4e3f-b75a-b794c909bc70",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630405.8881967,
+        "end_time": 1763630410.8332496,
+        "duration": 4.945052862167358,
+        "self_time": 4.945052862167358,
+        "subtree_time": 4.945052862167358,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 4.945052862167358
+      },
+      "421c8063-8566-4096-9f2d-f6a9bfca9840": {
+        "uuid": "421c8063-8566-4096-9f2d-f6a9bfca9840",
+        "operation_type": "TOOL",
+        "operation_name": "web_search_tool",
+        "start_time": 1763630410.856793,
+        "end_time": 1763630411.329469,
+        "duration": 0.47267603874206543,
+        "self_time": 0.0023698806762695312,
+        "subtree_time": 0.47267603874206543,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.47267603874206543
+      },
+      "13d15416-8fcc-4118-baf7-b0dfdaffb8bf": {
+        "uuid": "13d15416-8fcc-4118-baf7-b0dfdaffb8bf",
+        "operation_type": "FUNCTION",
+        "operation_name": "web_search_tool",
+        "start_time": 1763630410.8581314,
+        "end_time": 1763630411.3284376,
+        "duration": 0.4703061580657959,
+        "self_time": 0.002232789993286133,
+        "subtree_time": 0.4703061580657959,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.4703061580657959
+      },
+      "0582b1e0-2111-4774-84f5-945f9aa9a1f8": {
+        "uuid": "0582b1e0-2111-4774-84f5-945f9aa9a1f8",
+        "operation_type": "TOOL",
+        "operation_name": "tavily_search",
+        "start_time": 1763630410.8597057,
+        "end_time": 1763630411.327779,
+        "duration": 0.46807336807250977,
+        "self_time": 0.46807336807250977,
+        "subtree_time": 0.46807336807250977,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.46807336807250977
+      },
+      "8beeaaf2-68c8-4d93-a253-5cbf2c294fe8": {
+        "uuid": "8beeaaf2-68c8-4d93-a253-5cbf2c294fe8",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630411.3435776,
+        "end_time": 1763630418.4160032,
+        "duration": 7.072425603866577,
+        "self_time": 7.072425603866577,
+        "subtree_time": 7.072425603866577,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 7.072425603866577
+      },
+      "a8ddbfe8-c3c9-4d57-b50d-f6fa67ca510c": {
+        "uuid": "a8ddbfe8-c3c9-4d57-b50d-f6fa67ca510c",
+        "operation_type": "TOOL",
+        "operation_name": "web_search_tool",
+        "start_time": 1763630418.4472287,
+        "end_time": 1763630418.7022333,
+        "duration": 0.2550046443939209,
+        "self_time": 0.002499103546142578,
+        "subtree_time": 0.2550046443939209,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.2550046443939209
+      },
+      "5081d59d-191f-4d7b-ae16-8b78502f8278": {
+        "uuid": "5081d59d-191f-4d7b-ae16-8b78502f8278",
+        "operation_type": "FUNCTION",
+        "operation_name": "web_search_tool",
+        "start_time": 1763630418.4486012,
+        "end_time": 1763630418.7011068,
+        "duration": 0.2525055408477783,
+        "self_time": 0.002180814743041992,
+        "subtree_time": 0.2525055408477783,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.2525055408477783
+      },
+      "f5783eef-009b-4cb5-aae4-b59bceb72531": {
+        "uuid": "f5783eef-009b-4cb5-aae4-b59bceb72531",
+        "operation_type": "TOOL",
+        "operation_name": "tavily_search",
+        "start_time": 1763630418.4501178,
+        "end_time": 1763630418.7004426,
+        "duration": 0.25032472610473633,
+        "self_time": 0.25032472610473633,
+        "subtree_time": 0.25032472610473633,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.25032472610473633
+      },
+      "45fdc918-7927-4080-87f9-1ad4f5eda43d": {
+        "uuid": "45fdc918-7927-4080-87f9-1ad4f5eda43d",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630418.737131,
+        "end_time": 1763630427.73385,
+        "duration": 8.996718883514404,
+        "self_time": 8.996718883514404,
+        "subtree_time": 8.996718883514404,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.996718883514404
+      }
+    },
+    "top_bottlenecks": [
+      {
+        "uuid": "c2ffb907-cc7e-44a2-b62f-a7a918d80902",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630405.8739333,
+        "end_time": 1763630427.772011,
+        "duration": 21.898077726364136,
+        "self_time": 0.15619969367980957,
+        "subtree_time": 21.898077726364136,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 21.898077726364136
+      },
+      {
+        "uuid": "fa9dd6e7-b8db-4e04-8426-a8ee01095695",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630384.320802,
+        "end_time": 1763630405.7611337,
+        "duration": 21.44033169746399,
+        "self_time": 0.11453413963317871,
+        "subtree_time": 21.44033169746399,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 21.44033169746399
+      },
+      {
+        "uuid": "5ce1fd8f-33f4-4603-8bba-55f2c3fc3fe0",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630350.6736236,
+        "end_time": 1763630368.4729962,
+        "duration": 17.799372673034668,
+        "self_time": 0.15893125534057617,
+        "subtree_time": 17.799372673034668,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 17.799372673034668
+      },
+      {
+        "uuid": "8171d511-44e6-4b9c-b263-eeda77acdbd8",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1763630369.8594155,
+        "end_time": 1763630384.2282262,
+        "duration": 14.368810653686523,
+        "self_time": 0.09328317642211914,
+        "subtree_time": 14.368810653686523,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 14.368810653686523
+      },
+      {
+        "uuid": "be5801cf-7c91-4e40-a87e-0063117ec7bf",
+        "operation_type": "LLM",
+        "operation_name": "deepseek-ai/deepseek-r1",
+        "start_time": 1763630384.3563085,
+        "end_time": 1763630394.9684432,
+        "duration": 10.6121346950531,
+        "self_time": 10.6121346950531,
+        "subtree_time": 10.6121346950531,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 10.6121346950531
+      }
+    ]
+  },
+  "concurrency_spike_analysis": {
+    "concurrency_distribution": {
+      "1": 74.26524639129639,
+      "0": 2.042550802230835,
+      "2": 0.7183980941772461
+    },
+    "p50_concurrency": 1.0,
+    "p90_concurrency": 1.0,
+    "p95_concurrency": 1.0,
+    "p99_concurrency": 1.0,
+    "spike_threshold": 7,
+    "spike_intervals": [],
+    "correlation_stats": {
+      "avg_prompt_tokens": 0.0,
+      "avg_total_tokens": 0.0
+    },
+    "average_latency_by_concurrency": {
+      "1": 6.187996983528137,
+      "2": 0.3615196943283081
+    }
+  }
+}

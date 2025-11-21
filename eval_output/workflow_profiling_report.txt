@@ -1,0 +1,71 @@
+
+
+
+=== Multi-Example Nested Call Profiling Report ===
+Total calls (across all examples): 30
+
+-- Concurrency Distribution (all examples) --
+p50=2.0, p90=3.0, p95=4.0, p99=4.0
+
+-- Top 5 Calls by Bottleneck Score (subtree_time) --
+1) UUID=669a0e17-0bf0-4b5e-893d-7685c8d64f92, FUNCTION '<workflow>', dur=8.41, self_time=0.04, subtree_time=8.41, concurrency=3.0, score=8.41
+2) UUID=8c946e16-a0bc-4d67-ae8d-6b22c3385cd8, FUNCTION '<workflow>', dur=5.19, self_time=0.03, subtree_time=5.19, concurrency=2.0, score=5.19
+3) UUID=843c3274-2328-4836-8456-dd6236b67a8e, FUNCTION '<workflow>', dur=4.25, self_time=0.03, subtree_time=4.25, concurrency=2.0, score=4.25
+4) UUID=a1ea1703-e3f5-42fd-b864-fcd7ccddd976, LLM 'meta/llama-3.3-70b-instruct', dur=3.87, self_time=3.87, subtree_time=3.87, concurrency=2.0, score=3.87
+5) UUID=d1bacac1-0f05-4539-81fb-b0b834e19a71, FUNCTION '<workflow>', dur=3.39, self_time=0.01, subtree_time=3.39, concurrency=4.0, score=3.39
+
+-- Full Tree(s) (All Examples) --
+- FUNCTION '<workflow>' (uuid=8c946e16-a0bc-4d67-ae8d-6b22c3385cd8, start=1762698222.01, end=1762698227.19, dur=5.19)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=d3a27540-1e70-43be-9579-a19da45b087e, start=1762698222.01, end=1762698222.91, dur=0.89)
+  - TOOL 'get_memory' (uuid=a2ef5e67-03b0-478b-bfc3-9cf3d46702f4, start=1762698222.91, end=1762698223.34, dur=0.43)
+    - FUNCTION 'get_memory' (uuid=c676a74c-e919-4dbd-9329-b5efead17c55, start=1762698222.91, end=1762698223.34, dur=0.43)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=c2886a3f-f83c-4729-a4d6-7592aa6e8efe, start=1762698223.34, end=1762698224.10, dur=0.76)
+  - TOOL 'nim_retriever_tool' (uuid=d9379c34-d8db-4bbc-b350-043ea37ebec7, start=1762698224.11, end=1762698224.55, dur=0.44)
+    - FUNCTION 'nim_retriever_tool' (uuid=28e8da27-5c27-46c2-9df3-cad229888d9b, start=1762698224.11, end=1762698224.55, dur=0.44)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=38ccaa83-f143-49ef-83d2-bc3f14e0736d, start=1762698224.55, end=1762698227.19, dur=2.64)
+- FUNCTION '<workflow>' (uuid=669a0e17-0bf0-4b5e-893d-7685c8d64f92, start=1762698227.22, end=1762698235.63, dur=8.41)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=ce40af71-f3eb-43f2-9732-de7ad2a79ac4, start=1762698227.22, end=1762698228.14, dur=0.92)
+  - TOOL 'get_memory' (uuid=51a2e8d9-8926-415e-8f11-5709dd3eadf3, start=1762698228.14, end=1762698228.55, dur=0.41)
+    - FUNCTION 'get_memory' (uuid=14ce796f-f48d-4488-a150-1188e88f72c4, start=1762698228.15, end=1762698228.55, dur=0.41)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=039149fd-2b22-4795-8b21-f617d0fe16fa, start=1762698228.56, end=1762698229.35, dur=0.80)
+  - TOOL 'nim_retriever_tool' (uuid=a53606b1-a2cd-4d75-bb1b-a6eaf474bc36, start=1762698229.36, end=1762698229.81, dur=0.45)
+    - FUNCTION 'nim_retriever_tool' (uuid=d5733eaf-0b52-4719-a029-88182e46e368, start=1762698229.36, end=1762698229.81, dur=0.45)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=2dfbe2e4-9ede-476e-bd3d-35adee8bd5e1, start=1762698229.81, end=1762698231.31, dur=1.50)
+  - TOOL 'nim_retriever_tool' (uuid=878b166d-8131-4a81-a072-f26009f8ed19, start=1762698231.32, end=1762698231.75, dur=0.43)
+    - FUNCTION 'nim_retriever_tool' (uuid=29d54744-9540-4def-af8a-1d9f72f8dafc, start=1762698231.32, end=1762698231.75, dur=0.43)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=a1ea1703-e3f5-42fd-b864-fcd7ccddd976, start=1762698231.75, end=1762698235.62, dur=3.87)
+- FUNCTION '<workflow>' (uuid=843c3274-2328-4836-8456-dd6236b67a8e, start=1762698235.66, end=1762698239.91, dur=4.25)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=f4c8fda7-f36e-4bc7-9754-964046d7b5fa, start=1762698235.68, end=1762698236.60, dur=0.92)
+  - TOOL 'nim_retriever_tool' (uuid=c383ba78-4083-4a32-b412-b5d04218eb0f, start=1762698236.61, end=1762698237.05, dur=0.44)
+    - FUNCTION 'nim_retriever_tool' (uuid=0b3a99db-68ee-4a47-9a3a-56dd3332054e, start=1762698236.61, end=1762698237.05, dur=0.44)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=e6647f32-418e-4071-a843-fa6f9eaa4867, start=1762698237.05, end=1762698239.91, dur=2.86)
+- FUNCTION '<workflow>' (uuid=d1bacac1-0f05-4539-81fb-b0b834e19a71, start=1762698239.92, end=1762698243.31, dur=3.39)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=b1e65c79-f4dc-4735-b1c6-4d64c4c729af, start=1762698239.92, end=1762698240.68, dur=0.75)
+  - TOOL 'web_search_tool' (uuid=9c0ea3ec-ef3f-4506-85c0-1fd70a65daff, start=1762698240.68, end=1762698242.14, dur=1.46)
+    - FUNCTION 'web_search_tool' (uuid=02316f3b-65d5-4487-9c28-cb9ba9337c53, start=1762698240.68, end=1762698242.14, dur=1.46)
+      - TOOL 'tavily_search' (uuid=05569436-a318-422e-b33c-b69b8287fdb6, start=1762698240.68, end=1762698242.14, dur=1.46)
+  - LLM 'meta/llama-3.3-70b-instruct' (uuid=32c31589-c50f-4e09-a6b0-8f319459f1c9, start=1762698242.14, end=1762698243.31, dur=1.17)
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 19
+Total time observed: 21.30 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+  concurrency=0: 0.18 time
+  concurrency=1: 19.66 time
+  concurrency=2: 1.46 time
+
+Percentiles => p50=1.0, p90=1.0, p95=2.0, p99=2.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+  concurrency=1 => avg_latency=1.16
+  concurrency=2 => avg_latency=1.46

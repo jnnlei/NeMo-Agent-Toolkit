@@ -1,0 +1,23 @@
+[
+    {
+    "id": "1",
+    "question": "What is NVIDIA NIM?",
+    "answer": "NVIDIA NIM is a set of easy-to-use microservices designed to accelerate the deployment of generative AI models across the cloud, data center, and workstations."
+    },
+    {
+    "id": "2",
+    "question": "What is a NIM model profile?",
+    "answer": "A NIM model profile defines two things: the runtime the NIM uses, and the criteria NIM should use to choose those engines. Unique strings based on a hash of the profile contents identify each profile."
+    },
+    {
+    "id": "3",
+    "question": "Can NVIDIA NIM for LLMs run on any NVIDIA GPU?",
+    "answer": "NVIDIA NIM for LLMs should, but is not guaranteed to, run on any NVIDIA GPU, as long as the GPU has sufficient memory, or on multiple, homogeneous NVIDIA GPUs with sufficient aggregate memory and CUDA compute capability > 7.0 (8.0 for bfloat16)."
+    },
+    {
+    "id": "4",
+    "question": "What is a TLS Proxy?",
+    "answer": "TLS Proxy is a proxy server that terminates TLS connections and forwards requests to external services."
+    }
+    ]
+    

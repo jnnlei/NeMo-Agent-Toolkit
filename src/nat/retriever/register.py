@@ -19,3 +19,4 @@
 # Import any providers which need to be automatically registered here
 import nat.retriever.milvus.register
 import nat.retriever.nemo_retriever.register
+import nat.retriever.rerank.register

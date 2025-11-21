@@ -1,0 +1,66 @@
+
+
+
+=== Multi-Example Nested Call Profiling Report ===
+Total calls (across all examples): 25
+
+-- Concurrency Distribution (all examples) --
+p50=2.0, p90=2.0, p95=3.0, p99=3.0
+
+-- Top 5 Calls by Bottleneck Score (subtree_time) --
+1) UUID=c2ffb907-cc7e-44a2-b62f-a7a918d80902, FUNCTION '<workflow>', dur=21.90, self_time=0.16, subtree_time=21.90, concurrency=2.0, score=21.90
+2) UUID=fa9dd6e7-b8db-4e04-8426-a8ee01095695, FUNCTION '<workflow>', dur=21.44, self_time=0.11, subtree_time=21.44, concurrency=3.0, score=21.44
+3) UUID=5ce1fd8f-33f4-4603-8bba-55f2c3fc3fe0, FUNCTION '<workflow>', dur=17.80, self_time=0.16, subtree_time=17.80, concurrency=3.0, score=17.80
+4) UUID=8171d511-44e6-4b9c-b263-eeda77acdbd8, FUNCTION '<workflow>', dur=14.37, self_time=0.09, subtree_time=14.37, concurrency=2.0, score=14.37
+5) UUID=be5801cf-7c91-4e40-a87e-0063117ec7bf, LLM 'deepseek-ai/deepseek-r1', dur=10.61, self_time=10.61, subtree_time=10.61, concurrency=2.0, score=10.61
+
+-- Full Tree(s) (All Examples) --
+- FUNCTION '<workflow>' (uuid=5ce1fd8f-33f4-4603-8bba-55f2c3fc3fe0, start=1763630350.67, end=1763630368.47, dur=17.80)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=bee0cf1f-d739-4f65-9fa8-ec20477d8793, start=1763630350.71, end=1763630359.42, dur=8.72)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=e24e4077-f49e-493d-899a-77506d89d3c5, start=1763630359.48, end=1763630361.19, dur=1.71)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=3c7df648-95fd-4af6-8896-e7f08e2c9c49, start=1763630359.49, end=1763630361.18, dur=1.69)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=89cbe7fc-8e91-4916-85a6-cc369a927de8, start=1763630361.22, end=1763630368.44, dur=7.22)
+- FUNCTION '<workflow>' (uuid=8171d511-44e6-4b9c-b263-eeda77acdbd8, start=1763630369.86, end=1763630384.23, dur=14.37)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=17325eb7-9079-4336-a3b7-28a54aee3169, start=1763630369.88, end=1763630373.88, dur=4.01)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=2ebab107-e5e5-41c2-b613-6c02b5668a21, start=1763630373.91, end=1763630375.67, dur=1.76)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=3b5c7f3b-b25d-45c8-aa57-3727eae64711, start=1763630373.92, end=1763630375.66, dur=1.75)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=e4324c5f-06ac-48f5-aec6-05acb249312d, start=1763630375.69, end=1763630384.20, dur=8.51)
+- FUNCTION '<workflow>' (uuid=fa9dd6e7-b8db-4e04-8426-a8ee01095695, start=1763630384.32, end=1763630405.76, dur=21.44)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=be5801cf-7c91-4e40-a87e-0063117ec7bf, start=1763630384.36, end=1763630394.97, dur=10.61)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=4c61612e-68fc-4aad-a2ff-19fc4a48ff0e, start=1763630395.00, end=1763630396.99, dur=1.99)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=02331356-3213-4fbd-9798-e5840905fdc3, start=1763630395.00, end=1763630396.99, dur=1.98)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=cc5fb1a9-4d69-40a1-8757-7b35e5ffe6e7, start=1763630397.01, end=1763630405.73, dur=8.72)
+- FUNCTION '<workflow>' (uuid=c2ffb907-cc7e-44a2-b62f-a7a918d80902, start=1763630405.87, end=1763630427.77, dur=21.90)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=a35194c4-ac3b-4e3f-b75a-b794c909bc70, start=1763630405.89, end=1763630410.83, dur=4.95)
+  - TOOL 'web_search_tool' (uuid=421c8063-8566-4096-9f2d-f6a9bfca9840, start=1763630410.86, end=1763630411.33, dur=0.47)
+    - FUNCTION 'web_search_tool' (uuid=13d15416-8fcc-4118-baf7-b0dfdaffb8bf, start=1763630410.86, end=1763630411.33, dur=0.47)
+      - TOOL 'tavily_search' (uuid=0582b1e0-2111-4774-84f5-945f9aa9a1f8, start=1763630410.86, end=1763630411.33, dur=0.47)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=8beeaaf2-68c8-4d93-a253-5cbf2c294fe8, start=1763630411.34, end=1763630418.42, dur=7.07)
+  - TOOL 'web_search_tool' (uuid=a8ddbfe8-c3c9-4d57-b50d-f6fa67ca510c, start=1763630418.45, end=1763630418.70, dur=0.26)
+    - FUNCTION 'web_search_tool' (uuid=5081d59d-191f-4d7b-ae16-8b78502f8278, start=1763630418.45, end=1763630418.70, dur=0.25)
+      - TOOL 'tavily_search' (uuid=f5783eef-009b-4cb5-aae4-b59bceb72531, start=1763630418.45, end=1763630418.70, dur=0.25)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=45fdc918-7927-4080-87f9-1ad4f5eda43d, start=1763630418.74, end=1763630427.73, dur=9.00)
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 16
+Total time observed: 77.03 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+  concurrency=0: 2.04 time
+  concurrency=1: 74.27 time
+  concurrency=2: 0.72 time
+
+Percentiles => p50=1.0, p90=1.0, p95=1.0, p99=1.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+  concurrency=1 => avg_latency=6.19
+  concurrency=2 => avg_latency=0.36

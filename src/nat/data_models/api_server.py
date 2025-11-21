@@ -203,8 +203,8 @@ class ChatRequestOrMessage(BaseModel):
     - `messages` is compatible with the OpenAI Chat Completions API specification.
     - `input_message` is a string input that can be used for functions that do not require a conversation.
 
-    Note: When `messages` is provided, extra fields are allowed to enable lossless round-trip
-    conversion with ChatRequest. When `input_message` is provided, no extra fields are permitted.
+    Note: Extra fields are allowed for both `messages` and `input_message` modes to enable
+    flexible extension and lossless round-trip conversion with ChatRequest.
     """
     model_config = ConfigDict(
         extra="allow",
@@ -229,9 +229,7 @@ class ChatRequestOrMessage(BaseModel):
                             "type": "string"
                         },
                     },
-                    "additionalProperties": {
-                        "not": True, "errorMessage": 'remove additional property ${0#}'
-                    },
+                    "additionalProperties": True
                 },
                 {
                     "required": ["messages"],
@@ -267,10 +265,6 @@ class ChatRequestOrMessage(BaseModel):
             raise ValueError("Either messages or input_message must be provided, not both")
         if self.messages is None and self.input_message is None:
             raise ValueError("Either messages or input_message must be provided")
-        if self.input_message is not None:
-            extra_fields = self.model_dump(exclude={"input_message"}, exclude_none=True, exclude_unset=True)
-            if len(extra_fields) > 0:
-                raise ValueError("no extra fields are permitted when input_message is provided")
         return self
 
 
