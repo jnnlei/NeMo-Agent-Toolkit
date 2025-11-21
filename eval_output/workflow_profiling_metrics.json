@@ -1,0 +1,752 @@
+{
+  "nested_stack_analysis": {
+    "concurrency": {
+      "timeline_segments": [
+        [
+          1762698222.0055966,
+          1762698222.0126853,
+          1
+        ],
+        [
+          1762698222.0126853,
+          1762698222.9050975,
+          2
+        ],
+        [
+          1762698222.9050975,
+          1762698222.9120538,
+          1
+        ],
+        [
+          1762698222.9120538,
+          1762698222.9130352,
+          2
+        ],
+        [
+          1762698222.9130352,
+          1762698223.3383262,
+          3
+        ],
+        [
+          1762698223.3383262,
+          1762698223.3387382,
+          2
+        ],
+        [
+          1762698223.3387382,
+          1762698223.3434644,
+          1
+        ],
+        [
+          1762698223.3434644,
+          1762698224.1016521,
+          2
+        ],
+        [
+          1762698224.1016521,
+          1762698224.1057951,
+          1
+        ],
+        [
+          1762698224.1057951,
+          1762698224.1067486,
+          2
+        ],
+        [
+          1762698224.1067486,
+          1762698224.5450633,
+          3
+        ],
+        [
+          1762698224.5450633,
+          1762698224.5463307,
+          2
+        ],
+        [
+          1762698224.5463307,
+          1762698224.5503938,
+          1
+        ],
+        [
+          1762698224.5503938,
+          1762698227.189314,
+          2
+        ],
+        [
+          1762698227.189314,
+          1762698227.1923356,
+          1
+        ],
+        [
+          1762698227.1923356,
+          1762698227.218143,
+          0
+        ],
+        [
+          1762698227.218143,
+          1762698227.2228742,
+          1
+        ],
+        [
+          1762698227.2228742,
+          1762698228.1380432,
+          2
+        ],
+        [
+          1762698228.1380432,
+          1762698228.144952,
+          1
+        ],
+        [
+          1762698228.144952,
+          1762698228.1466155,
+          2
+        ],
+        [
+          1762698228.1466155,
+          1762698228.5543582,
+          3
+        ],
+        [
+          1762698228.5543582,
+          1762698228.5546987,
+          2
+        ],
+        [
+          1762698228.5546987,
+          1762698228.558379,
+          1
+        ],
+        [
+          1762698228.558379,
+          1762698229.3547952,
+          2
+        ],
+        [
+          1762698229.3547952,
+          1762698229.3574984,
+          1
+        ],
+        [
+          1762698229.3574984,
+          1762698229.3581822,
+          2
+        ],
+        [
+          1762698229.3581822,
+          1762698229.8073666,
+          3
+        ],
+        [
+          1762698229.8073666,
+          1762698229.8079555,
+          2
+        ],
+        [
+          1762698229.8079555,
+          1762698229.8145475,
+          1
+        ],
+        [
+          1762698229.8145475,
+          1762698231.314591,
+          2
+        ],
+        [
+          1762698231.314591,
+          1762698231.319523,
+          1
+        ],
+        [
+          1762698231.319523,
+          1762698231.3202634,
+          2
+        ],
+        [
+          1762698231.3202634,
+          1762698231.745662,
+          3
+        ],
+        [
+          1762698231.745662,
+          1762698231.7462087,
+          2
+        ],
+        [
+          1762698231.7462087,
+          1762698231.7523718,
+          1
+        ],
+        [
+          1762698231.7523718,
+          1762698235.6216593,
+          2
+        ],
+        [
+          1762698235.6216593,
+          1762698235.6291742,
+          1
+        ],
+        [
+          1762698235.6291742,
+          1762698235.6602967,
+          0
+        ],
+        [
+          1762698235.6602967,
+          1762698235.6836133,
+          1
+        ],
+        [
+          1762698235.6836133,
+          1762698236.6031141,
+          2
+        ],
+        [
+          1762698236.6031141,
+          1762698236.6081014,
+          1
+        ],
+        [
+          1762698236.6081014,
+          1762698236.6091127,
+          2
+        ],
+        [
+          1762698236.6091127,
+          1762698237.046984,
+          3
+        ],
+        [
+          1762698237.046984,
+          1762698237.0473201,
+          2
+        ],
+        [
+          1762698237.0473201,
+          1762698237.0500257,
+          1
+        ],
+        [
+          1762698237.0500257,
+          1762698239.9052713,
+          2
+        ],
+        [
+          1762698239.9052713,
+          1762698239.9081283,
+          1
+        ],
+        [
+          1762698239.9081283,
+          1762698239.919563,
+          0
+        ],
+        [
+          1762698239.919563,
+          1762698239.922809,
+          1
+        ],
+        [
+          1762698239.922809,
+          1762698240.6752458,
+          2
+        ],
+        [
+          1762698240.6752458,
+          1762698240.678772,
+          1
+        ],
+        [
+          1762698240.678772,
+          1762698240.6796227,
+          2
+        ],
+        [
+          1762698240.6796227,
+          1762698240.680334,
+          3
+        ],
+        [
+          1762698240.680334,
+          1762698242.139272,
+          4
+        ],
+        [
+          1762698242.139272,
+          1762698242.1395404,
+          3
+        ],
+        [
+          1762698242.1395404,
+          1762698242.1396275,
+          2
+        ],
+        [
+          1762698242.1396275,
+          1762698242.1422858,
+          1
+        ],
+        [
+          1762698242.1422858,
+          1762698243.307973,
+          2
+        ],
+        [
+          1762698243.307973,
+          1762698243.3115187,
+          1
+        ]
+      ],
+      "p50": 2.0,
+      "p90": 3.0,
+      "p95": 4.0,
+      "p99": 4.0
+    },
+    "node_metrics": {
+      "8c946e16-a0bc-4d67-ae8d-6b22c3385cd8": {
+        "uuid": "8c946e16-a0bc-4d67-ae8d-6b22c3385cd8",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698222.0055966,
+        "end_time": 1762698227.1923356,
+        "duration": 5.186738967895508,
+        "self_time": 0.0299990177154541,
+        "subtree_time": 5.186738967895508,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 5.186738967895508
+      },
+      "d3a27540-1e70-43be-9579-a19da45b087e": {
+        "uuid": "d3a27540-1e70-43be-9579-a19da45b087e",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698222.0126853,
+        "end_time": 1762698222.9050975,
+        "duration": 0.8924121856689453,
+        "self_time": 0.8924121856689453,
+        "subtree_time": 0.8924121856689453,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.8924121856689453
+      },
+      "a2ef5e67-03b0-478b-bfc3-9cf3d46702f4": {
+        "uuid": "a2ef5e67-03b0-478b-bfc3-9cf3d46702f4",
+        "operation_type": "TOOL",
+        "operation_name": "get_memory",
+        "start_time": 1762698222.9120538,
+        "end_time": 1762698223.3387382,
+        "duration": 0.4266843795776367,
+        "self_time": 0.0013933181762695312,
+        "subtree_time": 0.4266843795776367,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4266843795776367
+      },
+      "c676a74c-e919-4dbd-9329-b5efead17c55": {
+        "uuid": "c676a74c-e919-4dbd-9329-b5efead17c55",
+        "operation_type": "FUNCTION",
+        "operation_name": "get_memory",
+        "start_time": 1762698222.9130352,
+        "end_time": 1762698223.3383262,
+        "duration": 0.4252910614013672,
+        "self_time": 0.4252910614013672,
+        "subtree_time": 0.4252910614013672,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4252910614013672
+      },
+      "c2886a3f-f83c-4729-a4d6-7592aa6e8efe": {
+        "uuid": "c2886a3f-f83c-4729-a4d6-7592aa6e8efe",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698223.3434644,
+        "end_time": 1762698224.1016521,
+        "duration": 0.7581877708435059,
+        "self_time": 0.7581877708435059,
+        "subtree_time": 0.7581877708435059,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.7581877708435059
+      },
+      "d9379c34-d8db-4bbc-b350-043ea37ebec7": {
+        "uuid": "d9379c34-d8db-4bbc-b350-043ea37ebec7",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698224.1057951,
+        "end_time": 1762698224.5463307,
+        "duration": 0.4405355453491211,
+        "self_time": 0.0022208690643310547,
+        "subtree_time": 0.4405355453491211,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4405355453491211
+      },
+      "28e8da27-5c27-46c2-9df3-cad229888d9b": {
+        "uuid": "28e8da27-5c27-46c2-9df3-cad229888d9b",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698224.1067486,
+        "end_time": 1762698224.5450633,
+        "duration": 0.43831467628479004,
+        "self_time": 0.43831467628479004,
+        "subtree_time": 0.43831467628479004,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.43831467628479004
+      },
+      "38ccaa83-f143-49ef-83d2-bc3f14e0736d": {
+        "uuid": "38ccaa83-f143-49ef-83d2-bc3f14e0736d",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698224.5503938,
+        "end_time": 1762698227.189314,
+        "duration": 2.6389200687408447,
+        "self_time": 2.6389200687408447,
+        "subtree_time": 2.6389200687408447,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 2.6389200687408447
+      },
+      "669a0e17-0bf0-4b5e-893d-7685c8d64f92": {
+        "uuid": "669a0e17-0bf0-4b5e-893d-7685c8d64f92",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698227.218143,
+        "end_time": 1762698235.6291742,
+        "duration": 8.411031246185303,
+        "self_time": 0.043225765228271484,
+        "subtree_time": 8.411031246185303,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 8.411031246185303
+      },
+      "ce40af71-f3eb-43f2-9732-de7ad2a79ac4": {
+        "uuid": "ce40af71-f3eb-43f2-9732-de7ad2a79ac4",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698227.2228742,
+        "end_time": 1762698228.1380432,
+        "duration": 0.9151690006256104,
+        "self_time": 0.9151690006256104,
+        "subtree_time": 0.9151690006256104,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.9151690006256104
+      },
+      "51a2e8d9-8926-415e-8f11-5709dd3eadf3": {
+        "uuid": "51a2e8d9-8926-415e-8f11-5709dd3eadf3",
+        "operation_type": "TOOL",
+        "operation_name": "get_memory",
+        "start_time": 1762698228.144952,
+        "end_time": 1762698228.5546987,
+        "duration": 0.4097466468811035,
+        "self_time": 0.002003908157348633,
+        "subtree_time": 0.4097466468811035,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4097466468811035
+      },
+      "14ce796f-f48d-4488-a150-1188e88f72c4": {
+        "uuid": "14ce796f-f48d-4488-a150-1188e88f72c4",
+        "operation_type": "FUNCTION",
+        "operation_name": "get_memory",
+        "start_time": 1762698228.1466155,
+        "end_time": 1762698228.5543582,
+        "duration": 0.4077427387237549,
+        "self_time": 0.4077427387237549,
+        "subtree_time": 0.4077427387237549,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4077427387237549
+      },
+      "039149fd-2b22-4795-8b21-f617d0fe16fa": {
+        "uuid": "039149fd-2b22-4795-8b21-f617d0fe16fa",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698228.558379,
+        "end_time": 1762698229.3547952,
+        "duration": 0.7964162826538086,
+        "self_time": 0.7964162826538086,
+        "subtree_time": 0.7964162826538086,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.7964162826538086
+      },
+      "a53606b1-a2cd-4d75-bb1b-a6eaf474bc36": {
+        "uuid": "a53606b1-a2cd-4d75-bb1b-a6eaf474bc36",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698229.3574984,
+        "end_time": 1762698229.8079555,
+        "duration": 0.4504570960998535,
+        "self_time": 0.0012726783752441406,
+        "subtree_time": 0.4504570960998535,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4504570960998535
+      },
+      "d5733eaf-0b52-4719-a029-88182e46e368": {
+        "uuid": "d5733eaf-0b52-4719-a029-88182e46e368",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698229.3581822,
+        "end_time": 1762698229.8073666,
+        "duration": 0.4491844177246094,
+        "self_time": 0.4491844177246094,
+        "subtree_time": 0.4491844177246094,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4491844177246094
+      },
+      "2dfbe2e4-9ede-476e-bd3d-35adee8bd5e1": {
+        "uuid": "2dfbe2e4-9ede-476e-bd3d-35adee8bd5e1",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698229.8145475,
+        "end_time": 1762698231.314591,
+        "duration": 1.5000433921813965,
+        "self_time": 1.5000433921813965,
+        "subtree_time": 1.5000433921813965,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 1.5000433921813965
+      },
+      "878b166d-8131-4a81-a072-f26009f8ed19": {
+        "uuid": "878b166d-8131-4a81-a072-f26009f8ed19",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698231.319523,
+        "end_time": 1762698231.7462087,
+        "duration": 0.4266855716705322,
+        "self_time": 0.0012869834899902344,
+        "subtree_time": 0.4266855716705322,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.4266855716705322
+      },
+      "29d54744-9540-4def-af8a-1d9f72f8dafc": {
+        "uuid": "29d54744-9540-4def-af8a-1d9f72f8dafc",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698231.3202634,
+        "end_time": 1762698231.745662,
+        "duration": 0.425398588180542,
+        "self_time": 0.425398588180542,
+        "subtree_time": 0.425398588180542,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.425398588180542
+      },
+      "a1ea1703-e3f5-42fd-b864-fcd7ccddd976": {
+        "uuid": "a1ea1703-e3f5-42fd-b864-fcd7ccddd976",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698231.7523718,
+        "end_time": 1762698235.6216593,
+        "duration": 3.8692874908447266,
+        "self_time": 3.8692874908447266,
+        "subtree_time": 3.8692874908447266,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 3.8692874908447266
+      },
+      "843c3274-2328-4836-8456-dd6236b67a8e": {
+        "uuid": "843c3274-2328-4836-8456-dd6236b67a8e",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698235.6602967,
+        "end_time": 1762698239.9081283,
+        "duration": 4.247831583023071,
+        "self_time": 0.03386640548706055,
+        "subtree_time": 4.247831583023071,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 4.247831583023071
+      },
+      "f4c8fda7-f36e-4bc7-9754-964046d7b5fa": {
+        "uuid": "f4c8fda7-f36e-4bc7-9754-964046d7b5fa",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698235.6836133,
+        "end_time": 1762698236.6031141,
+        "duration": 0.9195008277893066,
+        "self_time": 0.9195008277893066,
+        "subtree_time": 0.9195008277893066,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.9195008277893066
+      },
+      "c383ba78-4083-4a32-b412-b5d04218eb0f": {
+        "uuid": "c383ba78-4083-4a32-b412-b5d04218eb0f",
+        "operation_type": "TOOL",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698236.6081014,
+        "end_time": 1762698237.0473201,
+        "duration": 0.43921875953674316,
+        "self_time": 0.0013475418090820312,
+        "subtree_time": 0.43921875953674316,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.43921875953674316
+      },
+      "0b3a99db-68ee-4a47-9a3a-56dd3332054e": {
+        "uuid": "0b3a99db-68ee-4a47-9a3a-56dd3332054e",
+        "operation_type": "FUNCTION",
+        "operation_name": "nim_retriever_tool",
+        "start_time": 1762698236.6091127,
+        "end_time": 1762698237.046984,
+        "duration": 0.43787121772766113,
+        "self_time": 0.43787121772766113,
+        "subtree_time": 0.43787121772766113,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 0.43787121772766113
+      },
+      "e6647f32-418e-4071-a843-fa6f9eaa4867": {
+        "uuid": "e6647f32-418e-4071-a843-fa6f9eaa4867",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698237.0500257,
+        "end_time": 1762698239.9052713,
+        "duration": 2.855245590209961,
+        "self_time": 2.855245590209961,
+        "subtree_time": 2.855245590209961,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 2.855245590209961
+      },
+      "d1bacac1-0f05-4539-81fb-b0b834e19a71": {
+        "uuid": "d1bacac1-0f05-4539-81fb-b0b834e19a71",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698239.919563,
+        "end_time": 1762698243.3115187,
+        "duration": 3.391955614089966,
+        "self_time": 0.01297616958618164,
+        "subtree_time": 3.391955614089966,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 3.391955614089966
+      },
+      "b1e65c79-f4dc-4735-b1c6-4d64c4c729af": {
+        "uuid": "b1e65c79-f4dc-4735-b1c6-4d64c4c729af",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698239.922809,
+        "end_time": 1762698240.6752458,
+        "duration": 0.7524368762969971,
+        "self_time": 0.7524368762969971,
+        "subtree_time": 0.7524368762969971,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 0.7524368762969971
+      },
+      "9c0ea3ec-ef3f-4506-85c0-1fd70a65daff": {
+        "uuid": "9c0ea3ec-ef3f-4506-85c0-1fd70a65daff",
+        "operation_type": "TOOL",
+        "operation_name": "web_search_tool",
+        "start_time": 1762698240.678772,
+        "end_time": 1762698242.1396275,
+        "duration": 1.460855484008789,
+        "self_time": 0.0009377002716064453,
+        "subtree_time": 1.460855484008789,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 1.460855484008789
+      },
+      "02316f3b-65d5-4487-9c28-cb9ba9337c53": {
+        "uuid": "02316f3b-65d5-4487-9c28-cb9ba9337c53",
+        "operation_type": "FUNCTION",
+        "operation_name": "web_search_tool",
+        "start_time": 1762698240.6796227,
+        "end_time": 1762698242.1395404,
+        "duration": 1.4599177837371826,
+        "self_time": 0.0009799003601074219,
+        "subtree_time": 1.4599177837371826,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 1.4599177837371826
+      },
+      "05569436-a318-422e-b33c-b69b8287fdb6": {
+        "uuid": "05569436-a318-422e-b33c-b69b8287fdb6",
+        "operation_type": "TOOL",
+        "operation_name": "tavily_search",
+        "start_time": 1762698240.680334,
+        "end_time": 1762698242.139272,
+        "duration": 1.4589378833770752,
+        "self_time": 1.4589378833770752,
+        "subtree_time": 1.4589378833770752,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 1.4589378833770752
+      },
+      "32c31589-c50f-4e09-a6b0-8f319459f1c9": {
+        "uuid": "32c31589-c50f-4e09-a6b0-8f319459f1c9",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698242.1422858,
+        "end_time": 1762698243.307973,
+        "duration": 1.165687084197998,
+        "self_time": 1.165687084197998,
+        "subtree_time": 1.165687084197998,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 1.165687084197998
+      }
+    },
+    "top_bottlenecks": [
+      {
+        "uuid": "669a0e17-0bf0-4b5e-893d-7685c8d64f92",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698227.218143,
+        "end_time": 1762698235.6291742,
+        "duration": 8.411031246185303,
+        "self_time": 0.043225765228271484,
+        "subtree_time": 8.411031246185303,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 8.411031246185303
+      },
+      {
+        "uuid": "8c946e16-a0bc-4d67-ae8d-6b22c3385cd8",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698222.0055966,
+        "end_time": 1762698227.1923356,
+        "duration": 5.186738967895508,
+        "self_time": 0.0299990177154541,
+        "subtree_time": 5.186738967895508,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 5.186738967895508
+      },
+      {
+        "uuid": "843c3274-2328-4836-8456-dd6236b67a8e",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698235.6602967,
+        "end_time": 1762698239.9081283,
+        "duration": 4.247831583023071,
+        "self_time": 0.03386640548706055,
+        "subtree_time": 4.247831583023071,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 4.247831583023071
+      },
+      {
+        "uuid": "a1ea1703-e3f5-42fd-b864-fcd7ccddd976",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1762698231.7523718,
+        "end_time": 1762698235.6216593,
+        "duration": 3.8692874908447266,
+        "self_time": 3.8692874908447266,
+        "subtree_time": 3.8692874908447266,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 3.8692874908447266
+      },
+      {
+        "uuid": "d1bacac1-0f05-4539-81fb-b0b834e19a71",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1762698239.919563,
+        "end_time": 1762698243.3115187,
+        "duration": 3.391955614089966,
+        "self_time": 0.01297616958618164,
+        "subtree_time": 3.391955614089966,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 3.391955614089966
+      }
+    ]
+  },
+  "concurrency_spike_analysis": {
+    "concurrency_distribution": {
+      "1": 19.658552169799805,
+      "0": 0.17779755592346191,
+      "2": 1.4589378833770752
+    },
+    "p50_concurrency": 1.0,
+    "p90_concurrency": 1.0,
+    "p95_concurrency": 2.0,
+    "p99_concurrency": 2.0,
+    "spike_threshold": 7,
+    "spike_intervals": [],
+    "correlation_stats": {
+      "avg_prompt_tokens": 0.0,
+      "avg_total_tokens": 0.0
+    },
+    "average_latency_by_concurrency": {
+      "1": 1.15627262171577,
+      "2": 1.4598966836929321
+    }
+  }
+}

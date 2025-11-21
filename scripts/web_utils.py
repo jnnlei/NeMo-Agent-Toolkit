@@ -16,8 +16,11 @@
 import asyncio
 import logging
 import os
+from typing import List, Set, Tuple
+from urllib.parse import urljoin, urlparse
 
 import httpx
+from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
@@ -69,6 +72,7 @@ def get_file_path_from_url(url: str, base_path: str) -> str:
     Resulting filepaths take the form {base_path}/{domain}/{page_name}
     Examples:
        http://mydomain.com/articles/generative_ai -> {base_path}/mydomain/articles_generative_ai
+       http://mydomain.com/ -> {base_path}/mydomain/index.html
 
     Args:
      url (str): The url from which to generate a file name
@@ -79,7 +83,12 @@ def get_file_path_from_url(url: str, base_path: str) -> str:
      directory (str): Path to the parent directory
     """
     short_url, domain = _get_short_url(url)
-    short_url = short_url.replace("/", "_")
+    short_url = short_url.replace("/", "_").strip("_")
+    
+    # If short_url is empty (root path), use default filename
+    if not short_url:
+        short_url = "index.html"
+    
     domain = domain.replace("/", "_")
     directory = os.path.join(base_path, domain)
     file_path = os.path.join(base_path, domain, short_url)
@@ -121,3 +130,123 @@ def _get_short_url(url: str):
     domain = path_components[0]
     short_url = "/".join(path_components[1:])
     return short_url, domain
+
+
+def extract_links_from_html(html_content: str, base_url: str, allowed_domains: Set[str] = None) -> List[str]:
+    """
+    Extract all links from HTML content.
+
+    Args:
+        html_content (str): HTML content to parse.
+        base_url (str): Base URL for resolving relative links.
+        allowed_domains (Set[str]): Set of allowed domains. None means only same domain as base_url.
+
+    Returns:
+        List[str]: List of normalized absolute URLs.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    links = []
+    base_domain = urlparse(base_url).netloc
+
+    # If no allowed domains specified, default to same domain only
+    if allowed_domains is None:
+        allowed_domains = {base_domain}
+
+    for tag in soup.find_all(['a', 'link']):
+        href = tag.get('href')
+        if not href:
+            continue
+
+        # Skip anchors, JavaScript, mailto, etc.
+        if href.startswith(('#', 'javascript:', 'mailto:', 'tel:')):
+            continue
+
+        # Convert to absolute URL
+        absolute_url = urljoin(base_url, href)
+        parsed = urlparse(absolute_url)
+
+        # Only keep http/https links
+        if parsed.scheme not in ('http', 'https'):
+            continue
+
+        # Domain filtering
+        if parsed.netloc not in allowed_domains:
+            continue
+
+        # Remove fragment (# part) and normalize
+        clean_url = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+        if parsed.query:
+            clean_url += f"?{parsed.query}"
+
+        links.append(clean_url)
+
+    return list(set(links))  # Deduplicate
+
+
+async def scrape_recursive(start_urls: List[str],
+                           max_depth: int = 2,
+                           allowed_domains: Set[str] = None,
+                           max_pages: int = 100) -> Tuple[List[dict], Set[str]]:
+    """
+    Recursively scrape web pages and their links.
+
+    Args:
+        start_urls (List[str]): List of starting URLs.
+        max_depth (int): Maximum crawl depth (0 = start URLs only).
+        allowed_domains (Set[str]): Set of allowed domains. None means domains from start_urls.
+        max_pages (int): Maximum number of pages to crawl.
+
+    Returns:
+        Tuple[List[dict], Set[str]]: (List of successful responses, Set of all visited URLs).
+    """
+    # Automatically extract domains from start URLs
+    if allowed_domains is None:
+        allowed_domains = {urlparse(url).netloc for url in start_urls}
+
+    visited: Set[str] = set()
+    to_visit: List[Tuple[str, int]] = [(url, 0) for url in start_urls]  # (url, depth)
+    all_responses = []
+
+    logger.info("Starting recursive crawl, max_depth: %s, allowed_domains: %s", max_depth, allowed_domains)
+
+    while to_visit and len(visited) < max_pages:
+        # Get current batch (same depth)
+        current_depth = to_visit[0][1]
+        current_batch = []
+
+        while to_visit and to_visit[0][1] == current_depth:
+            url, depth = to_visit.pop(0)
+            if url not in visited:
+                current_batch.append(url)
+                visited.add(url)
+
+        if not current_batch:
+            continue
+
+        logger.info("Depth %s: crawling %s pages", current_depth, len(current_batch))
+
+        # Batch scrape all pages at current depth
+        responses, failures = await scrape(current_batch)
+        all_responses.extend(responses)
+
+        if failures:
+            logger.warning("Failed to scrape %s URLs at depth %s", len(failures), current_depth)
+
+        # If not at max depth, extract new links
+        if current_depth < max_depth:
+            for response in responses:
+                if response.get('content'):
+                    try:
+                        new_links = extract_links_from_html(response['content'], response['url'], allowed_domains)
+
+                        # Add unvisited links to queue
+                        for link in new_links:
+                            if link not in visited and len(visited) < max_pages:
+                                to_visit.append((link, current_depth + 1))
+
+                        logger.info("Extracted %s new links from %s", len(new_links), response['url'])
+                    except Exception as e:
+                        logger.warning("Failed to extract links from %s: %s", response['url'], e)
+
+    logger.info("Recursive crawl completed, visited %s pages", len(visited))
+    return all_responses, visited

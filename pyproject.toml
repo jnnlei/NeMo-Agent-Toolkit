@@ -261,6 +261,7 @@ nat_llms = "nat.llm.register"
 nat_object_stores = "nat.object_store.register"
 nat_observability = "nat.observability.register"
 nat_retrievers = "nat.retriever.register"
+nat_rerank_retriever = "nat.retriever.rerank.register"
 nat_tools = "nat.tool.register"
 
 

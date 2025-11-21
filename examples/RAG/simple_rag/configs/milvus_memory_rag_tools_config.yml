@@ -13,33 +13,94 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+general:
+  telemetry:
+    tracing:
+      weave:
+        _type: weave
+        project: "nat-simple"
+        
 memory:
   saas_memory:
     _type: mem0_memory
 
 retrievers:
-  cuda_retriever:
+  vllm_retriever:
     _type: milvus_retriever
     uri: http://localhost:19530
-    collection_name: "cuda_docs"
-    embedding_model: milvus_embedder
-    top_k: 10
-  mcp_retriever:
-    _type: milvus_retriever
-    uri: http://localhost:19530
-    collection_name: "mcp_docs"
+    collection_name: "vllm_docs"
     embedding_model: milvus_embedder
     top_k: 10
 
+  nim_retriever:
+    _type: milvus_retriever
+    uri: http://localhost:19530
+    collection_name: "nim_docs"
+    embedding_model: milvus_embedder
+    top_k: 10
+    
+  nim_retriever_with_rerank:
+    _type: milvus_rerank_retriever 
+    uri: http://localhost:19530
+    collection_name: "nim_docs"
+    embedding_model: milvus_embedder
+    reranker_model_name: "nvidia/llama-3.2-nv-rerankqa-1b-v2"    
+    top_k: 5                        # 最终返回给 Agent 的文档数
+    expansion_factor: 3        # 初始检索 5*3=15 个文档进行 rerank
+
 functions:
-  cuda_retriever_tool:
+  vllm_retriever_tool:
     _type: nat_retriever
-    retriever: cuda_retriever
-    topic: Retrieve documentation for NVIDIA's CUDA library
-  mcp_retriever_tool:
+    retriever: vllm_retriever
+    topic: Retrieve information about vLLM
+    
+  nim_retriever_tool:
     _type: nat_retriever
-    retriever: mcp_retriever
-    topic: Retrieve information about Model Context Protocol (MCP)
+    retriever: nim_retriever
+    topic: Retrieve information about NVIDIA NIM (NVIDIA Inference Microservices)
+    description: |
+      Retrieves detailed documentation about NVIDIA NIM (NVIDIA Inference Microservices) for Large Language Models. This tool contains comprehensive information about:
+      - Supported LLM models and their specifications
+      - Hardware requirements (GPU types, memory, compute capability)
+      - Optimized vs. generic configurations
+      - TRT-LLM and vLLM profile details
+      - Precision types (FP16, BF16, FP8, FP32)
+      - Multi-GPU setup requirements
+      - Features like LoRA and vGPU support
+      - Model-specific deployment configurations
+
+      Use this tool for ANY question related to:
+      - NVIDIA NIM containers or microservices
+      - Specific model support (Llama, Qwen, DeepSeek, Gemma, Mistral, etc.)
+      - GPU requirements for running specific models
+      - Profile selection and configuration options
+      - Performance optimization settings
+
+      The tool responds to queries about model deployment, hardware compatibility, and NIM functionality. Always use this tool first when the user asks about NVIDIA NIM, model support, or GPU requirements for LLM inference.
+
+  nim_retriever_tool_with_rerank:
+    _type: nat_retriever
+    retriever: nim_retriever_with_rerank
+    topic: Retrieve information about NVIDIA NIM (NVIDIA Inference Microservices)
+    description: |
+      Retrieves detailed documentation about NVIDIA NIM (NVIDIA Inference Microservices) for Large Language Models. This tool contains comprehensive information about:
+      - Supported LLM models and their specifications
+      - Hardware requirements (GPU types, memory, compute capability)
+      - Optimized vs. generic configurations
+      - TRT-LLM and vLLM profile details
+      - Precision types (FP16, BF16, FP8, FP32)
+      - Multi-GPU setup requirements
+      - Features like LoRA and vGPU support
+      - Model-specific deployment configurations
+
+      Use this tool for ANY question related to:
+      - NVIDIA NIM containers or microservices
+      - Specific model support (Llama, Qwen, DeepSeek, Gemma, Mistral, etc.)
+      - GPU requirements for running specific models
+      - Profile selection and configuration options
+      - Performance optimization settings
+
+      The tool responds to queries about model deployment, hardware compatibility, and NIM functionality. Always use this tool first when the user asks about NVIDIA NIM, model support, or GPU requirements for LLM inference.
 
   add_memory:
     _type: add_memory
@@ -70,10 +131,19 @@ functions:
 llms:
   nim_llm:
     _type: nim
-    model_name: meta/llama-3.3-70b-instruct
+    model_name: deepseek-ai/deepseek-r1
     temperature: 0
     max_tokens: 4096
     top_p: 1
+  nim_rag_eval_llm:
+    _type: nim
+    model_name: meta/llama-3.1-70b-instruct
+    max_tokens: 8
+  nim_trajectory_eval_llm:
+    _type: nim
+    model_name: meta/llama-3.1-70b-instruct
+    temperature: 0.0
+    max_tokens: 1024
 
 embedders:
   milvus_embedder:
@@ -84,11 +154,59 @@ embedders:
 workflow:
   _type: react_agent
   tool_names:
-    - cuda_retriever_tool
-    - mcp_retriever_tool
+    - vllm_retriever_tool
+    # - nim_retriever_tool
+    - nim_retriever_tool_with_rerank
     - add_memory
     - get_memory
     - web_search_tool
     - code_generation_tool
   verbose: true
   llm_name: nim_llm
+
+eval:
+  general:
+    verbose: true
+    max_concurrency: 1
+    output:
+      dir: eval_output
+      cleanup: false
+    dataset:
+      _type: json
+      file_path: my_data/test_nim.json
+    profiler:
+      # Compute inter query token uniqueness
+      token_uniqueness_forecast: true
+      # Compute expected workflow runtime
+      workflow_runtime_forecast: true
+      # Compute inference optimization metrics
+      compute_llm_metrics: true
+      # Avoid dumping large text into the output CSV (helpful to not break structure)
+      csv_exclude_io_text: true
+      # Idenitfy common prompt prefixes
+      prompt_caching_prefixes:
+        enable: true
+        min_frequency: 0.1
+      bottleneck_analysis:
+        # Can also be simple_stack
+        enable_nested_stack: true
+      concurrency_spike_analysis:
+        enable: true
+        spike_threshold: 7
+
+  evaluators:
+    accuracy:
+      _type: ragas
+      metric: AnswerAccuracy
+      llm_name: nim_rag_eval_llm
+    groundedness:
+      _type: ragas
+      metric: ResponseGroundedness
+      llm_name: nim_rag_eval_llm
+    relevance:
+      _type: ragas
+      metric: ContextRelevance
+      llm_name: nim_rag_eval_llm
+    trajectory_accuracy:
+      _type: trajectory
+      llm_name: nim_trajectory_eval_llm

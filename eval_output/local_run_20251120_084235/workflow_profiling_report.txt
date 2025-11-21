@@ -1,0 +1,65 @@
+
+
+
+=== Multi-Example Nested Call Profiling Report ===
+Total calls (across all examples): 24
+
+-- Concurrency Distribution (all examples) --
+p50=2.0, p90=3.0, p95=3.0, p99=4.0
+
+-- Top 5 Calls by Bottleneck Score (subtree_time) --
+1) UUID=11cfb20b-6c33-4aed-987a-74630ee113b2, FUNCTION '<workflow>', dur=16.91, self_time=0.03, subtree_time=16.91, concurrency=2.0, score=16.91
+2) UUID=8a11c2fe-7910-4731-af74-2586d81c3eb5, FUNCTION '<workflow>', dur=9.13, self_time=0.02, subtree_time=9.13, concurrency=2.0, score=9.13
+3) UUID=3a3dcb97-ac19-4de1-adce-3ed6dbbdaca4, FUNCTION '<workflow>', dur=8.47, self_time=0.03, subtree_time=8.47, concurrency=3.0, score=8.47
+4) UUID=38160008-4202-41c5-ae37-1e3388a15d4e, FUNCTION '<workflow>', dur=7.75, self_time=0.02, subtree_time=7.75, concurrency=4.0, score=7.75
+5) UUID=4f0dce3a-dadb-4631-a2a9-4541ab58ecd9, LLM 'deepseek-ai/deepseek-r1', dur=7.74, self_time=7.74, subtree_time=7.74, concurrency=2.0, score=7.74
+
+-- Full Tree(s) (All Examples) --
+- FUNCTION '<workflow>' (uuid=11cfb20b-6c33-4aed-987a-74630ee113b2, start=1763628164.06, end=1763628180.98, dur=16.91)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=4f0dce3a-dadb-4631-a2a9-4541ab58ecd9, start=1763628164.07, end=1763628171.81, dur=7.74)
+  - TOOL 'get_memory' (uuid=9d832595-960a-420b-8a81-e2754fa56043, start=1763628171.82, end=1763628172.15, dur=0.32)
+    - FUNCTION 'get_memory' (uuid=5fe1e23b-0335-4ffe-9ecd-39472fda3f9f, start=1763628171.82, end=1763628172.15, dur=0.32)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=09451ffb-fffc-44ba-ac62-5e8bf72d5dac, start=1763628172.15, end=1763628174.54, dur=2.39)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=a27317e6-23d2-4cb5-a8aa-7f4c8ad47d41, start=1763628174.54, end=1763628176.27, dur=1.73)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=3dcacb3a-a717-400c-aaa0-562fc84d1a0e, start=1763628174.54, end=1763628176.27, dur=1.73)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=39cd83e1-4cf4-4003-b891-af824fdd39a9, start=1763628176.27, end=1763628180.97, dur=4.70)
+- FUNCTION '<workflow>' (uuid=3a3dcb97-ac19-4de1-adce-3ed6dbbdaca4, start=1763628181.11, end=1763628189.57, dur=8.47)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=c3daf93a-d6d0-485f-ae38-31eb89791453, start=1763628181.12, end=1763628183.63, dur=2.51)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=1f9ca2b5-ff82-4066-8e21-3d84d33bc929, start=1763628183.63, end=1763628185.40, dur=1.76)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=03336982-f33f-4a61-b00e-a9fe21782b83, start=1763628183.63, end=1763628185.40, dur=1.76)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=6d75d812-b3e2-4656-b830-7c80cef76b0f, start=1763628185.40, end=1763628189.57, dur=4.17)
+- FUNCTION '<workflow>' (uuid=8a11c2fe-7910-4731-af74-2586d81c3eb5, start=1763628189.64, end=1763628198.77, dur=9.13)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=75a33b98-d75c-49a7-a952-473af098939a, start=1763628189.64, end=1763628191.78, dur=2.14)
+  - TOOL 'nim_retriever_tool_with_rerank' (uuid=65b839ce-df46-4403-b44e-cd0cb66979c5, start=1763628191.79, end=1763628193.82, dur=2.04)
+    - FUNCTION 'nim_retriever_tool_with_rerank' (uuid=efb6b8b4-40b6-4e7e-ac1a-a48f4b32d593, start=1763628191.79, end=1763628193.82, dur=2.03)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=2c7b7a81-6e9d-424b-bc8c-7c0a793ab880, start=1763628193.83, end=1763628198.76, dur=4.94)
+- FUNCTION '<workflow>' (uuid=38160008-4202-41c5-ae37-1e3388a15d4e, start=1763628199.57, end=1763628207.32, dur=7.75)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=2526bebb-9349-45c0-a58b-ffc1011b0a7a, start=1763628199.58, end=1763628203.39, dur=3.82)
+  - TOOL 'web_search_tool' (uuid=36d0850a-32f8-4c72-a92d-38b17ec6fe69, start=1763628203.40, end=1763628204.57, dur=1.17)
+    - FUNCTION 'web_search_tool' (uuid=625a4083-9a55-4432-9c86-1293226608c9, start=1763628203.40, end=1763628204.57, dur=1.17)
+      - TOOL 'tavily_search' (uuid=0bf20e4b-a6b5-4b8e-84cb-e9ee03f50a45, start=1763628203.40, end=1763628204.57, dur=1.17)
+  - LLM 'deepseek-ai/deepseek-r1' (uuid=3316276e-cece-479a-8ce0-55c17dad5187, start=1763628204.57, end=1763628207.32, dur=2.74)
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 15
+Total time observed: 43.25 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+  concurrency=0: 1.09 time
+  concurrency=1: 40.99 time
+  concurrency=2: 1.17 time
+
+Percentiles => p50=1.0, p90=1.0, p95=1.0, p99=2.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+  concurrency=1 => avg_latency=3.15
+  concurrency=2 => avg_latency=1.17
