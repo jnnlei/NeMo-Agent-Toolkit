@@ -1,57 +1,57 @@
 {
   "confidence_intervals": {
     "workflow_run_time_confidence_intervals": {
-      "n": 4,
-      "mean": 5.30975741147995,
+      "n": 50,
+      "mean": 6.670961818695068,
       "ninetieth_interval": [
-        3.7470243102988743,
-        6.872490512661026
+        6.099065195093766,
+        7.24285844229637
       ],
       "ninety_fifth_interval": [
-        3.447777546242924,
-        7.171737276716976
+        5.989553075680751,
+        7.352370561709385
       ],
       "ninety_ninth_interval": [
-        2.862583874311287,
-        7.756930948648613
+        5.775396042161965,
+        7.566527595228171
       ],
-      "p90": 7.444211149215699,
-      "p95": 7.92782552242279,
-      "p99": 8.314717020988464
+      "p90": 10.241431999206544,
+      "p95": 10.971682977676391,
+      "p99": 11.912166757583616
     },
     "llm_latency_confidence_intervals": {
-      "n": 11,
-      "mean": 1.5512096881866455,
+      "n": 163,
+      "mean": 1.5282551174514865,
       "ninetieth_interval": [
-        1.0444600325347912,
-        2.0579593438384998
+        1.4463683153788915,
+        1.6101419195240814
       ],
       "ninety_fifth_interval": [
-        0.9474228644312449,
-        2.1549965119420462
+        1.4306878639181817,
+        1.6258223709847912
       ],
       "ninety_ninth_interval": [
-        0.757661291250976,
-        2.344758085122315
+        1.4000238699505718,
+        1.656486364952401
       ],
-      "p90": 2.855245590209961,
-      "p95": 3.3622665405273438,
-      "p99": 3.7678833007812504
+      "p90": 2.491335630416871,
+      "p95": 2.770185685157776,
+      "p99": 3.4203858709335324
     },
     "throughput_estimate_confidence_interval": {
-      "n": 4,
-      "mean": 0.18773554481771748,
+      "n": 50,
+      "mean": 0.29168037959996534,
       "ninetieth_interval": [
-        0.03332305920514486,
-        0.3421480304302901
+        0.22382440123743294,
+        0.3595363579624977
       ],
       "ninety_fifth_interval": [
-        0.0037547108963543463,
-        0.3717163787390806
+        0.21083070325311823,
+        0.37253005594681243
       ],
       "ninety_ninth_interval": [
-        0.0,
-        0.42953892654293757
+        0.18542080497268057,
+        0.39793995422725015
       ],
       "p90": 0,
       "p95": 0,
@@ -60,37 +60,37 @@
   },
   "common_prefixes": {
     "": {
-      "total_calls": 1001,
+      "total_calls": 18248,
       "prefix_info": []
     },
     "meta/llama-3.3-70b-instruct": {
-      "total_calls": 22,
+      "total_calls": 326,
       "prefix_info": [
         {
-          "prefix": "[{'content': '\\nAnswer the following questions as best you can. You may ask the human to use the following tools:\\n\\ncuda_retriever_tool: Retrieve document chunks related to Retrieve documentation for NVIDIA\\'s CUDA library which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nmcp_retriever_tool: Retrieve document chunks related to Retrieve information about Model Context Protocol (MCP) which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nvllm_retriever_tool: Retrieve document chunks related to Retrieve information about vLLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nsglang_retriever_tool: Retrieve document chunks related to Retrieve information about sglang which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\ntensorrt_llm_retriever_tool: Retrieve document chunks related to Retrieve information about TensorRT-LLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nnim_retriever_tool: Retrieve document chunks related to Retrieve information about NVIDIA NIM (NVIDIA Inference Microservices) which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nadd_memory: Add any facts about user preferences to long term memory. Always use this if users mention a preference.\\nThe input to this tool should be a string that describes the user\\'s preference, not the question or answer.. . Arguments must be provided as a valid JSON object following this format: {\\'conversation\\': FieldInfo(annotation=Union[list[dict[str, str]], NoneType], required=False, default=None, description=\\'List of conversation messages. Each message must have a \"role\" key (user or assistant. It must also have a \"content\" key.\\'), \\'tags\\': FieldInfo(annotation=list[str], required=False, default_factory=list, description=\\'List of tags applied to the item.\\'), \\'metadata\\': FieldInfo(annotation=dict[str, Any], required=False, default={}, description=\\'Metadata about the memory item.\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\"The user\\'s ID.\"), \\'memory\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}\\nget_memory: Always call this tool before calling any other tools, even if the user does not mention to use it.\\nThe question should be about user preferences which will help you format your response.\\nFor example: \"How does the user like responses formatted?\". . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'Search query for which to retrieve memory.\\'), \\'top_k\\': FieldInfo(annotation=int, required=True, description=\\'Maximum number of memories to return\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\\'ID of the user to search for.\\')}\\nweb_search_tool: This tool retrieves relevant contexts from web search (using Tavily) for the given question.\\n\\nArgs:\\n    question (str): The question to be answered.\\n\\nReturns:\\n    str: The web search results.. . Arguments must be provided as a valid JSON object following this format: {\\'question\\': FieldInfo(annotation=str, required=True)}\\ncode_generation_tool: Always call this tool to generate python code. Returns a code snippet which MUST be included in your response.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True)}\\n\\nYou may respond in one of two formats.\\nUse the following format exactly to ask the human to use a tool:\\n\\nQuestion: the input question you must answer\\nThought: you should always think about what to do\\nAction: the action to take, should be one of [cuda_retriever_tool,mcp_retriever_tool,vllm_retriever_tool,sglang_retriever_tool,tensorrt_llm_retriever_tool,nim_retriever_tool,add_memory,get_memory,web_search_tool,code_generation_tool]\\nAction Input: the input to the action (if there is no required input, include \"Action Input: None\")\\nObservation: wait for the human to respond with the result from the tool, do not assume the response\\n\\n... (this Thought/Action/Action Input/Observation can repeat N times. If you do not need to use a tool, or after asking the human to use any tools and waiting for the human to respond, you might know the final answer.)\\nUse the following format once you have the final answer:\\n\\nThought: I now know the final answer\\nFinal Answer: the final answer to the original input question\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'system', 'name': None, 'id': None}, {'content': '\\nPrevious conversation history:\\n\\n\\nQuestion: What is a NIM model profile?\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'human', 'name': None, 'id': None, 'example': False}",
-          "prefix_length": 5857,
-          "calls_count": 3,
-          "calls_percentage": 0.13636363636363635
+          "prefix": "[{'content': '\\nAnswer the following questions as best you can. You may ask the human to use the following tools:\\n\\nvllm_retriever_tool: Retrieve document chunks related to Retrieve information about vLLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nwix_retriever_tool_with_rerank: Retrieves information from the Wix Help Center knowledge base.\\nUse this tool for questions about website building, features, accounts, domains, or support, even if \"Wix\" is not explicitly mentioned in the query.\\nAssume generic questions (e.g., \"how to add a page\", \"change domain settings\") are referring to the Wix platform.\\nTopics covered include:\\n- Website building and editing\\n- Features and functionality\\n- Account and settings\\n- Apps and integrations\\n- Domains and email\\n- E-commerce and bookings. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nadd_memory: Add any facts about user preferences to long term memory. Always use this if users mention a preference.\\nThe input to this tool should be a string that describes the user\\'s preference, not the question or answer.. . Arguments must be provided as a valid JSON object following this format: {\\'conversation\\': FieldInfo(annotation=Union[list[dict[str, str]], NoneType], required=False, default=None, description=\\'List of conversation messages. Each message must have a \"role\" key (user or assistant. It must also have a \"content\" key.\\'), \\'tags\\': FieldInfo(annotation=list[str], required=False, default_factory=list, description=\\'List of tags applied to the item.\\'), \\'metadata\\': FieldInfo(annotation=dict[str, Any], required=False, default={}, description=\\'Metadata about the memory item.\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\"The user\\'s ID.\"), \\'memory\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}\\nget_memory: Always call this tool before calling any other tools, even if the user does not mention to use it.\\nThe question should be about user preferences which will help you format your response.\\nFor example: \"How does the user like responses formatted?\". . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'Search query for which to retrieve memory.\\'), \\'top_k\\': FieldInfo(annotation=int, required=True, description=\\'Maximum number of memories to return\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\\'ID of the user to search for.\\')}\\nweb_search_tool: This tool retrieves relevant contexts from web search (using Tavily) for the given question.\\n\\nArgs:\\n    question (str): The question to be answered.\\n\\nReturns:\\n    str: The web search results.. . Arguments must be provided as a valid JSON object following this format: {\\'question\\': FieldInfo(annotation=str, required=True)}\\ncode_generation_tool: Always call this tool to generate python code. Returns a code snippet which MUST be included in your response.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True)}\\n\\nYou may respond in one of two formats.\\nUse the following format exactly to ask the human to use a tool:\\n\\nQuestion: the input question you must answer\\nThought: you should always think about what to do\\nAction: the action to take, should be one of [vllm_retriever_tool,wix_retriever_tool_with_rerank,add_memory,get_memory,web_search_tool,code_generation_tool]\\nAction Input: the input to the action (if there is no required input, include \"Action Input: None\")\\nObservation: wait for the human to respond with the result from the tool, do not assume the response\\n\\n... (this Thought/Action/Action Input/Observation can repeat N times. If you do not need to use a tool, or after asking the human to use any tools and waiting for the human to respond, you might know the final answer.)\\nUse the following format once you have the final answer:\\n\\nThought: I now know the final answer\\nFinal Answer: the final answer to the original input question\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'system', 'name': None, 'id': None}, {'content': '\\nPrevious conversation history:\\n\\n\\nQuestion: I want to ",
+          "prefix_length": 4584,
+          "calls_count": 47,
+          "calls_percentage": 0.1441717791411043
         },
         {
-          "prefix": "[{'content': '\\nAnswer the following questions as best you can. You may ask the human to use the following tools:\\n\\ncuda_retriever_tool: Retrieve document chunks related to Retrieve documentation for NVIDIA\\'s CUDA library which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nmcp_retriever_tool: Retrieve document chunks related to Retrieve information about Model Context Protocol (MCP) which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nvllm_retriever_tool: Retrieve document chunks related to Retrieve information about vLLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nsglang_retriever_tool: Retrieve document chunks related to Retrieve information about sglang which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\ntensorrt_llm_retriever_tool: Retrieve document chunks related to Retrieve information about TensorRT-LLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nnim_retriever_tool: Retrieve document chunks related to Retrieve information about NVIDIA NIM (NVIDIA Inference Microservices) which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nadd_memory: Add any facts about user preferences to long term memory. Always use this if users mention a preference.\\nThe input to this tool should be a string that describes the user\\'s preference, not the question or answer.. . Arguments must be provided as a valid JSON object following this format: {\\'conversation\\': FieldInfo(annotation=Union[list[dict[str, str]], NoneType], required=False, default=None, description=\\'List of conversation messages. Each message must have a \"role\" key (user or assistant. It must also have a \"content\" key.\\'), \\'tags\\': FieldInfo(annotation=list[str], required=False, default_factory=list, description=\\'List of tags applied to the item.\\'), \\'metadata\\': FieldInfo(annotation=dict[str, Any], required=False, default={}, description=\\'Metadata about the memory item.\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\"The user\\'s ID.\"), \\'memory\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}\\nget_memory: Always call this tool before calling any other tools, even if the user does not mention to use it.\\nThe question should be about user preferences which will help you format your response.\\nFor example: \"How does the user like responses formatted?\". . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'Search query for which to retrieve memory.\\'), \\'top_k\\': FieldInfo(annotation=int, required=True, description=\\'Maximum number of memories to return\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\\'ID of the user to search for.\\')}\\nweb_search_tool: This tool retrieves relevant contexts from web search (using Tavily) for the given question.\\n\\nArgs:\\n    question (str): The question to be answered.\\n\\nReturns:\\n    str: The web search results.. . Arguments must be provided as a valid JSON object following this format: {\\'question\\': FieldInfo(annotation=str, required=True)}\\ncode_generation_tool: Always call this tool to generate python code. Returns a code snippet which MUST be included in your response.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True)}\\n\\nYou may respond in one of two formats.\\nUse the following format exactly to ask the human to use a tool:\\n\\nQuestion: the input question you must answer\\nThought: you should always think about what to do\\nAction: the action to take, should be one of [cuda_retriever_tool,mcp_retriever_tool,vllm_retriever_tool,sglang_retriever_tool,tensorrt_llm_retriever_tool,nim_retriever_tool,add_memory,get_memory,web_search_tool,code_generation_tool]\\nAction Input: the input to the action (if there is no required input, include \"Action Input: None\")\\nObservation: wait for the human to respond with the result from the tool, do not assume the response\\n\\n... (this Thought/Action/Action Input/Observation can repeat N times. If you do not need to use a tool, or after asking the human to use any tools and waiting for the human to respond, you might know the final answer.)\\nUse the following format once you have the final answer:\\n\\nThought: I now know the final answer\\nFinal Answer: the final answer to the original input question\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'system', 'name': None, 'id': None}, {'content': '\\nPrevious conversation history:\\n\\n\\nQuestion: What is NVIDIA NIM?\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'human', 'name': None, 'id': None, 'example': False}",
-          "prefix_length": 5848,
-          "calls_count": 3,
-          "calls_percentage": 0.13636363636363635
+          "prefix": "[{'content': '\\nAnswer the following questions as best you can. You may ask the human to use the following tools:\\n\\nvllm_retriever_tool: Retrieve document chunks related to Retrieve information about vLLM which can be used to answer the provided question.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nwix_retriever_tool_with_rerank: Retrieves information from the Wix Help Center knowledge base.\\nUse this tool for questions about website building, features, accounts, domains, or support, even if \"Wix\" is not explicitly mentioned in the query.\\nAssume generic questions (e.g., \"how to add a page\", \"change domain settings\") are referring to the Wix platform.\\nTopics covered include:\\n- Website building and editing\\n- Features and functionality\\n- Account and settings\\n- Apps and integrations\\n- Domains and email\\n- E-commerce and bookings. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'The query to be searched in the configured data store\\')}\\nadd_memory: Add any facts about user preferences to long term memory. Always use this if users mention a preference.\\nThe input to this tool should be a string that describes the user\\'s preference, not the question or answer.. . Arguments must be provided as a valid JSON object following this format: {\\'conversation\\': FieldInfo(annotation=Union[list[dict[str, str]], NoneType], required=False, default=None, description=\\'List of conversation messages. Each message must have a \"role\" key (user or assistant. It must also have a \"content\" key.\\'), \\'tags\\': FieldInfo(annotation=list[str], required=False, default_factory=list, description=\\'List of tags applied to the item.\\'), \\'metadata\\': FieldInfo(annotation=dict[str, Any], required=False, default={}, description=\\'Metadata about the memory item.\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\"The user\\'s ID.\"), \\'memory\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None)}\\nget_memory: Always call this tool before calling any other tools, even if the user does not mention to use it.\\nThe question should be about user preferences which will help you format your response.\\nFor example: \"How does the user like responses formatted?\". . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True, description=\\'Search query for which to retrieve memory.\\'), \\'top_k\\': FieldInfo(annotation=int, required=True, description=\\'Maximum number of memories to return\\'), \\'user_id\\': FieldInfo(annotation=str, required=True, description=\\'ID of the user to search for.\\')}\\nweb_search_tool: This tool retrieves relevant contexts from web search (using Tavily) for the given question.\\n\\nArgs:\\n    question (str): The question to be answered.\\n\\nReturns:\\n    str: The web search results.. . Arguments must be provided as a valid JSON object following this format: {\\'question\\': FieldInfo(annotation=str, required=True)}\\ncode_generation_tool: Always call this tool to generate python code. Returns a code snippet which MUST be included in your response.. . Arguments must be provided as a valid JSON object following this format: {\\'query\\': FieldInfo(annotation=str, required=True)}\\n\\nYou may respond in one of two formats.\\nUse the following format exactly to ask the human to use a tool:\\n\\nQuestion: the input question you must answer\\nThought: you should always think about what to do\\nAction: the action to take, should be one of [vllm_retriever_tool,wix_retriever_tool_with_rerank,add_memory,get_memory,web_search_tool,code_generation_tool]\\nAction Input: the input to the action (if there is no required input, include \"Action Input: None\")\\nObservation: wait for the human to respond with the result from the tool, do not assume the response\\n\\n... (this Thought/Action/Action Input/Observation can repeat N times. If you do not need to use a tool, or after asking the human to use any tools and waiting for the human to respond, you might know the final answer.)\\nUse the following format once you have the final answer:\\n\\nThought: I now know the final answer\\nFinal Answer: the final answer to the original input question\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'system', 'name': None, 'id': None}, {'content': '\\nPrevious conversation history:\\n\\n\\nQuestion: I need to ",
+          "prefix_length": 4584,
+          "calls_count": 33,
+          "calls_percentage": 0.10122699386503067
         }
       ]
     }
   },
   "token_uniqueness": {
     "meta/llama-3.3-70b-instruct": {
-      "p90": 1106.8,
-      "p95": 1128.3999999999999,
-      "p99": 1145.68
+      "p90": 136.0,
+      "p95": 141.39999999999998,
+      "p99": 150.76
     }
   },
   "workflow_runtimes": {
-    "p90": 7.444211149215699,
-    "p95": 7.92782552242279,
-    "p99": 8.314717020988464
+    "p90": 10.241431999206544,
+    "p95": 10.971682977676391,
+    "p99": 11.912166757583616
   }
 }

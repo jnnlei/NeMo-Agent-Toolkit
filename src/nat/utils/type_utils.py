@@ -353,7 +353,15 @@ class DecomposedType:
             True if the current type is an instance of the specified instance, False otherwise
         """
 
-        return isinstance(instance, self.get_base_type().root)
+        # Handle Literal types
+        if self.origin is typing.Literal:
+            return instance in self.args
+
+        try:
+            return isinstance(instance, self.get_base_type().root)
+        except TypeError:
+            # Fallback for types that don't support isinstance
+            return False
 
     def get_pydantic_schema(self,
                             converters: list[collections.abc.Callable] | None = None) -> type[BaseModel] | type[None]:

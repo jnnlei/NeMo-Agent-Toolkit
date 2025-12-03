@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "1",
+    "question": "How to make the published changes draft?",
+    "answer": "To make changes to your site without making them live immediately, you can save your changes as a draft in the Wix Editor by editing your site, saving your changes, and not clicking Publish."
+  },
+  {
+    "id": "2",
+    "question": "how can i connect google reviews to website",
+    "answer": "To connect Google Reviews to your Wix website, you can use the Google Reviews app by Elfsight, which allows you to embed customer reviews from a Google business or location on your site without any coding."
+  },
+  {
+    "id": "3",
+    "question": "how to remove a gap on the mobile site version between the logo and elements below it",
+    "answer": "open the mobile editor, click on the logo to check its position and size, drag the elements below the logo upwards to reduce the gap, use the Spacing Guide tool, and check for hidden elements or overlapping issues using the Layers Tool if the gap persists"
+  },
+  {
+    "id": "4",
+    "question": "How can I save a lightbox for next year?",
+    "answer": "To schedule a lightbox to appear at a specific time next year, go to the Pages section in the editor, select the lightbox, click Set Triggers, scroll to Lightbox scheduling, and set the start and end dates. To save the lightbox design and content for future use without displaying it, duplicate the lightbox in the Menus & Pages panel."
+  },
+  {
+    "id": "5",
+    "question": "WHAT is full form of cms, and benefits",
+    "answer": "The full form of CMS is Content Management System. Benefits of using the Wix CMS include efficient content management, dynamic content display, custom forms, SEO optimization, access controls, backup and restore, and integration with Wix App Collections."
+  },
+  {
+    "id": "6",
+    "question": "Can I get a refund for the domain I purchased yesterday?",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable."
+  },
+  {
+    "id": "7",
+    "question": "How can I access analytics as a collaborator on a Wix site?",
+    "answer": "Check with the site owner to ensure your role includes permission to view site analytics. To check or change your role and permissions, go to Roles & Permissions in your site's dashboard, find your name, and if needed, the site owner can change your role to include the necessary permissions."
+  },
+  {
+    "id": "8",
+    "question": "I bought two domains I want to cancel one of them",
+    "answer": "To cancel one of your domains purchased through Wix, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the domain you want to cancel, select 'Cancel Domain,' choose 'Cancel auto renew,' and click 'Submit.' This will turn off auto-renewal, and your domain will remain active until the end of the subscription period."
+  },
+  {
+    "id": "9",
+    "question": "can you change the text for the service descriptions",
+    "answer": "Yes, you can change the text for the service descriptions in Wix Bookings. To do this, go to your site's dashboard, navigate to the Booking Services section, and edit the service title, subtitle, and description."
+  },
+  {
+    "id": "10",
+    "question": "How do I show a client we have issued a refund",
+    "answer": "To show a client that you have issued a refund, you can send them a confirmation email directly from the refund process. When issuing a refund, there's an option to 'Send a confirmation email to customer,' which will include the refund details. This email serves as proof that the refund has been processed."
+  },
+  {
+    "id": "11",
+    "question": "Can I migrate a site from the Wix Editor to the Studio Editor?",
+    "answer": "If your site was originally created using the Wix Editor, it is not possible to migrate it to the Studio Editor."
+  },
+  {
+    "id": "12",
+    "question": "not getting notifications when store orders are placed",
+    "answer": "To ensure you receive notifications when store orders are placed, verify the email address in the Business Info section, check your spam/junk folder and whitelist the email address, ensure MX records are set up correctly if using a custom domain email, and place a test order using the Manual (Offline) Payment method. If the issue persists, contact Wix support for further assistance."
+  },
+  {
+    "id": "13",
+    "question": "How can I cancel my Wix Premium Plan - Light and get a refund?",
+    "answer": "To cancel your Wix Premium Plan - Light, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant plan, and select 'Cancel Plan' followed by 'Cancel Now' to confirm. If canceled within the first 14 days, you are eligible for a full refund. To check the refund status, visit the Refund Page."
+  },
+  {
+    "id": "14",
+    "question": "How can I redirect users to the website language based on their geographic location?",
+    "answer": "Currently, Wix does not offer a built-in feature to automatically redirect users based on their geographic location. The language auto-switch feature only works based on the browser's language settings. However, you can manually set up different language versions of your site and provide a language menu for users to select their preferred language."
+  },
+  {
+    "id": "15",
+    "question": "how to reorder plan options during checkout in Wix",
+    "answer": "the order of plans in the checkout drop-down list cannot be customized directly; they are listed based on their creation date, and recreating the plans in the desired sequence is a workaround."
+  },
+  {
+    "id": "16",
+    "question": "how to take my site off live",
+    "answer": "To take your Wix site offline, you can unpublish it by opening your site in the Wix Editor, selecting 'Site' in the top toolbar, clicking 'Unpublish Site' and confirming. Alternatively, you can unpublish from your sites dashboard by going to Settings > Website settings > Unpublish."
+  },
+  {
+    "id": "17",
+    "question": "How can I ensure my website www.momsroots.com is published on Google and indexed by search engines?",
+    "answer": "To have your website published on Google, ensure it is indexed by search engines by checking if your site is indexed, enabling indexing in SEO settings, and submitting your sitemap using the Wix SEO Setup Checklist. For detailed guidance, refer to the Wix support article on getting your site indexed."
+  },
+  {
+    "id": "18",
+    "question": "how can I change my Wix account email address",
+    "answer": "you can change your Wix Account email address in your Account Settings by editing the Account email field under Login Info, entering your Wix account password, and confirming the new email address."
+  },
+  {
+    "id": "19",
+    "question": "how to cancel both site plan and domain after already paying",
+    "answer": "to cancel both your site plan and domain, you need to do it separately by going to the Premium Subscriptions page, clicking the More Actions icon next to the relevant plan or domain, and selecting 'Cancel Plan' or 'Cancel domain.' Your plan and domain will remain active until the end of the subscription period."
+  },
+  {
+    "id": "20",
+    "question": "I can't see how to edit my website",
+    "answer": "To edit your website on a desktop, go to your site's dashboard and click 'Edit Site' to access the Wix Editor. From there, you can add and customize elements, adjust your site's design, and optimize it for mobile. Remember to save and publish your changes when you're ready."
+  },
+  {
+    "id": "21",
+    "question": "how can I change my plan type from a multi-year cycle to a yearly plan",
+    "answer": "plan changes are handled on your Premium Subscriptions page. Click on the More Actions icon (...) next to the relevant plan to view your options, then select Change Plan and follow the steps."
+  },
+  {
+    "id": "22",
+    "question": "How can I cancel my premium subscriptions and request a refund for a renewal purchase?",
+    "answer": "To cancel your Wix Premium subscription, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant plan, and select 'Cancel Plan' and 'Cancel Now'. For refunds on renewal purchases, the [X][X] day trial period does not apply, but you can turn off auto-renewal to avoid future charges. For extenuating circumstances, contact support for assistance."
+  },
+  {
+    "id": "23",
+    "question": "how to add a card to Wix account",
+    "answer": "Go to the Payment Methods page in your Wix account, click 'Add a Payment Method,' enter your card details, and click 'Save.'"
+  },
+  {
+    "id": "24",
+    "question": "How can I preview my dynamic pages and see how they connect to the buttons?",
+    "answer": "To preview your dynamic pages and see how they connect to the buttons, open your Wix Editor, navigate to your dynamic page, ensure elements are connected to the CMS, click the Preview icon, test button connections, and publish changes if everything looks good."
+  },
+  {
+    "id": "25",
+    "question": "I need help adding a picture to my lightbox background",
+    "answer": "To add a picture to your lightbox background in the Wix Editor, go to your Editor, click 'Pages & Menu', select 'Lightboxes', click the 'Design' icon, choose 'Image', and select your desired image. If the image is getting cut off, adjust the settings to fit your design preferences or crop the image to better fit the lightbox."
+  },
+  {
+    "id": "26",
+    "question": "Can I get a refund on a domain purchase?",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable."
+  },
+  {
+    "id": "27",
+    "question": "how to edit the book a room",
+    "answer": "To edit the 'Book a Room' page in Wix Hotels by HotelRunner: Go to your site's editor, click the Booking Page element, and click 'Settings' to customize display, text, and design options. You can also manage room types and other details from the Room Types tab in your site's dashboard."
+  },
+  {
+    "id": "28",
+    "question": "how can the web hosting be removed from the plan and just keep the domain name plan",
+    "answer": "To remove the web hosting (site plan) and keep only the domain name, cancel your site plan while keeping your domain subscription active. Go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant plan, and click 'Cancel Plan' and confirm."
+  },
+  {
+    "id": "29",
+    "question": "how to edit texts of each language on a Wix site",
+    "answer": "use the Wix Multilingual feature, go to your editor, switch to the language you want to edit, select the text element, and click 'Edit Translation' or 'Auto-translate' to enter or edit the translation, then publish your changes once done"
+  },
+  {
+    "id": "30",
+    "question": "how to unpublish a Wix site",
+    "answer": "Open your site in the Wix Editor, select 'Site' in the top toolbar, click 'Unpublish Site', and confirm by clicking 'Unpublish' in the pop-up. Your site will no longer be accessible to the public, but you can republish it anytime."
+  },
+  {
+    "id": "31",
+    "question": "How to shorten or narrow a hover box and make a slanted text box horizontal in Wix Editor",
+    "answer": "To make a hover box smaller, drag the side handles inward or enter specific dimensions in the Inspector panel. To make a slanted text box horizontal, enter hover mode, select the text box, and use the rotation handle or enter a rotation value in the Inspector panel. If adding a white box inside a text box in hover mode causes issues, use the 'Add to Hover' icon to add elements specifically in hover mode."
+  },
+  {
+    "id": "32",
+    "question": "I want to turn off post approval for my forum",
+    "answer": "To disable the requirement for admin approval before posts are published, go to Forum in your sites dashboard, click the More Actions drop-down, click Moderation Settings, and disable the Moderate posts for sensitive content toggle"
+  },
+  {
+    "id": "33",
+    "question": "how to add animation to all images in a slider",
+    "answer": "The standard Wix Slider Gallery does not support adding animations to all images directly. To add animations, switch to the Wix Pro Gallery, which is included in the Wix platform at no additional cost. In the Wix Pro Gallery, ensure you are using a layout that supports scroll animations, and then select your desired animation effect in the settings."
+  },
+  {
+    "id": "34",
+    "question": "Can work be saved when a participant is in an online course?",
+    "answer": "Participants' progress in an online program is automatically saved as they complete each step, so if they accidentally log out, they can log back in and their progress will not be lost."
+  },
+  {
+    "id": "35",
+    "question": "How can I connect my GoDaddy domain to Wix quickly?",
+    "answer": "The fastest way is via pointing by updating the A record and CNAME record in your GoDaddy account. However, DNS propagation can still take up to a few hours."
+  },
+  {
+    "id": "36",
+    "question": "i want to cancel my domain but i am unable to do it",
+    "answer": "to cancel your Wix domain, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant domain, click 'Cancel Domain,' and select 'Cancel auto renew' and click 'Submit.' If you encounter a technical issue, try refreshing the page, clearing your browser cache and cookies, or using a different browser or device. If the issue persists, contact Wix Customer Care for further assistance."
+  },
+  {
+    "id": "37",
+    "question": "do I have to give my login to a website designer to work on my site",
+    "answer": "No, you don't have to give your login details to a website designer. You can assign roles and permissions to them so they can work on your site without accessing your personal account credentials."
+  },
+  {
+    "id": "38",
+    "question": "how to change DNS configuration in Wix for email forwarding with Squarespace",
+    "answer": "Go to the Domains section in your Wix account, click the Domain Actions icon next to the relevant domain, select 'Manage DNS Records,' and add or update the necessary MX records and any other DNS records provided by Squarespace"
+  },
+  {
+    "id": "39",
+    "question": "How can I change the font color of the dropdown menu on my desktop site using the Wix Editor?",
+    "answer": "To change the font color of the dropdown menu on your desktop site in the Wix Editor: Select the menu in the editor, click the Design icon, click Customize Design, select 'Dropdown menu items' under 'What do you want to design?', choose the state (Regular, Hover, or Current page) and use the tabs to customize the text color. You can also adjust other text settings like font, size, and formatting."
+  },
+  {
+    "id": "40",
+    "question": "Can I use last year's tax return for the verification process of my Wix Payments account until I receive the letter of determination from the IRS?",
+    "answer": "Using last year's tax return might not meet the requirements for verification. Typically, a letter of determination from the IRS is needed for verifying your EIN. You can try uploading the available documents to see if they are accepted. For more detailed guidelines, refer to the guidelines for uploading documentation."
+  },
+  {
+    "id": "41",
+    "question": "What are the refund policies for domain purchases?",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable."
+  },
+  {
+    "id": "42",
+    "question": "How can I assign a premium subscription to a different site?",
+    "answer": "To assign a premium subscription to a different site in your Wix account, go to the Premium Subscriptions page, click the More Actions icon next to the plan, select 'Assign to a Different Site,' choose the site, and click 'Assign' to confirm. If issues arise, verify billing permissions, check site ownership, reassign permissions, and contact Wix Support if needed."
+  },
+  {
+    "id": "43",
+    "question": "How can I add an MX record to Wix for a domain connected via name servers?",
+    "answer": "To add an MX record to Wix while your domain is connected via name servers: Go to Domains in your Wix account, click the Domain Actions icon next to the relevant domain, select 'Edit MX Records,' click '+ Add Another' to add a new MX record, enter the mail server address and priority for the new MX record, and click 'Save.'"
+  },
+  {
+    "id": "44",
+    "question": "how can I connect my Squarespace domain to Wix",
+    "answer": "to connect your Squarespace domain to Wix using name servers, go to the Domains section in your Wix account, click 'Add an Existing Domain', select 'Connect a domain you already own', enter your domain name, and follow the on-screen instructions to update your name servers in your Squarespace account. It may take up to 48 hours for the changes to propagate."
+  },
+  {
+    "id": "45",
+    "question": "can i temporarily unpublish my website and stop billing, then access it later",
+    "answer": "You can temporarily unpublish your website to make it inaccessible to the public, but unpublishing does not stop billing for your domain or Premium plan. Canceling your Premium plan will not delete your website, and you can restore the plan later by turning auto-renew back on or purchasing a new plan if the subscription has ended."
+  },
+  {
+    "id": "46",
+    "question": "need to purchase another email address from Wix",
+    "answer": "To purchase another email address through Wix, go to the Business Email section in your Wix account, click 'Add Users,' select the number of additional business emails, choose your payment method, and submit your purchase."
+  },
+  {
+    "id": "47",
+    "question": "can I extend my current contract to be a month longer",
+    "answer": "you can't extend a Premium plan by just one month, but you can change your subscription period to a longer term. You can extend your domain registration by up to several additional years through your Wix account."
+  },
+  {
+    "id": "48",
+    "question": "how to double-check that my website is pointing correctly",
+    "answer": "use whatsmydns.net to verify DNS records by entering your domain name and selecting 'A' for IP address and 'CNAME' for CNAME record, then compare the results with the DNS records in your Wix account."
+  },
+  {
+    "id": "49",
+    "question": "I need to rename a Wix file with an inappropriate name. The provided instructions were ghastly.",
+    "answer": "To rename a file in the Wix Media Manager: Go to the Wix Editor, click Media on the left side, click Show More under Site Files, hover over the relevant file and click the More Actions icon (three dots), click Rename, type the file's new name and press Enter."
+  },
+  {
+    "id": "50",
+    "question": "I have problems with my business email not being directed to my Gmail. How can I fix it?",
+    "answer": "Ensure your domain is active and check your MX records in your Wix account. If you don't know your email provider, contact them for the correct MX records and update them in your Wix account. If you need further assistance, contact Wix Customer Care."
+  },
+  {
+    "id": "51",
+    "question": "how to cancel premium",
+    "answer": "To cancel your Wix Premium plan: 1. Go to the Premium Subscriptions page in your Wix account. 2. Click the More Actions icon next to the relevant plan. 3. Click 'Cancel Plan' and then 'Cancel Now' to confirm. Your plan will remain active until the end of the current subscription period."
+  },
+  {
+    "id": "52",
+    "question": "How can I disconnect my domain name from Wix?",
+    "answer": "To disconnect your domain from Wix, go to Domains in your Wix account, click the Domain Actions icon next to the relevant domain, select Unassign from this site, review the information, and click Unassign Domain."
+  },
+  {
+    "id": "53",
+    "question": "I ordered a premium account for the wrong domain. Can I please change it to the right one?",
+    "answer": "You can transfer your Premium plan to the correct site by going to Premium Subscriptions in your Wix account, clicking the More Actions icon next to the plan you want to reassign, and selecting 'Assign to a Different Site' to move your Premium plan to the right domain."
+  },
+  {
+    "id": "54",
+    "question": "how to remove card details from Wix account",
+    "answer": "go to the Payment Methods page in your Wix account, click 'Actions' next to the card you want to remove, click 'Remove' and confirm by clicking 'Remove' again. If the 'Remove' button is not visible, check for active subscriptions or contact Wix support for assistance."
+  },
+  {
+    "id": "55",
+    "question": "how to edit the cart page in a Wix store",
+    "answer": "To customize your cart page in Wix Editor, access the Cart Page through 'Pages & Menu', select 'Store Pages', then 'Cart Page'. Customize settings by clicking the cart page element and 'Settings'. Design the page by clicking 'Design', and edit text by clicking 'Text'."
+  },
+  {
+    "id": "56",
+    "question": "Why is the UI in the tutorial different from mine, and what is the Wix Studio Editor?",
+    "answer": "The UI in the tutorial might be different because Wix frequently updates its interface. You might be using the Wix Editor, while the tutorial is for the Studio Editor, which has different interfaces and features. Wix Studio is designed for freelancers and agencies, offering smart design capabilities and flexible dev tools, allowing teams to work simultaneously on the same site. For more information, you can check out the guided tour and the Wix Studio help center."
+  },
+  {
+    "id": "57",
+    "question": "How can I make my booking hours live for the public on my site?",
+    "answer": "To make your booking hours live, set your default business hours and staff working hours correctly, and enable online bookings in your booking preferences."
+  },
+  {
+    "id": "58",
+    "question": "how to get the same view for mobile and desktop website",
+    "answer": "to have the same view for both your mobile and desktop website, disable the mobile-friendly view by clicking 'Settings' in the Wix Editor, selecting 'Mobile Friendly', toggling the switch to disable, and clicking 'Close'. This may impact site performance and SEO on mobile devices."
+  },
+  {
+    "id": "59",
+    "question": "how to set up offline payments for invoices on Wix",
+    "answer": "to set up manual (offline) payments for Wix Invoices, go to Invoices in your site's dashboard, click More Actions and select Accept payments, scroll down to Manual Payments, click Connect next to Manual Payments, select the relevant payment type, enter the instructions, and enable the Accepting payments toggle."
+  },
+  {
+    "id": "60",
+    "question": "how to report someone infringing on copyright",
+    "answer": "Wix complies with the DMCA and will take action against copyright infringements when necessary. The process involves providing details about the copyrighted content, the infringing site, and contact information, followed by confirming sworn statements and submitting a digital signature."
+  },
+  {
+    "id": "61",
+    "question": "how can I cancel my domain renewal plan on Wix",
+    "answer": "To cancel your domain renewal, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant domain, click 'Cancel domain,' select 'Cancel auto renew,' and click 'Submit.' This will turn off the auto-renew feature, and your domain will remain active until the end of the current subscription period."
+  },
+  {
+    "id": "62",
+    "question": "why are some people who fill out a form listed as subscribe and unsubscribe",
+    "answer": "Contacts who fill out a form on your site can be listed as 'subscribed' or 'unsubscribed' based on their consent to receive marketing emails. 'Subscribed' means they have given permission to receive your newsletters or updates, while 'unsubscribed' means they have opted out of receiving such emails. You can manage these statuses in the Contacts section of your site's dashboard."
+  },
+  {
+    "id": "63",
+    "question": "how can I update the payment method for my premium plan after being charged on the wrong credit card",
+    "answer": "To update your payment method, go to Premium Subscriptions in your Wix account, find the subscription, click the More Actions icon next to the plan, select Update Payment Method, and enter your new card details"
+  },
+  {
+    "id": "64",
+    "question": "how to remove an automatic discount code from a product in a Wix shop",
+    "answer": "Go to your site's dashboard, click on 'Marketing', select 'Discounts', click on 'Automatic Discounts', find the discount, click 'More Actions', and select 'Delete' to remove the discount."
+  },
+  {
+    "id": "65",
+    "question": "how to insert images in a slide",
+    "answer": "To insert images into a slide in Wix Editor, click on your slideshow in the editor, use the blue arrows to navigate to the relevant slide, and drag and drop the image element onto the slide and position it as needed."
+  },
+  {
+    "id": "66",
+    "question": "how to remove preset social media icons and a statement from a program section in the Wix Editor",
+    "answer": "Open the Wix Editor, navigate to the program section, click on the elements to select them, and use the 'Delete' icon or the 'Delete' key on your keyboard. If elements are part of a group, ungroup them first before deleting."
+  },
+  {
+    "id": "67",
+    "question": "Connect my domain to external site",
+    "answer": "To connect your Wix domain to an external site, update the DNS records in your Wix account by editing the A and CNAME records to point to your external site. Obtain the relevant DNS records from your external site host, go to the Domains section in your Wix account, click the Domain Actions icon next to your domain, select 'Manage DNS Records,' and update the records with the information provided by your external site host. If your host requires changing name servers, you'll need to transfer your domain away from Wix."
+  },
+  {
+    "id": "68",
+    "question": "how to change search bar from tile to description",
+    "answer": "Currently, Wix's search functionality does not support searching through product descriptions directly. It primarily searches through product titles and other metadata."
+  },
+  {
+    "id": "69",
+    "question": "I want to know how to add a full PDF to my portfolio site",
+    "answer": "To add a full PDF to your portfolio site, use the PDF Viewer app by Wix. Add the app from the Wix App Market, upload your PDF, and customize the design. Save and publish your changes to make the PDF visible on your live site."
+  },
+  {
+    "id": "70",
+    "question": "how can we accept payments as a college council that is not a registered business",
+    "answer": "you can set up an individual account with Wix Payments by selecting Individual/Sole Proprietorship and filling in personal details, address, bank details, and a brief business description."
+  },
+  {
+    "id": "71",
+    "question": "Why is VAT not included on my Wix bill in the UAE?",
+    "answer": "Wix started charging VAT on services to customers in the UAE from October [X][X]th, [X][X][X][X]. If VAT is not on your bill, it might be because you haven't added your VAT number to your Wix account. To apply for tax exemption, update your payment details with your VAT number in your Wix account."
+  },
+  {
+    "id": "72",
+    "question": "i want to transfer my google workspace account from wix to myself",
+    "answer": "you can transfer your Google Workspace business email from Wix to Google by contacting Wix Customer Care for assistance. This is an irreversible action, and once transferred, you cannot repurchase the business email through Wix."
+  },
+  {
+    "id": "73",
+    "question": "how can I cancel my Premium or Studio subscription plan",
+    "answer": "To cancel a Premium or Studio Plan: Click the [X]-dot icon next to the plan you want to cancel and then click 'Cancel Plan.'"
+  },
+  {
+    "id": "74",
+    "question": "i am unable to connect my email to my website",
+    "answer": "To resolve issues with your Google Workspace business email purchased from Wix, check that your domain is active, verify your MX records, and set up your business email correctly. If issues persist, contact Wix Customer Care for assistance."
+  },
+  {
+    "id": "75",
+    "question": "how to transfer a business email away from Wix",
+    "answer": "To transfer a business email away from Wix, ensure access to your Google Admin Console, disable the email's auto-renewal, and contact a Customer Care Expert for assistance"
+  },
+  {
+    "id": "76",
+    "question": "How can I find missing DNS records after migrating to a new website?",
+    "answer": "Wix does not store old DNS records. You need to contact your previous domain host or website provider to retrieve the information. Alternatively, perform a DNS lookup using a tool like whatsmydns.net to check if any old records are still available."
+  },
+  {
+    "id": "77",
+    "question": "how can I reduce the price of a one-time payment plan",
+    "answer": "to reduce the price of a one-time payment plan, you can edit the plan details in your site's dashboard. Go to the Pricing Plans tab, select the plan you want to edit, and update the price under Pricing options. Note that changes to the price only affect new purchases; existing clients will continue with the conditions they agreed to when they purchased the plan."
+  },
+  {
+    "id": "78",
+    "question": "how do I delete a page from my Wix site when delete is not an option",
+    "answer": "To delete a page, go to the Wix Editor, click on 'Pages & Menu,' hover over the page, click the 'More Actions' icon, and select 'Delete.' If the page is linked to a Wix app, such as Wix Bookings, you need to delete the app to remove the page."
+  },
+  {
+    "id": "79",
+    "question": "How do I make an image smaller on my mobile site when I can't crop it?",
+    "answer": "To make an image smaller on your mobile site without cropping it, adjust its size in the mobile editor by clicking the image, clicking the Settings icon, choosing Reset Image Proportions if needed, and dragging the corners of the image to make it smaller."
+  },
+  {
+    "id": "80",
+    "question": "how to switch my domain connection to pointing from Wix to another host",
+    "answer": "log in to your Wix account, go to the Domains section, click on the domain name to open its settings, look for 'Manage DNS records' or 'DNS settings,' and update the A Record and CNAME with the information provided by your new host. Save the changes, which can take up to 48 hours to propagate."
+  },
+  {
+    "id": "81",
+    "question": "How can I upgrade my Wix plan?",
+    "answer": "To upgrade your Wix plan, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the plan you want to upgrade, click 'Upgrade plan' and select the new plan you wish to purchase, choose the subscription period, and proceed to checkout. For further assistance, contact Wix Customer Care."
+  },
+  {
+    "id": "82",
+    "question": "What are the refund policies for Wix Premium or Studio plans?",
+    "answer": "Wix offers a 14-day, money-back guarantee for new Premium or Studio site plans. If you purchased your site plan within the last 14 days, you're eligible for a full refund. "
+  },
+  {
+    "id": "83",
+    "question": "I have reduced the number of business email users and need to update my billing for the yearly email subscription.",
+    "answer": "To update your billing after reducing the number of email users, contact Wix Customer Care and inform them of the change. You can request a callback to speak with a Customer Care Expert."
+  },
+  {
+    "id": "84",
+    "question": "Can I migrate a site from the Studio Editor to the Wix Editor?",
+    "answer": "It is not possible to move sites you have created in the Studio Editor to the classic Wix Editor. Likewise, classic Wix Editor sites in your account cannot be moved to the Studio Editor."
+  },
+  {
+    "id": "85",
+    "question": "I would like a refund on my domain purchase. I do not want this domain. I want it removed from my account and a refund issued.",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable. However, you can request an expert to review your case by visiting the refund request page."
+  },
+  {
+    "id": "86",
+    "question": "i wish to cancel a plan",
+    "answer": "You can cancel your Wix Premium or Studio plan at any time by going to the Premium Subscriptions page in your Wix account, clicking the More Actions icon next to the relevant plan, and selecting 'Cancel Plan'. Your plan will remain active until the end of the current subscription period. If canceled within the first few days, you will receive a full refund."
+  },
+  {
+    "id": "87",
+    "question": "how to handle multiple bookings for same registrant",
+    "answer": "To allow clients to book multiple participants for a single service in Wix Bookings, go to Booking Services in your site's dashboard, edit or create a service, adjust Booking Preferences for group bookings, and set a price per participant. Group bookings are available for classes and courses, not appointments."
+  },
+  {
+    "id": "88",
+    "question": "how to remove one seat from Google Workspace and update billing",
+    "answer": "to remove a seat, go to Business Email in your Wix account, manage at Google, remove the user, then contact Wix Customer Care to update billing"
+  },
+  {
+    "id": "89",
+    "question": "How can I allow users to enter the amount they want to pay on my Wix website?",
+    "answer": "To allow users to enter the amount they want to pay, you can use a custom price field in a form by adding a form to your site, choosing the 'Custom price' option in the form settings, and setting the minimum and maximum payment amounts if needed."
+  },
+  {
+    "id": "90",
+    "question": "how to cancel a Wix account",
+    "answer": "to cancel a Wix account, log in to your account, go to Account Settings, select 'Close Your Account', remove all premium services and subscriptions, move all sites to the trash, and follow the instructions on the Close Your Account page. Closing the account will permanently delete all sites and data."
+  },
+  {
+    "id": "91",
+    "question": "How can I change the entire page to show a family setting in Wix Editor?",
+    "answer": "To change the entire page and see other templates in the Wix Editor, go to the Wix Editor templates page, browse through the categories to find a template that suits a family setting, click on a template to preview it, and select it to start customizing. All templates are fully customizable."
+  },
+  {
+    "id": "92",
+    "question": "I would like to cancel my premium membership and get a refund",
+    "answer": "The refund policy applies only to initial purchases within the first [X][X] days. For renewal payments, the trial period does not apply, but you can turn off auto-renewal to avoid future charges."
+  },
+  {
+    "id": "93",
+    "question": "how to see my website ip address",
+    "answer": "To find your website's IP address, check the DNS records in your Wix account by going to Domains, clicking the Domain Actions icon next to the relevant domain, clicking Manage DNS records, and looking for the A record in your DNS settings. The IP address will be listed in the Value field."
+  },
+  {
+    "id": "94",
+    "question": "how to add more static pages to a Wix website",
+    "answer": "to add a new static page, go to the Editor, click on 'Pages & Menu' on the left side, and then click 'Add Menu Item' at the bottom. Select 'New Page' and choose either a blank page or a template."
+  },
+  {
+    "id": "95",
+    "question": "is it possible to have AI design my site even though I'm also working on a design? can it be done non-destructively?",
+    "answer": "Yes, you can use Wix's AI tools to design your site even if you are already working on a design. The AI-generated content and designs can be customized and adjusted within the Wix Editor, allowing you to make changes non-destructively."
+  },
+  {
+    "id": "96",
+    "question": "my customer wants to buy a gift card and other products as one purchase. how do they do that?",
+    "answer": "Currently, it's not possible to add gift cards and other products to the cart and pay for them together. Customers need to purchase Wix Gift Cards separately from other products. As a workaround, you can use the Gifted app, a third-party solution that integrates with Wix Stores, allowing customers to purchase gift cards along with other products in a single transaction."
+  },
+  {
+    "id": "97",
+    "question": "How do I access the dashboard to my live website",
+    "answer": "To access the dashboard of your live website, log in to your Wix account and go to the Site Selector page. From there, select your site to access its dashboard."
+  },
+  {
+    "id": "98",
+    "question": "how to cancel a Wix Premium plan",
+    "answer": "to cancel your Wix Premium plan, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant plan, click 'Cancel Plan' and then 'Cancel Now' to confirm. Your plan will remain active until the end of the current subscription period. If you cancel within the first 14 days, you are eligible for a full refund."
+  },
+  {
+    "id": "99",
+    "question": "can I get the invoice re-issued with the correct address",
+    "answer": "Yes, you can get the invoice re-issued with the correct address by going to the Invoices section in your site's dashboard, clicking the More Actions icon next to the relevant invoice, selecting 'Edit,' updating the address, and then resending the invoice to your customer."
+  },
+  {
+    "id": "100",
+    "question": "where and how to place a code in DNS for setting up email purchased from Wix",
+    "answer": "go to the Domains section in your Wix account, click the Domain Actions icon next to your domain, select Manage DNS Records, scroll to the record type you need to add, click + Add Record, enter the DNS record details provided by Google Workspace, and click Save."
+  },
+  {
+    "id": "101",
+    "question": "Can I get a refund for the domain I bought by mistake (c-gw-art-studio.com)?",
+    "answer": "Wix domain purchases are non-refundable."
+  },
+  {
+    "id": "102",
+    "question": "What should I do if I'm having issues making a payment for a Wix service?",
+    "answer": "If you're having issues making a payment for a Wix service, it could be due to reasons such as a declined credit card, expired card, insufficient funds, invalid card number, incorrect CVV code, or the card not being valid for online or cross-border transactions. To resolve these issues, try contacting your bank, using a different card, or clearing your browser's cache. If the problem persists, contact Wix support for further assistance."
+  },
+  {
+    "id": "103",
+    "question": "how to delete a picture off the contact page and add a new one, and help with slideshow in the Wix Editor",
+    "answer": "to delete a picture, go to Wix Editor, click on the image, and press 'Delete'. To add a new image, use the 'Add' button. For a slideshow, go to Wix Editor, click 'Add Elements', select 'Interactive', choose a slideshow, click 'Manage Slides', and drag your image onto the slide. For further help, an Expert will assist."
+  },
+  {
+    "id": "104",
+    "question": "how should I disable text selection and copy paste from my website",
+    "answer": "To prevent visitors from copying text from your website, you can use the Right Click Protect app. This app helps to disable right-click actions, which can prevent text selection and copying to some extent. To add and set up the Right Click Protect app on your Wix site: Go to your Wix Editor, click 'Add Apps', search for the 'Right Click Protect' app, and click 'Add to Site'. Customize the copyright message in the app's settings. Note that it does not provide 100% protection against all methods of copying content."
+  },
+  {
+    "id": "105",
+    "question": "can I buy a premium plan but build my website on other platforms",
+    "answer": "Wix Premium Plans are designed to be used with websites built on the Wix platform. If you purchase a Premium Plan, it will apply to your Wix site, and you cannot use Wix Premium Plans for a site built on another platform."
+  },
+  {
+    "id": "106",
+    "question": "Can I apply a promotion to my existing Core Plan?",
+    "answer": "Promotions or discounts typically apply to new purchases or upgrades, not to existing plans. Promotions seen on the Wix website are generally valid for new purchases or upgrades only, not for renewing an existing Premium plan."
+  },
+  {
+    "id": "107",
+    "question": "I would like to cancel my domain order and get a refund because I ordered it by mistake.",
+    "answer": "Wix domain purchases are non-refundable and do not include a trial period. You can cancel your domain to stop it from auto-renewing, but you will still own it until the end of the subscription period. For further assistance, contact a Customer Care Expert."
+  },
+  {
+    "id": "108",
+    "question": "Is domain privacy included in the price of purchasing the domain and the yearly charge?",
+    "answer": "Domain privacy is not automatically included when you purchase a domain from Wix. It requires an additional fee and is not included in the yearly renewal cost by default."
+  },
+  {
+    "id": "109",
+    "question": "Why is the video not playing sound even when sound is enabled?",
+    "answer": "Videos set to autoplay always start on mute due to browser restrictions. Turning off autoplay will allow sound to play when users press the play button."
+  },
+  {
+    "id": "110",
+    "question": "how to cancel and request a refund for a renewal purchase",
+    "answer": "the trial period does not apply to renewal payments, but you can turn off auto-renewal to avoid future charges. For extenuating circumstances, contact an expert for assistance."
+  },
+  {
+    "id": "111",
+    "question": "i want to change my plan",
+    "answer": "To change your Wix plan, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to your current plan, select 'Change Plan' and choose the new plan you want. Follow the on-screen instructions to complete the process."
+  },
+  {
+    "id": "112",
+    "question": "Can we update both GST rates according to the product in Wix Stores?",
+    "answer": "Yes, you can set up different GST rates for your products in Wix Stores by manually entering the tax rates for each product category in the Tax section of your site's dashboard."
+  },
+  {
+    "id": "113",
+    "question": "how do I connect Wix Stores to Shippo app",
+    "answer": "To connect Wix Stores to the Shippo app, go to Manage Apps in your site's dashboard, click Get More Apps, search for the Shippo app, click Add to Site, and then Agree & Add. Log into your existing Shippo account or create a new one. Once set up, your previous orders will appear in Shippo, and you can select orders to fulfill and print shipping labels."
+  },
+  {
+    "id": "114",
+    "question": "can I request a refund for a Wix domain purchase",
+    "answer": "Wix domain purchases are non-refundable and not included in the trial period."
+  },
+  {
+    "id": "115",
+    "question": "I want to use a button that people can click and it will reveal info without linking to another page",
+    "answer": "You can achieve this by using collapsible text in the Wix Editor. Add a collapsible text box to your site, and set it up so that parts of the text are hidden. Visitors can click a button to reveal the full text without navigating to another page. To do this, go to the Editor, click 'Add Elements,' then 'Text,' and select 'Collapsible Text.' Customize the layout and button settings as needed."
+  },
+  {
+    "id": "116",
+    "question": "how can I request a refund for Premium or Studio plans",
+    "answer": "Wix offers a 14-day, money-back guarantee for new Premium or Studio site plans. If you purchased your site plan within the last 14 days, you're eligible for a full refund. "
+  },
+  {
+    "id": "117",
+    "question": "how to resend an email marketing campaign to a specific group",
+    "answer": "Go to Email Marketing in your site's dashboard, click 'View all Campaigns' and select the 'Published' tab, find the campaign you want to resend and click 'Reuse,' edit the campaign as needed, click 'Next' and select 'Target group' under 'Who are you sending this email to,' click '+ Add Segment' and select the relevant segments, click 'Choose Segments' and then 'Send now' to resend your campaign."
+  },
+  {
+    "id": "118",
+    "question": "How can I get a refund for a renewal payment I did not want to renew?",
+    "answer": "The 14-day trial period does not apply to renewal payments, but you can turn off auto-renewal to avoid future charges. For extenuating circumstances, you can request an expert to look into your situation."
+  },
+  {
+    "id": "119",
+    "question": "How can I have the customer's physical address automatically appear on invoices generated from orders?",
+    "answer": "To ensure the customer's physical address appears on the invoices, make sure the address information is collected during the checkout process by customizing the checkout page in your site's dashboard. Enable the Delivery details fields (address info) in the Checkout form settings."
+  },
+  {
+    "id": "120",
+    "question": "How can I lower the number of email accounts on my Wix account?",
+    "answer": "To lower the number of email accounts on your yearly subscription, go to Business Email in your Wix account, click 'Manage at Google' next to the relevant subscription, sign in to your Google Workspace account, go to Directory, then Users, and delete the user you want to remove. After deleting the user, contact Wix Customer Care to update your billing so you're only charged for the remaining email accounts."
+  },
+  {
+    "id": "121",
+    "question": "when booking again can I see times that are already taken",
+    "answer": "when booking again on the desktop version, you can see the time slots that are already taken by viewing your Booking Calendar, which shows all scheduled appointments, classes, and courses, including any blocked times."
+  },
+  {
+    "id": "122",
+    "question": "how long does it take for my website to go live/be accessible?",
+    "answer": "Once you publish your Wix site, it typically goes live immediately. However, if you've connected a custom domain, it may take up to 48 hours for domain propagation to complete. During this time, your site might not be accessible from all devices or may appear as insecure."
+  },
+  {
+    "id": "123",
+    "question": "How can I change the MX email server in my Wix account?",
+    "answer": "To change the DNS MX record in your Wix account, go to Domains in your Wix account, click the Domain Actions icon next to the relevant domain, select 'Edit MX Records,' and enter the new MX records provided by your email provider. Ensure your domain is connected via name servers, not pointing."
+  },
+  {
+    "id": "124",
+    "question": "how do i cancel my ezchamps VIP Premium plan?",
+    "answer": "To cancel your Wix Premium plan, go to Premium Subscriptions in your Wix account, click the More Actions icon next to the relevant plan, click Cancel Plan, and then click Cancel Now to confirm. This will turn off the auto-renewal, and your plan will remain active until the end of the current subscription period."
+  },
+  {
+    "id": "125",
+    "question": "I recently moved my website to wix.com and updated the DNS records, but I get an error message when trying to connect. What should I do?",
+    "answer": "Ensure your DNS records are set correctly: A Record '@' to the specified IP address and CNAME Record 'www' to pointing.wixdns.net. It may take up to 48 hours for changes to propagate. If issues persist, check domain status, SSL certificate, and propagation status, or refer to the Wix Domain Assistant for troubleshooting."
+  },
+  {
+    "id": "126",
+    "question": "I transferred my site to the wrong email address. How do I cancel the transfer?",
+    "answer": "To cancel a site transfer invite, go to Roles & Permissions in your site's dashboard, hover over the new site owner, click the More Actions icon, and then click Cancel transfer."
+  },
+  {
+    "id": "127",
+    "question": "how to change on checkout page the telephone number that customer is putting",
+    "answer": "To change the telephone number field on the checkout page, go to your site's dashboard and navigate to Checkout Settings. Click 'Edit' under Checkout form, then click on the Phone field and select 'Settings.' Ensure that the phone number format is consistent with the Delivery Details section. You can also make the phone number optional or mandatory by enabling or disabling the 'Required field' toggle."
+  },
+  {
+    "id": "128",
+    "question": "how do I link a button to the users member page without linking to a dataset",
+    "answer": "To link a button to a members page without using a dataset, add a button in the Wix Editor, click the Link icon, select Page, choose the members page from the list, and click Done."
+  },
+  {
+    "id": "129",
+    "question": "how can I find my domain information purchased from Wix",
+    "answer": "use the Wix Whois Lookup tool to find detailed information about your domain, including registrar details, registration date, and expiration date."
+  },
+  {
+    "id": "130",
+    "question": "How can I remove my credit card information entirely from my Wix account?",
+    "answer": "To remove your credit card information, go to the Payment Methods page in your Wix account, click on 'Actions' next to the payment method you want to remove, and then click 'Remove' and confirm by clicking 'Remove' again. Note that you can only remove a payment method if it's not connected to an active subscription."
+  },
+  {
+    "id": "131",
+    "question": "how to disconnect a Google Developer account from a Wix mobile app",
+    "answer": "once connected, there is no way to change or disconnect it from the Mobile App dashboard; you can transfer the account using Google's instructions"
+  },
+  {
+    "id": "132",
+    "question": "How do I know if I have paid for Wix to host my site?",
+    "answer": "To check if you have paid for Wix to host your site, go to the Payments section in your site's dashboard to view and manage all your payments. Additionally, check your Billing History to see all payments and invoices for Wix services, which will help determine if you have paid for hosting. If you have the Core plan, it includes hosting."
+  },
+  {
+    "id": "133",
+    "question": "how to reorder my product catalogue in Wix Stores",
+    "answer": "To reorder your product catalog in Wix Stores: Go to the Categories tab in your site's dashboard, select the relevant category, click and drag the products to change the order, and click Save."
+  },
+  {
+    "id": "134",
+    "question": "Could I get a reimbursement for a plan renewal I have now cancelled?",
+    "answer": "The [X][X] day trial period does not apply to renewal payments. However, you can turn off the auto-renewal to avoid future charges. For extenuating circumstances, you can request an expert to look into your situation."
+  },
+  {
+    "id": "135",
+    "question": "How can I request a refund for a Wix website renewal purchase?",
+    "answer": "The 14-day trial period does not apply to renewal payments. If you have an extenuating circumstance, you can request an expert to look into your situation."
+  },
+  {
+    "id": "136",
+    "question": "I would like to delete my webpage and leave Wix.",
+    "answer": "The 14-day trial period does not apply to renewal payments. However, if you have an extenuating circumstance, you can request a refund by having an Expert look into your situation. To do this, you would need to click on the request page link (which would be provided in the Wix interface) to submit your refund request for review. This allows Wix to consider your specific situation beyond the standard refund policy."
+  },
+  {
+    "id": "137",
+    "question": "Can you offer me any discounts for Wix hosting?",
+    "answer": "While I can't provide specific discount details, you can often find promotions and special offers directly on the Wix website."
+  },
+  {
+    "id": "138",
+    "question": "How can I make my image fit in the space correctly on my homepage in Wix Editor?",
+    "answer": "To make your image fit correctly, try adjusting the image settings in the Wix Editor by selecting the image, clicking the Settings icon, and using options like 'Fit', 'Scale to Fill', or 'Reset Image'. If these steps do not work, contact Wix Customer Service for further assistance."
+  },
+  {
+    "id": "139",
+    "question": "can I update my invoice after changing the site name",
+    "answer": "Yes, you can update your invoice details for your Wix subscriptions by going to your Billing History in your Wix account, clicking the More Actions icon next to the subscription you want to update, and selecting 'Update invoice details.' Some changes may only apply to future invoices due to legal reasons."
+  },
+  {
+    "id": "140",
+    "question": "how can I switch from AI-generated site to custom",
+    "answer": "to switch from an AI-generated site to a custom one, create a new site using a template, copy elements from the old site, and transfer your plan and domain to the new site"
+  },
+  {
+    "id": "141",
+    "question": "i cant create a new gallery in my website. it only refers to portfolio templates",
+    "answer": "To create a photo gallery on your Wix website: Go to your site's editor, click 'Add Elements' on the left side, select 'Gallery' and choose a gallery type (e.g., Grid, Slider, Freestyle), drag the gallery onto your page, click the gallery, then 'Change Images' to add your photos. For more advanced options, consider using the Wix Pro Gallery for additional customization and multimedia support."
+  },
+  {
+    "id": "142",
+    "question": "how to make a Google Drive document accessible without requiring a Google login",
+    "answer": "change the document's sharing permissions to 'Anyone with the link' in Google Drive and set the access level to 'Viewer,' 'Commenter,' or 'Editor' based on preference."
+  },
+  {
+    "id": "143",
+    "question": "how to check if domain is properly connected",
+    "answer": "To check if your domain is properly connected: Go to the Domains page in your Wix account, click the 'Show More' icon and select 'Manage DNS records,' and verify that your DNS records are correct. You can also use whatsmydns.net to perform a DNS lookup and ensure your domain's DNS records are propagated correctly."
+  },
+  {
+    "id": "144",
+    "question": "how do you scroll sections over other sections",
+    "answer": "to make a section stick as visitors scroll, use the sticky position feature. Alternatively, for scroll effects, add a background scroll effect like Parallax or Zoom In."
+  },
+  {
+    "id": "145",
+    "question": "I need to cancel my subscription",
+    "answer": "To cancel your domain and Premium plan, you'll need to do it separately: For the Premium Plan, go to your Premium Subscriptions page, click the More Actions icon next to the relevant plan, and click 'Cancel Plan' and confirm. For the Domain, go to your Premium Subscriptions page, click the More Actions icon next to the relevant domain, and click 'Cancel Domain' and confirm. Both services will remain active until the end of their current subscription periods."
+  },
+  {
+    "id": "146",
+    "question": "i want to cancel a business email",
+    "answer": "To cancel your business email, you need to turn off the auto-renewal option by going to your Premium Subscriptions page in your Wix account, clicking the More Actions icon next to the relevant business email, and selecting 'Cancel business email.'"
+  },
+  {
+    "id": "147",
+    "question": "How do I get notified of purchases",
+    "answer": "To get notified of purchases on Wix, you can set up email, desktop, and mobile push notifications through your site's dashboard and the Wix app."
+  },
+  {
+    "id": "148",
+    "question": "how can I purchase additional business emails with a specific domain",
+    "answer": "to purchase additional business emails with the domain @fivepointsmecplan.com, ensure the domain is connected to your Wix account, go to the Business Email section, click 'Get a Business Email', select the domain, set the quantity, enter your desired email prefix, select a Google Workspace plan, choose a subscription, and complete the purchase."
+  },
+  {
+    "id": "149",
+    "question": "is there a way to add a consent form under contacts and save it for each person",
+    "answer": "use Wix Forms to add a form, include an explicit consent checkbox, and save form data to contacts"
+  },
+  {
+    "id": "150",
+    "question": "Can Wix help contact the owner of a domain registered with them?",
+    "answer": "Wix does not facilitate direct contact between domain owners and potential buyers. You need to contact the current owner directly using the WHOIS information."
+  },
+  {
+    "id": "151",
+    "question": "How can I change my Premium plan on Wix?",
+    "answer": "To change your Premium plan, go to Premium Subscriptions in your Wix account, click the More Actions icon next to the relevant plan, click Change Plan, select the new plan you want, and follow the on-screen steps. If you encounter issues, alternative instructions involve canceling the current plan, duplicating the site, reassigning the canceled plan to the duplicate site, upgrading the original site to the new plan, and reassigning your domain back to the original site. If further assistance is needed, contact a Customer Care Expert."
+  },
+  {
+    "id": "152",
+    "question": "how can i delete a copy site",
+    "answer": "To delete a regular site from your Wix account, you can move it to the Trash folder by going to your sites dashboard, clicking the More Actions icon, selecting 'Move to trash,' and confirming. The site will be unpublished and inaccessible to visitors. You have [X][X] days to restore it from the Trash before it is permanently deleted."
+  },
+  {
+    "id": "153",
+    "question": "I would like to cancel domain and get the refund",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable"
+  },
+  {
+    "id": "154",
+    "question": "how can I delete my shop and cancel my plan",
+    "answer": "to delete your shop, go to Wix Editor, click Pages & Menu, then Actions next to Store Pages, and select Delete Store. To cancel your plan, go to Premium Subscriptions in your Wix account, click More Actions next to the relevant plan, and select Cancel Plan."
+  },
+  {
+    "id": "155",
+    "question": "how can I download all my ebooks as digital products from my Wix Store",
+    "answer": "to download your ebooks as digital products from your Wix Store, go to the Orders section in your site's dashboard, select the relevant order containing the ebook, click the 'More Actions' icon, and click 'Resend Download Link' to get a new download link for your ebook"
+  },
+  {
+    "id": "156",
+    "question": "how can I get my invoices for services paid for at Wix",
+    "answer": "you can find all your invoices on your Billing History page, where you can view, download, and print them"
+  },
+  {
+    "id": "157",
+    "question": "how to cancel a payment for a Wix Premium plan",
+    "answer": "To cancel your Wix Premium plan, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the relevant plan, click 'Cancel Plan' and then 'Cancel Now' to confirm. Your plan will remain active until the end of the current subscription period. If you cancel within the first few days, you are eligible for a full refund."
+  },
+  {
+    "id": "158",
+    "question": "How can I connect elements to my dataset in Wix?",
+    "answer": "To connect elements to your dataset in the Wix Editor, go to your editor and select the element you want to connect (e.g., text, image, gallery). Click the 'Connect to CMS' icon, choose an existing dataset or add a new one, and use the drop-down menus to connect each part of the element to the relevant collection fields."
+  },
+  {
+    "id": "159",
+    "question": "how can I rename my existing Wix site",
+    "answer": "Go to your sites dashboard, click on 'Site Actions,' select 'Rename Site,' enter your new site name and click 'Save.'"
+  },
+  {
+    "id": "160",
+    "question": "how do I connect my existing business email to my website",
+    "answer": "to connect your existing business email to your Wix website, go to the Domains page in your Wix account, click the Domain Actions icon next to the relevant domain, select 'Connect an email purchased outside of Wix' or 'Edit MX records,' choose your email provider from the drop-down list and click Save, or manually enter the MX records provided by your email host if your provider isn't listed."
+  },
+  {
+    "id": "161",
+    "question": "How do I remove the ribbon from one plan on the plan card list?",
+    "answer": "To remove the ribbon from a specific plan in the Wix Pricing Plans app, go to your Wix Editor, click on Pages & Menu, select your Plans & Pricing page, click on the Plans & Pricing element, go to Settings, then the Display tab, and toggle off the Show ribbon option for the specific plan. If this affects all plans, adjust the settings for each plan individually."
+  },
+  {
+    "id": "162",
+    "question": "how to remove a payment method",
+    "answer": "credit card info can only be removed when there are no active subscriptions attached. If an active subscription is attached, you can update the card info."
+  },
+  {
+    "id": "163",
+    "question": "how do I move the language bar on mobile view",
+    "answer": "To move the language bar to the header on your mobile view: Right-click the language bar on the mobile menu, header, or footer. Click 'Move To.' Select 'Move to Header.' This will place the language bar in your site's header."
+  },
+  {
+    "id": "164",
+    "question": "how to stop email notifications for bookings even after turning them off",
+    "answer": "ensure email and SMS notifications are deactivated in Booking Settings, check for active automations, and perform a test booking to verify changes."
+  },
+  {
+    "id": "165",
+    "question": "I paid a premium subscription to a different website than I wanted, can I reassign it to the correct one?",
+    "answer": "You can reassign your Premium plan to the correct site within your Wix account by going to the Premium Subscriptions page, clicking the More Actions icon next to the plan, selecting 'Assign to a Different Site,' choosing the relevant site, and confirming the assignment."
+  },
+  {
+    "id": "166",
+    "question": "I have just been charged due to auto-renewal and want to cancel this payment for a Wix site plan",
+    "answer": "To cancel the auto-renewal and the recent charge for your Wix site plan, go to Premium Subscriptions in your Wix account, click the More Actions icon next to the relevant plan, click 'Cancel Plan' and then 'Cancel Now' to confirm. If within the refund period, you will be refunded; otherwise, the plan remains active until the end of the current subscription period."
+  },
+  {
+    "id": "167",
+    "question": "how do I unsync and resync my Google Calendar with Wix Bookings",
+    "answer": "To unsync and resync your Google Calendar with Wix Bookings: Go to the Booking Calendar in your site's dashboard, click the More Actions icon at the top, select 'Sync personal calendar,' click 'Unsync' next to Google Calendar and confirm, then click 'Sync' next to Google Calendar again and follow the prompts to re-sync."
+  },
+  {
+    "id": "168",
+    "question": "how to delete an entire Wix site",
+    "answer": "To delete your entire Wix site, go to your sites dashboard, click the Site Actions icon at the top of the page, then click 'Move to Trash' and confirm."
+  },
+  {
+    "id": "169",
+    "question": "How can I forward a domain I purchased to a specific page on my existing domain?",
+    "answer": "To forward a domain purchased from Wix to a specific page on your existing domain, go to the Domains page in your Wix account, select the domain, and set up a redirect by managing DNS records and specifying the URL of the specific page."
+  },
+  {
+    "id": "170",
+    "question": "How can I migrate from the Wix Editor to the Wix Studio Editor?",
+    "answer": "It is not possible to migrate a site from the Wix Editor to the Studio Editor; you need to rebuild your site in the Studio Editor."
+  },
+  {
+    "id": "171",
+    "question": "how can I renew my Premium plan subscription and get a new invoice for a refund error",
+    "answer": "Premium plans on Wix renew automatically. For a new invoice due to a refund error, visit the Billing History page in your Wix account or contact Wix Customer Care for assistance."
+  },
+  {
+    "id": "172",
+    "question": "How can I offer free shipping for a sample option of a product while the main product does not have free shipping?",
+    "answer": "Wix does not support setting different shipping rules for individual product options directly. However, you can create a separate product listing for the sample and set up free shipping for it, or use a price discount coupon that covers the shipping cost for the sample product."
+  },
+  {
+    "id": "173",
+    "question": "Hi I would like to install blog",
+    "answer": "To add a blog to your Wix site using the Wix Editor, go to your Wix Editor, click the 'Add Elements' icon on the left side, select 'Blog' and click 'Add to Site.' This will add the Wix Blog to your site, including a blog feed and a blog post page. You can then customize the layout, design, and settings to match your brand."
+  },
+  {
+    "id": "174",
+    "question": "What will I lose from moving from a Business plan to a Core plan?",
+    "answer": "When moving from a Business Premium plan to a Core Premium plan, you may lose certain features such as e-commerce capabilities, higher storage and bandwidth limits, advanced marketing and SEO tools, and priority customer support. For specific details, check the Premium Plans page."
+  },
+  {
+    "id": "175",
+    "question": "I need to delete a business email address that is no longer in use and change my Wix account email back to the original one",
+    "answer": "To delete a business email address from your Google Workspace subscription, access the Google Admin Console and remove the user. To change your Wix account email back to the original, log in to the other account and change its email address to free up the old email. If you need further assistance, contact Wix Customer Care."
+  },
+  {
+    "id": "176",
+    "question": "i cant see a visual representation of a page on my site in the Wix Editor",
+    "answer": "If specific elements are missing in the Wix Editor, they might be placed behind other elements or outside the gridlines. You can use the Layers panel to locate and select these elements. Alternatively, right-click the covering element and use the 'Overlapping Items' feature to select the hidden element. If needed, you can also move elements backward or use Ctrl (Cmd on Mac) + Shift + M to toggle through elements on the page."
+  },
+  {
+    "id": "177",
+    "question": "how to shut down a website",
+    "answer": "to unpublish your site, open your site in the Wix Editor, select 'Site' in the top toolbar, click 'Unpublish Site,' and confirm by clicking 'Unpublish' in the pop-up. Alternatively, go to Settings in your sites dashboard, click 'Website settings,' click 'Unpublish' at the top of the page, and confirm by clicking 'Unpublish' in the pop-up."
+  },
+  {
+    "id": "178",
+    "question": "What's the difference between 'site sessions' and 'unique visitors'?",
+    "answer": "Site sessions' refer to visits to your site, starting when a visitor arrives and ending after a period of inactivity. Multiple page views and actions can occur within a single session. 'Unique visitors' are individual people who visit your site, counted uniquely by device and browser. If the same person visits from different devices, they are counted as separate unique visitors."
+  },
+  {
+    "id": "179",
+    "question": "How do I move the premier plan to the site I want?",
+    "answer": "To move your Premium plan to the desired site, go to the Premium Subscriptions page in your Wix account, click the More Actions icon next to the plan you want to reassign, select 'Assign to a Different Site,' choose the site you want to assign the plan to, and confirm."
+  },
+  {
+    "id": "180",
+    "question": "show me how to add a make profile public option when signing up",
+    "answer": "To add a 'Make Profile Public' option when members sign up: Go to the Pages panel in the Wix Editor, click on 'Signup & Login' and select 'Member Signup Form (Default)', navigate to the 'Social & Community' tab, choose 'Checkbox for members to choose profile privacy on signup', and enable the 'Sign up to this site with a public profile' toggle."
+  },
+  {
+    "id": "181",
+    "question": "How do I verify my DNS records now that I have transferred my domain to Wix?",
+    "answer": "To verify your DNS records after transferring your domain to Wix, go to the Domains section in your Wix account, click the Domain Actions icon next to your domain and select 'Manage DNS records.' Note the records you want to verify and visit whatsmydns.net to compare the search results with the records in your Wix account. Green checkmarks indicate successful propagation."
+  },
+  {
+    "id": "182",
+    "question": "is there no way to get a domain name and set up a simple website for free",
+    "answer": "You can create a website for free with Wix, but connecting a custom domain requires upgrading to a Premium plan. You can build and publish a fully functioning website for free using Wix with a free Wix URL, but to connect a custom domain, you need to upgrade."
+  },
+  {
+    "id": "183",
+    "question": "I am unable to manually add a site member to a private group on the Wix dashboard without sending an invitation. I tried making the group public temporarily and adding the member, but it did not work.",
+    "answer": "To manually add a site member to a private group without sending an invitation, temporarily make the group public, add the member, and then switch the group back to private. If this does not work, contact Wix Customer Care for further assistance."
+  },
+  {
+    "id": "184",
+    "question": "I need to update my account payment information",
+    "answer": "To update your account payment information in Wix: Go to the Payment Methods page in your Wix account. Click 'Actions' next to the payment method you want to update. Select 'Update' and enter your new payment details. Click 'Update' to save the changes. This will automatically apply the updated payment method to your existing subscriptions."
+  },
+  {
+    "id": "185",
+    "question": "Can guests post or upload content on a Wix site without being members?",
+    "answer": "Currently, Wix does not support allowing non-members to post on forums or groups or upload content to a gallery. Posting and uploading are restricted to site members to ensure a controlled and secure environment."
+  },
+  {
+    "id": "186",
+    "question": "how to direct a Wix domain back to a Wix site from Squarespace",
+    "answer": "delete the old DNS records and add new ones: A Record with Host '@' and CNAME Record with Host 'www', then wait for changes to propagate"
+  },
+  {
+    "id": "187",
+    "question": "how to reconnect a domain without affecting email after accidentally changing the CNAME record",
+    "answer": "reset the CNAME record to its default value by editing the CNAME record in Wix, setting the 'Host name' to 'www' and the 'Value' to 'initial.wixdns.net', then saving the changes"
+  },
+  {
+    "id": "188",
+    "question": "how long will it take to approve my number after I resubmit my registration",
+    "answer": "the approval process for your business phone number registration can vary, typically taking a few business days for verification and approval by third-party regulators."
+  },
+  {
+    "id": "189",
+    "question": "how to update my last name in Wix bills and domain contact information",
+    "answer": "to update your domain contact information, go to Domains in your Wix account, click Domain Actions, then Edit contact info, and save the changes. To update the name on your bills, you need to update your invoice details in Billing History by clicking More Actions next to the subscription, then Update invoice details. If you can't update your name, contact Wix Customer Care for assistance."
+  },
+  {
+    "id": "190",
+    "question": "how to apply an upgraded plan to the correct domain",
+    "answer": "reassign the upgraded plan to the correct site by going to Premium Subscriptions in your Wix account, clicking the More Actions icon next to the plan, selecting Assign to a Different Site, and choosing the correct site from the list to confirm the reassignment."
+  },
+  {
+    "id": "191",
+    "question": "can I get a refund on the domain",
+    "answer": "Wix domain purchases are not included in the trial and are non-refundable"
+  },
+  {
+    "id": "192",
+    "question": "I need help getting an extension on my payment date for my Wix premium subscription",
+    "answer": "Currently, you cannot change the payment date for a Wix premium subscription. If you need further assistance, please contact Wix Customer Care directly."
+  },
+  {
+    "id": "193",
+    "question": "where can I find the directory of Wix partners by country location language",
+    "answer": "To find a directory of Wix Professionals by country, location, and language, you can use the Wix Marketplace by signing in to your Wix account, going to your projects page in the Wix Marketplace, clicking 'New Project' and selecting 'Explore professionals', and browsing for Wix Professionals. You can also edit the filters to refine your search by service, price, location, and language."
+  },
+  {
+    "id": "194",
+    "question": "If I cancel my subscription will I get a refund, like Wordpress does?",
+    "answer": "When paying by credit card, you can cancel your Premium or Studio plan at any time within the first [X][X] days of the initial purchase and automatically receive a full refund. No questions asked! The [X][X] day trial period does not apply to renewal payments."
+  },
+  {
+    "id": "195",
+    "question": "how can I downgrade my email plan and pay for one email instead of two",
+    "answer": "To downgrade your email plan, delete the user's business email and contact Wix Customer Care to update the billing system"
+  },
+  {
+    "id": "196",
+    "question": "Can I get a refund for a domain purchased through Wix?",
+    "answer": "Wix domain purchases are non-refundable and not included in the trial period."
+  },
+  {
+    "id": "197",
+    "question": "I would like to do a refund on the website",
+    "answer": "Wix domain purchases are non-refundable and not included in the trial period."
+  },
+  {
+    "id": "198",
+    "question": "do you provide SEO services to websites not hosted on Wix",
+    "answer": "Wix's SEO tools and services are specifically designed for websites hosted on the Wix platform. If you have a website hosted elsewhere, you might not be able to use Wix's SEO features directly."
+  },
+  {
+    "id": "199",
+    "question": "how do i transfer ownership of a website in wix",
+    "answer": "To transfer ownership of a website in Wix: Go to your sites dashboard, click the Site Actions icon, select 'Transfer Site,' enter the new owner's email, fill out required details, choose whether to transfer the site's premium plan, domain, and business email, decide if you want to keep a copy or remain as a co-owner, click 'Continue,' review the transfer summary, and click 'Transfer Ownership.' The new owner will receive an email to accept the transfer."
+  },
+  {
+    "id": "200",
+    "question": "how can I get my domain refunded",
+    "answer": "Wix domain purchases are non-refundable and not included in the trial period."
+  }
+]

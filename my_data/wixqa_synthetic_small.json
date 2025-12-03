@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1",
+    "question": "How can I manage inventory updates after creating purchase orders in the Wix dashboard?",
+    "answer": "When you mark the merchandise as received in the Wix Stores POS, your inventory updates automatically."
+  },
+  {
+    "id": "2",
+    "question": "How can I create and send purchase orders using the Wix dashboard?",
+    "answer": "We're excited to announce that it's now possible to create purchase orders in the Wix dashboard and send them to suppliers. When you mark the merchandise as received, your inventory updates automatically."
+  },
+  {
+    "id": "3",
+    "question": "How can I manage the activation status of a coupon in my Wix Stores dashboard?",
+    "answer": "To activate or deactivate a coupon in Wix Stores, follow these steps:\n\n1. Go to Coupons in your site's dashboard.  \n2. Click the More Actions icon next to the relevant coupon.  \n3. Click Activate or Deactivate."
+  },
+  {
+    "id": "4",
+    "question": "How do I delete a coupon in Wix Stores?",
+    "answer": "To delete a coupon in Wix Stores, follow these steps:\n\n1. Go to **Coupons** in your site's dashboard. \n2. Click the **More Actions** icon at the top right of the coupon you want to delete. \n3. Click **Delete**. \n4. Click **Yes, Delete** to confirm.\n\n**Note:** Once you delete a coupon, you can't undo this action. You can, however, recreate a coupon with the same details."
+  },
+  {
+    "id": "5",
+    "question": "How do I customize the Facebook Like button's layout on my Wix site?",
+    "answer": "To change the layout of your Facebook Like button on your Wix site, follow these steps:\n\n1. Click the Facebook Like button in your editor.\n2. Click the Layout icon.\n3. Select your chosen layout from the panel.\n\nThis will allow you to set whether the button displays a Like counter, additional text, or icons."
+  },
+  {
+    "id": "6",
+    "question": "How do I add a Facebook Comments box to my Wix site?",
+    "answer": "To add a Facebook Comments box to your Wix site, follow these steps:\n\n1. Click **Add** on the left side of the Editor.\n2. Click **Social**.\n3. Under Facebook, click **Facebook Comments** to add it, or alternatively drag the box to the relevant location.\n\nNote: Facebook Comments are saved and displayed according to the page's URL, therefore if you change your site's name or change your domain, the Facebook comments will not appear in the new site."
+  },
+  {
+    "id": "7",
+    "question": "How do I specify a service fee that only applies to delivery orders over a certain amount in Wix Restaurants?",
+    "answer": "To specify a service fee that only applies to delivery orders over a certain amount in your Wix Restaurants site, follow these steps:\n\n1. Go to **Service Fees** in your site's dashboard.\n2. Click **+ New Service Fee**.\n3. Add your service fee details and set the conditions:\n   - **Service name**: Add a name for your service fee.\n   - **Amount**: Enter your service fee. It can be a fixed amount ($) or a percentage (%).\n\n4. (Optional) Add sales tax: Click the checkbox to add sales tax to this service fee and select a tax group.\n5. **Apply based on fulfillment types**: Choose **delivery orders**.\n6. **Apply based on subtotal**:\n   - **Set minimum**: Enter the minimum order amount required for the service fee to apply.\n\n7. Click **Save**.\n\nBy following these steps, your service fee will only apply to delivery orders exceeding the specified amount, ensuring transparent pricing for your customers."
+  },
+  {
+    "id": "8",
+    "question": "How can I set a service fee to apply only to orders above a certain amount in my Wix Restaurant site?",
+    "answer": "To set a service fee that applies only to orders above a certain amount in your Wix Restaurant site, follow these steps:\n\n1. Go to **Order Settings** in your site's dashboard. \n2. Click **Advanced**.\n3. Scroll down to **Service fees** and click **+ New Service Fee**. \n4. Add your service fee details and set the conditions:\n    - **Service name**: Add a name for your service fee.\n    - **Amount**: Enter your service fee. It can be a fixed amount ($) or a percentage (%).\n    - **Optional**: To add sales tax, click the checkbox and enter the percentage to add.\n5. **Apply based on subtotal amount**: \n    - Choose **Orders above** and set the amount threshold. Orders placed above this amount will be charged the service fee.\n6. Choose the fulfillment type to apply the service fee to (Pickup / Curbside Pickup / Delivery / Contactless Dine-in).\n7. Click **Create**.\n8. Click **Save**.\n\nYou can return to edit, delete, or disable the service fee as needed by hovering over it and choosing the appropriate option."
+  },
+  {
+    "id": "9",
+    "question": "What are the steps to add an app to my Wix site through the site's dashboard?",
+    "answer": "To add an app to your Wix site through the site's dashboard:\n\n1. **Go to the Wix App Market in your site's dashboard.** \n2. **Browse for apps or use the search bar to search for a particular app.**\n3. **Click an app to learn more about it.**\n4. **Click +Add to Site to add the app.**\n5. **Click Allow and Add to confirm.**\n\n**Note:** If the app you chose has an editor component as well, it will appear as a pending app when you open your Editor. Not all apps available in the Wix App Market are available through the Wix app."
+  },
+  {
+    "id": "10",
+    "question": "How can I manage the apps I've added to my Wix site?",
+    "answer": "To manage the apps you've added to your Wix site, follow these steps:\n\n1. Go to the \"Manage Apps\" tab in your dashboard.\n2. From the \"Manage Apps\" tab, you can:\n   - Access your apps \n   - Get info and support for your apps \n   - Rate and review your apps \n   - Get more apps \n   - Update your apps \n   - Upgrade your apps \n   - Delete apps you no longer need\n\nThis provides you with complete control and the ability to customize the functionality of your site through the apps available in the Wix App Market."
+  },
+  {
+    "id": "11",
+    "question": "What should I do if an animation doesn't display properly when I resize my browser window in the Studio Editor?",
+    "answer": "When you resize the browser window (by dragging its handles), the animation might not appear properly. We recommend refreshing the page for optimal display."
+  },
+  {
+    "id": "12",
+    "question": "How do I customize the duration and direction of an entrance animation in the Studio Editor?",
+    "answer": "To customize the duration and direction of an entrance animation:\n\n1. Select the relevant element, section or page.\n2. Click the **Open Inspector** icon at the top right of the editor.\n3. Click the **Animations and Effects** tab.\n4. Click the animation you want to change.\n5. Click **Adjust Animation** to change its settings:\n   - **Direction:** Decide which direction the animation should come from. Depending on the animation type, you either set the direction in degrees (e.g. 180°) or choose an option from a drop-down (e.g. from left, clockwise).\n   - **Duration:** Change the length of time of the animation.\n\n**Note:** The available customization options depend on the animation you choose."
+  },
+  {
+    "id": "13",
+    "question": "How do I customize the breadcrumbs layout on my Wix site?",
+    "answer": "To adjust the breadcrumbs layout on your Wix site:\n\n1. **Go to your editor.**\n2. **Select the breadcrumbs element.**\n3. **Click the Layout icon.**\n4. **Adjust the layout using the available options:**\n   - **Overflow items:** Select how to display items that don't fit on the trail on smaller screens:\n     - **Wrap:** If items don't fit, another line is created on the trail.\n     - **Collapse:** Items are displayed on one line only. If they don't fit, an ellipsis displays.\n   - **Show separators:** Enable the toggle to show separators between trail items, then choose the icon you want to use: **Arrow** or **Forward slash**.\n   - **Vertical spacing:** Drag the slider to change the spacing above and below the items.\n   - **Horizontal spacing:** Drag the slider to change the spacing between the items.\n   - **Item alignment:** Align the items to the left, center, or right.\n   - **Item direction:** Choose the direction in which the items appear: **Left to right** or **Right to left**.\n\n*Working with breakpoints:* Your selections in the Breadcrumbs Layout panel apply to all breakpoints."
+  },
+  {
+    "id": "14",
+    "question": "How do I enable and customize breadcrumbs on my Wix site?",
+    "answer": "To enable and customize breadcrumbs on your Wix site, follow these steps:\n\n1. **Enable Dev Mode on your site**:\n   - Click 'Dev Mode' at the top of your Editor.\n   - Toggle the 'Enable Developer Mode' toggle to on.\n\n2. **Add a breadcrumbs trail to your site**:\n   - Click 'Add Elements' on the left side of the Editor.\n   - Select 'Menu & Anchor'.\n   - Select 'Breadcrumbs'.\n   - Click and drag a design to add it to your page.\n\n3. **Choose what to display on your trail**:\n   - Click the breadcrumbs element in the Editor.\n   - Click 'Settings'.\n   - Use the options to choose how you would like the trail to be displayed:\n     - Full trail: Show both the homepage and the current page. If a visitor goes to a subpage, the main page is also displayed.\n     - Hide homepage: Hide the homepage from the trail.\n     - Hide current page: Hide the page the visitor is currently on from the trail.\n   - Choose how to display the homepage:\n     - Text: The name of your homepage appears in the breadcrumbs.\n     - Icon: An icon representing your homepage appears in the breadcrumbs. Click the icon below 'Homepage Icon' to choose an icon from Wix or upload your own vector art.\n\n4. **Set breadcrumbs to appear on all pages**:\n   - Right-click the breadcrumbs in your Editor.\n   - Enable the 'Show on All Pages' toggle.\n\nThis setup allows your site visitors to navigate easily through your site's structure using the breadcrumbs feature."
+  },
+  {
+    "id": "15",
+    "question": "Can I choose a specific day for my weekly and monthly payouts in Wix Payments?",
+    "answer": "Yes, you can choose a specific day for your weekly and monthly payouts in Wix Payments. To do this, follow these steps:\n\n1. Go to Accept Payments in your site's dashboard.\n2. Click Manage next to Wix Payments.\n3. Scroll down to Payout Schedule.\n4. Select the checkbox next to the relevant option:\n    - **Daily**\n    - **Weekly**: Use the drop-down menu to select a day.\n    - **Monthly**: Use the drop-down menu to select a day.\n5. Click Save."
+  },
+  {
+    "id": "16",
+    "question": "What stages does a customer payment go through before it reaches my bank account with Wix Payments?",
+    "answer": "Each payment from your customer goes through 3 stages before it reaches your bank account with Wix Payments:\n\n1. **Processing Payment:** After your customer makes a successful payment, the payment is processed. Processing usually takes 2-5 business days and involves two parts happening simultaneously:\n   - The settlement period, which generally takes 1-2 days but can be longer depending on the customer’s payment method.\n   - The pending period, lasting between 2-5 business days, is in place to protect against fraudulent activity.\n\n2. **Scheduled Payout:** The payment is added to your next scheduled daily, weekly, or monthly payout. If you have multiple payment methods active in Wix Payments, your payouts may be grouped by payment method.\n\n3. **Sent Payout:** The payout is sent from Wix Payments and typically arrives in your bank account within 3-5 business days, with various factors like weekdays, currency, or bank holidays affecting the arrival date of your payout."
+  },
+  {
+    "id": "17",
+    "question": "What are the steps to edit a blog post in the Wix app?",
+    "answer": "To edit a blog post in the Wix app:\n\n1. Go to your site in the Wix app.\n2. Tap **Manage** at the bottom.\n3. Tap **Blog**.\n4. Tap **Posts**.\n5. Tap the post you want to edit.\n    - Note: If the post has not yet been published, tap **Drafts** at the top and then tap the post.\n6. Make your changes and then tap **Next** at the top right.\n7. Tap **Save & Publish**."
+  },
+  {
+    "id": "18",
+    "question": "How can I view and manage my blog post analytics on the Wix app?",
+    "answer": "To view and manage your blog post analytics on the Wix app, follow these steps:\n\n1. Go to your site in the Wix app.\n2. Tap `Manage` at the bottom.\n3. Tap `Blog`.\n4. Tap `Analytics`.\n5. Tap the relevant day range at the top of the screen.\n\n**Tip:** View reports of your Blog activity and Top blog posts to see how your blog is performing over time."
+  },
+  {
+    "id": "19",
+    "question": "What can I do if a page on my Wix site is no longer available and returns a 404 error?",
+    "answer": "If you have a page that no longer exists and is returning a 404 error, or you have changed the URL name of a previously published page, you can create a 301 redirect to your home page or to another page on the site."
+  },
+  {
+    "id": "20",
+    "question": "How do I create a custom 404 error page in Wix Editor?",
+    "answer": "To create a customized 404 error page in Wix Editor, follow these steps:\n\n1. Go to your editor.\n2. Click **Pages & Menu** on the left side of the editor.\n3. Click **Add Menu Item** at the bottom of the panel.\n4. Click **New Page**.\n5. Click **(404) Error Page**.\n6. Hover over the page template you want to use and click **Add Page**.\n\nCustomize your page to match your site. Here are some suggestions:\n- Change the text to match the voice and tone of your site.\n- Add a site menu.\n- Add links to popular sections of your site that your visitors might be looking for.\n- Change the default image:\n  - Click the 404 image.\n  - Click **Change Vector Art**.\n  - Click the **All Categories** drop-down menu and select **Technology**.\n  - Choose another vector art.\n\nFinally, publish your site to see the changes take effect. As a tip, you can also add an Error 404 by clicking **Settings** on the top of your editor. Note that while you can change the page title for your browser tab from **Page Settings**, the page URL will always contain \"error404\". \n\nTo test your 404 page, you can view it in your browser by going to a URL of one of your site's pages and adding extra numbers or letters to the URL."
+  },
+  {
+    "id": "21",
+    "question": "How can I remove a dynamic page from my Wix site?",
+    "answer": "To delete a dynamic page from your site using the Wix Editor:\n\n1. Click **Pages & Menu** on the left side of the Editor.\n2. Click **Dynamic Pages**.\n3. Hover over the relevant page and click the **More Actions** icon.\n4. Click **Delete**.\n5. Click **Delete** to confirm.\n6. Publish your site to make the changes go live."
+  },
+  {
+    "id": "22",
+    "question": "How can I delete multiple elements from my Wix site at once using the Editor?",
+    "answer": "To select and delete multiple elements at once in the Wix Editor, follow these steps:\n\n1. Open the Editor.\n2. Click and drag your cursor to mark all the relevant elements.\n3. Choose how you want to delete the elements:\n    - **Keyboard**: Press Delete on your keyboard.\n    - **Right-click menu**: Right-click the element, then click Delete.\n\n**Tip**: You can also multi-select elements by holding down the Ctrl key on your keyboard and clicking the relevant elements."
+  },
+  {
+    "id": "23",
+    "question": "How do I enable 2-step verification for my Wix account using the SMS option?",
+    "answer": "To enable 2-step verification for your Wix account using the SMS option:\n\n1. Go to **Account Settings** in your Wix account.\n2. Scroll down to **2-Step verification**.\n3. Click **Enable** next to **Verify logins by phone (SMS)**.\n4. Add your phone number.\n5. Click **OK**.\n6. Go to your phone and get the 6-digit code.\n7. Go back to Wix and enter the code.\n8. Click **Confirm**.\n\n**Note:** If you are not receiving the SMS associated with your account's 2-step verification, please contact support."
+  },
+  {
+    "id": "24",
+    "question": "What steps should I follow to sign in to my Wix account using an authenticator app after enabling 2-step verification?",
+    "answer": "When you sign in to your Wix account with 2-Step verification enabled, you need to confirm your login by adding a 6-digit code from your authenticator app.\n\nTo sign in with 2-step verification:\n\n1. Sign in as normal on the Wix login page.\n2. Open your authenticator app on your phone.\n3. Get the 6-digit code for your Wix account.\n4. Enter the 6-digit code under Enter code here on the Wix login page.\n5. Click Verify."
+  },
+  {
+    "id": "25",
+    "question": "How can I display a Cookie Banner on my Wix site to comply with privacy laws like GDPR and LGPD?",
+    "answer": "To display a Cookie Banner on your Wix site for compliance with privacy laws like the GDPR and LGPD, follow these steps:\n\n1. **Login to Your Wix Account:** Access your Wix website dashboard by logging into your account.\n\n2. **Go to the Privacy & Security Settings:** Navigate to your site’s settings and locate the 'Privacy & Security' section.\n\n3. **Enable the Cookie Banner:** Within the privacy settings, look for the option to enable the Cookie Banner. This banner will inform your visitors about the use of cookies and provide them the option to consent to non-essential cookies.\n\nBy following these instructions, you ensure that your site provides the necessary transparency regarding cookies and adheres to privacy legislation such as GDPR and LGPD."
+  },
+  {
+    "id": "26",
+    "question": "What steps can I take to ensure my Wix site complies with the CCPA regulations?",
+    "answer": "To prepare your Wix site for the CCPA, consider the following steps:\n\n- **Right to Access**: Ensure that California residents can request access to their personal information collected by your site.\n- **Right to be Deleted**: Make it possible for California residents to request deletion of their personal data that your site has collected.\n- **Right to Opt-Out**: Allow California residents to opt-out of the sale of their personal information.\n\nUtilize the Wix Privacy Center to assist you in implementing these CCPA compliance measures effectively."
+  },
+  {
+    "id": "27",
+    "question": "How can I use the Wix app to send invites for an upcoming event I am planning?",
+    "answer": "To send invites for your event using the Wix app, first go to your site in the Wix app. Then, tap **Manage** at the bottom and select **Events**. After you tap to select the relevant event, go to the **Manage** tab and tap **Promotion**. At the bottom, tap **Invite Guests** to send invites via email, social media, or more (RSVP events only)."
+  },
+  {
+    "id": "28",
+    "question": "What are the steps to promote a Wix event using the site's dashboard?",
+    "answer": "To create a promotion for your event using Wix site's dashboard, follow these steps:\n\n1. **Go to Events** in your site's dashboard.\n2. Click the **More Actions** icon next to the relevant event.\n3. Click **Promote events** on the relevant event.\n4. Choose a template to promote your event:\n    - **Email campaign**: Capture your subscribers' attention with visually appealing emails.\n    - **Social post**: Show your online presence by sharing updates on social media.\n    - **Facebook & Instagram ads**: Target the right audience using ads on Facebook and Instagram.\n    - **Promotional video**: Create professional-looking videos by adding photos and choosing your favorite design style and music for promotions on YouTube and social media.\n5. **Share a link to your event**: Click Copy Link at the bottom and send it to potential guests."
+  },
+  {
+    "id": "29",
+    "question": "How can I rename a page in the Wix Editor?",
+    "answer": "To duplicate a page in the Wix Editor:\n\n1. Go to your editor.\n2. Click **Pages & Menu** on the left side of the editor.\n3. Hover over the relevant page and click the **More Actions** icon.\n4. Click **Duplicate**.\n5. Choose from the following options:\n    - **Duplicate Page**: Create a duplicate of the page.\n    - **Make This Page Dynamic**: Reuse this layout to create multiple site pages with content from a CMS (Content Management System) collection."
+  },
+  {
+    "id": "30",
+    "question": "What are the steps to change the name of a page in the Wix Editor?",
+    "answer": "To rename a page in the Wix Editor, follow these steps:\n\n1. Click **Pages** on the left side of the Editor.\n2. Click the relevant page.\n3. Click the **Show More** icon.\n4. Click **Rename**.\n5. Enter the new page name.\n6. Click **Done**.\n\n**Important:** As your site menu displays your page names, changing the name of a page also changes the text on your site's menu. If you would like to update the page URL, follow [the steps here](https://support.wix.com/en/article/changing-your-pages-url)."
+  },
+  {
+    "id": "31",
+    "question": "What factors should I consider when determining appointment availability in Wix Bookings?",
+    "answer": "Here is a list of the main factors which affect if you or your staff are available to accept appointments:\n\n1. **Default Business Hours**: Your default business hours, or your opening hours, determine when your staff are available to take appointments. Make sure these are set correctly to reflect your business’s availability.\n\n2. **Staff Working Hours**: The availability of appointments largely depends on the working hours of your selected staff members. You can customize each staff member's hours individually, which can affect availability.\n\n3. **Adding One-Time Changes to Staff Hours**: You can set custom hours for your staff, either as one-time or recurring appointments. These custom hours override the default ones and can affect availability, especially if multiple staff members have custom schedules.\n\n4. **Blocked Time**: You can manually block any day or part of a day in your Wix Bookings calendar for you or for a staff member. The times you block are not available for bookings.\n\n5. **Synced Calendars**: Sync your personal calendars with the Wix Bookings calendar to avoid conflicts and double bookings. Events synced from these personal calendars block off the time on the Wix calendar.\n\n6. **Appointment Time Slots**: You can set appointment time slots at specific intervals or based on the duration of a service, including any time buffers you add between appointments.\n\n7. **Time Buffer**: Set a time buffer between sessions to ensure staff have preparation time and necessary breaks.\n\n8. **Booking Windows**: Booking windows let you set limits on exactly how far in advance and how close to your sessions clients can book.\n\nThese factors help ensure your live site accurately displays your business's available appointment times."
+  },
+  {
+    "id": "32",
+    "question": "What steps do I need to follow to add a time buffer between appointments in Wix Bookings?",
+    "answer": "To set a time buffer between appointments in Wix Bookings, follow these steps:\n\n1. **Go to Booking Services** in your site's dashboard.\n2. **Select the relevant appointment.**\n3. **Scroll down to the Service details section.**\n4. **Click the Duration drop-down** to choose how long your service lasts.\n   - *Tip: Choose Custom to enter a specific duration in hours and minutes.*\n5. **Click the Buffer Time drop-down** to choose how long of a break you have between appointments.\n   - *Tip: Choose Custom to enter your own buffer time duration in hours and minutes.*\n6. **Click Save.**\n\nNote: Creating buffer time does not add 'busy' slots like those from personal appointments in your Google Calendar. You can manually extend the 'busy' slot in your Google Calendar to allow for any additional time you need as a buffer."
+  },
+  {
+    "id": "33",
+    "question": "How can I set up a tax group for products with special tax rates in Wix Restaurants Orders (New)?",
+    "answer": "To set up a tax group for products with special tax rates in Wix Restaurants Orders (New), follow these steps:\n\n1. **Determine which items have special tax rates**: First, identify which items are taxed at rates different from the general sales tax rate. You should consult with an accountant or your local tax authority to determine the correct rates.\n\n2. **Create a tax group**: Navigate to the **Tax** section in your site's dashboard and scroll down to **Tax groups**. Click **+Add Group**, enter a group name (e.g., \"Car Seats\"), and click **Add**. Note that the tax group name is not visible to customers, so choose a name that helps you remember its purpose.\n\n3. **Assign your group's tax rates**: For each tax location where you do business, select the location and enter the appropriate tax rate for your group. Go to **Tax** in your site's dashboard, select a location, enter the tax rate for the group you created, and click **Save**. Repeat for any other locations. If you don't enter a rate for a location, items in the tax group will be taxed at 0% in that location.\n\n4. **Add items to the group**: After setting up your tax groups, assign items to them:\n   - For adding multiple products at once, go to **Tax** in your site's dashboard, hover over the relevant tax group, click **Add Products**, select your products, and click **Save**.\n   - For adding a single product, go to **Products** in your site's dashboard, select the product, and choose the relevant tax group from the **Product tax group** drop-down.\n\n   For restaurant menu items, go to **Menus (New)** in your site's dashboard, select the menu item, click the **Ordering tab**, and select the relevant tax group from the **Items tax group** drop-down (e.g., \"Alcoholic Beverages\").\n\nIf you're using Avalara automatic tax calculation, Avalara will automatically assign the correct tax setting for each location you have added when creating tax groups."
+  },
+  {
+    "id": "34",
+    "question": "How can I assign multiple products to a tax group in Wix Stores?",
+    "answer": "To add multiple products to a tax group in Wix Stores, follow these steps:\n\n1. Go to **Tax** in your site's dashboard.\n2. Hover over the relevant tax group and click **Add Products**.\n3. Select the products you want to add to this tax group.\n4. Click **Save**.\n\nThis process allows you to efficiently manage and group your store products that require specific tax rates."
+  },
+  {
+    "id": "35",
+    "question": "What content should I avoid in my Facebook Ads to prevent my campaign from being rejected?",
+    "answer": "Facebook may reject your campaign if it promotes any of the following: COVID-19 items, election or political content, adult content, alcoholic beverages, weapons, ammunition or explosives, tobacco products, or dating services. To ensure your campaign is not rejected, your site should not include any of these types of products or content. For more information as well as the full list of Facebook's prohibited items, check their Advertising Policies."
+  },
+  {
+    "id": "36",
+    "question": "What happens when I edit my Facebook ad campaign after it goes live, and what should I do if it's rejected?",
+    "answer": "When you decide to edit your campaign at any point after it goes live, it is automatically submitted to Facebook for another review. If your campaign is rejected by Facebook, it is most likely because it didn't comply with their advertising policies. Common reasons campaigns get rejected include adult content, alcoholic beverages, dating services, and election or political content.\n\nIf your campaign was rejected, here's how you can resubmit it:\n\n1. Go to Facebook Ads in your site's dashboard.\n2. Click 'Edit & Resubmit' in the error message.\n3. Make the necessary changes to your ad content as explained in the notification (remove certain products, change the text, etc.).\n4. Click 'Submit Changes' at the top right.\n5. Click 'Submit Changes' in the pop-up to confirm."
+  },
+  {
+    "id": "37",
+    "question": "How can I take advantage of the 50% sale on Google Workspace business email through Wix?",
+    "answer": "To take advantage of the 50% sale on your connected domain's first Google Workspace business email purchase through Wix, follow these steps:\n\n1. **Check for Sale Availability:** When the sale is available, you will see a sale banner in your Wix account.\n2. **Purchase the Business Email:** Ensure that this is your domain's first business email purchase to qualify for the discount. If you purchase more than one business email in a single purchase, the discount applies to all business emails.\n3. **Yearly Subscription:** The promotion applies only to yearly business email subscriptions.\n4. **Automatic Discount:** The promotional discount is applied automatically to the purchase price, so there is no need to manually enter a coupon code.\n\n**Important Notes:**\n- The promotion is not available in all regions.\n- It cannot be applied retroactively towards a previously purchased business email.\n- Offer is valid while supplies last.\n\nFor more details, you can learn more about [choosing a Google Workspace plan](https://support.wix.com/en/article/google-workspace-choosing-a-plan) and [purchasing a Google Workspace business email](https://support.wix.com/en/article/google-workspace-purchasing-a-personalized-business-email)."
+  },
+  {
+    "id": "38",
+    "question": "How can I verify my domain with Yandex using a meta tag on my Wix site?",
+    "answer": "### Prerequisites\nEnsure you have a Yandex Webmaster account and access to your Wix site's SEO Dashboard.\n\n### Step-by-Step Instructions\n\n#### Step 1 | Get your meta tag from Yandex\n1. Log in to your [Yandex.Webmaster](https://webmaster.yandex.com/) account.\n2. Click **Get Started**.\n3. Click **Add**.\n4. Enter your website URL.\n5. Click **Add to**.\n6. Copy your meta tag.\n7. Leave the Yandex screen open.\n\n#### Step 2 | Add your meta tag to your Wix site\n1. In a new tab, [go to your SEO Dashboard](https://manage.wix.com/my-account/site-selector/?siteType=HtmlWeb&actionUrl=https://www.wix.com/dashboard/{{metaSiteId}}/seo-home?referralInfo=KB-f3388913-140f-47a9-b2ba-4bf86b60e04e&title=Select%20a%20Site&buttonText=Go+to+SEO).\n2. Select **Go to Site Verification** under **Tools and settings**.\n3. Click on Yandex to expand.\n4. Enter the meta tag.\n5. Click **Save**.\n\n#### Step 3 | Complete the site verification on Yandex Webmaster\n1. Go back to the Yandex Webmaster.\n2. Click **Check**."
+  },
+  {
+    "id": "39",
+    "question": "Does Wix Stores support email notifications when a product is out of stock?",
+    "answer": "Currently, Wix Stores does not send an email notification when a product is out of stock. However, you do receive a notification in your [site's dashboard](https://support.wix.com/en/article/about-your-dashboard-notifications) and in the [Wix app on your mobile device](https://support.wix.com/en/article/wix-owner-app-an-overview). In addition, an \"Out Of Stock\" notice automatically appears on the product itself - unless you set up [back-in-stock notifications](https://support.wix.com/en/article/wix-stores-notifying-customers-when-products-are-back-in-stock). \n\n### Tip\nYou can receive alerts when stock levels are low through the Low Stock Alerts third-party app. To add the app, go to the [Wix App Market](https://www.wix.com/app-market)."
+  },
+  {
+    "id": "40",
+    "question": "Can I use one Wix site plan for multiple sites in my account?",
+    "answer": "No, a site plan cannot be used for multiple sites. Each site you want to upgrade must have its own [Premium](https://support.wix.com/en/article/choosing-a-premium-plan) or [Studio](https://support.wix.com/en/article/wix-studio-upgrading-sites) site plan. If you wish to apply premium features, such as connecting your own domain, to more than one site, you must purchase additional upgrades. There is no limit to the number of Premium or Studio plans you can add to your account. There is also no limit to the number of sites you can create under a single account.\n\n### Tip\nYou can [transfer a site plan from one site to another](https://support.wix.com/en/article/assigning-a-premium-plan-to-a-different-site-in-your-wix-account), or [transfer a site together with a site plan](https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account) to another Wix account."
+  },
+  {
+    "id": "41",
+    "question": "How can I add video conferencing to my Wix event using Zoom?",
+    "answer": "Prerequisites: Ensure you have created and saved your event draft.\n\nTo add video conferencing:\n1. [Go to Events](https://www.wix.com/my-account/site-selector/?buttonText=Manage%20Events&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https://www.wix.com/dashboard/{{metaSiteId}}/events/) in your site's dashboard.\n2. Select the relevant event.\n3. Click the **Features** tab.\n4. Click **Video Conferencing**.\n5. Click **Setup Video Conferencing**.\n6. Select **Zoom** and click **Continue**.\n7. (If this is your first Zoom event) Connect to Zoom:\n   1. Click **Connect**.\n   2. Sign in to your existing Zoom account or create a new account.\n   3. Click **Done**.\n8. Click **Copy link** to get the link to your Zoom meeting.\n\n**Note:** Guests receive the link and password in their confirmation email as well as reminder emails."
+  },
+  {
+    "id": "42",
+    "question": "How can I display a specific Wix Photo Album on a different page of my site?",
+    "answer": "To display an album on another page:\n\n1. Open your site in the editor.\n2. Click **Pages** ![](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/f0656688-8ed1-488a-888d-62373b7c3a3c/2021/12/15/88b0d904-688a-4d78-902d-04bb3f2d303d/4179bf46-a513-4484-a0dd-678db4a9b37d.png) on the left side of the editor.\n3. Click the page that includes Wix Photo Albums.\n4. Click the photo album in your editor and select **Settings**.\n5. Click **Add Ons**.\n6. Click the **Select page** drop-down.\n7. Select the page where you want to add Wix Photo Albums to.\n8. Click the photo album in your editor and select **Settings**.\n9. Click **Albums**.\n10. Click **Show or Hide Albums**.\n11. Enable the **Show on page** toggle next to each album you want to display.\n\n### Tip\nIn addition to adding Wix Photo Albums to different pages, you can add it multiple times to the same page, with each displaying a different album. This allows you to organize and display your albums any way you choose. Repeat the above steps to add another album on the same page."
+  },
+  {
+    "id": "43",
+    "question": "How do I add a Wix Pro Gallery to my site using the Wix Editor?",
+    "answer": "### Prerequisites\nEnsure you have access to the Wix Editor.\n\n### Steps to Add a Wix Pro Gallery:\n1. Click **Add** ![](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/13691038-5aa8-4672-9b95-348c0733cabc/2020/09/25/a2e39031-4930-42dc-acf7-ec0139d0ae2d/ce96fb4d-99d9-4cd0-b315-14a26cdc161c.png) on the left side of your editor.\n2. Click **Gallery**.\n3. Select a gallery from the Pro Galleries section and drag it to the relevant place on your site."
+  },
+  {
+    "id": "44",
+    "question": "How can I add an age disclaimer using a popup in Wix Editor?",
+    "answer": "To create an age disclaimer using a popup in Wix Editor, follow these steps:\n\n1. [Add a lightbox](https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-lightbox).\n2. Click the lightbox.\n3. Click the **Settings** icon.\n   \n   1. Select **Yes** under **Automatically display popup on pages**.\n      \n      1. Click the **Which pages is it on?** field and select **First page visitor sees**.\n      2. Drag the **Delay** slider to 0 seconds.\n   2. Disable the **X icon** toggle.\n   3. Enable the **Close button** toggle.\n4. Set up the button that leads to your site:\n   \n   1. Click the Close button on your popup and click **Change Text**.\n   2. Enter the confirmation text (e.g. \"Yes, I'm over 18\").\n5. Customize your popup to create your age disclaimer.\n6. Customize and [set up this popup for mobile](https://support.wix.com/en/article/wix-editor-showing-and-customizing-lightboxes-on-your-mobile-site).\n\n**Note:** By default, popups won’t appear on your mobile site unless enabled in the Mobile Editor. This is because Google does not like intrusive popups on mobile sites so having a popup enabled may negatively impact your site’s SEO."
+  },
+  {
+    "id": "45",
+    "question": "How can I change the currency for my Wix Store?",
+    "answer": "To change your currency in Wix Stores, follow these steps:\n\n1. [Go to Language & Region](https://www.wix.com/my-account/site-selector/?buttonText=Open%20Regional%20Settings&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fsettings%2Flanguage-and-region%2F) in your site's dashboard.\n2. Scroll down to the **Currency** section and select a currency from the drop-down.\n\n### Notes\n* If the currency you want does not appear in the drop-down, click [here](https://support.wix.com/en/article/wix-stores-request-additional-currencies) to request additional currencies.\n* You can [add a currency converter](https://support.wix.com/en/article/wix-stores-adding-and-setting-up-a-currency-converter) so customers can view prices in their own currency."
+  },
+  {
+    "id": "46",
+    "question": "How can I remove the 'Kids' option from the reservation process in Wix Hotels?",
+    "answer": "To remove the 'Kids' option in Wix Hotels, follow these steps:\n\n1. Click the Wix Hotels app in the Editor.\n2. Click **Settings**.\n3. Click the **Rooms list** tab.\n4. Deselect the **Kids** checkbox next to **Fields**.\n\n**Note:** If you've added the Wix Hotels Search Bar to your site, you need to update its settings separately to remove the Kids option. To do so, click the Search Bar in the Editor, click **Settings**, and then deselect the checkbox next to **Kids**."
+  },
+  {
+    "id": "47",
+    "question": "How can I set up installment payment options for my Wix Store using a payment provider?",
+    "answer": "To set up installment payment options for your Wix Store using a payment provider, follow these steps:\n\n1. **Connect one or more of the relevant payment providers.**\n   - For instructions, click any of the links in the table provided in the article.\n\n2. **Go to your store's Product Page in the Editor.**\n   - **Wix Editor:**\n     1. Click the **Pages** icon ![Pages icon](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8769cf44-f342-494c-b25f-cc98c9da3e82/2021/07/20/944d6500-ed02-4be8-b561-7f88ef0b70fb/893f2a52-13fc-431a-bd61-7b3b0b01bcc3.png) on the left side of the Editor.\n     2. Click **Store Pages**.\n     3. Select the **Product Page**.\n   - **Editor X:**\n     1. Click the **Pages** icon ![Pages icon](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8769cf44-f342-494c-b25f-cc98c9da3e82/2021/04/07/3c37be5e-e20a-4a6f-88e5-6c344ff30fdb/e3225be6-ad04-4ef8-b205-c9ffab130b4c.png) at the top bar of Editor X.\n     2. Scroll down and select the Product Page.\n\n3. **Click the Product Page in the Editor.**\n4. **Click Settings.**\n5. **Click the Design tab.**\n6. **Click Product Details.**\n7. **Select the Light or Dark display mode.**\n\nAfter you add the payment provider to your site, customers will see your installment options on the product page. During checkout, customers can select one of the options, log in to their accounts or create a new one, and complete the purchase."
+  },
+  {
+    "id": "48",
+    "question": "Can I create an invoice with Wix Automations?",
+    "answer": "Currently, it is not possible to create an invoice with Wix Automations. However, it is possible to [send payment requests (invoices) to Wix Bookings clients](https://support.wix.com/en/article/wix-bookings-sending-payment-requests-to-clients-using-automations) using Wix Automations."
+  },
+  {
+    "id": "49",
+    "question": "How can I adjust the background image position and scale for different language versions of my Wix site?",
+    "answer": "To change your site's background image position and scale:\n\n1. [Go to your editor](https://manage.wix.com/account/site-selector/?actionUrl=https%3A%2F%2Fwww.wix.com%2Feditor%2F%7BmetaSiteId%7D%3FeditorSessionId%3D%7Besi%7D%26).\n2. Click the **Switch languages** drop-down menu at the top left.\n3. Select the relevant language.\n4. Click the **Background** icon on the left.\n5. Click **Settings**.\n6. Set the scale and positioning:\n   * **Adjust image scale:** Click the drop-down menu under **How's the image scaled?** and select an option.\n   * **Change image position:** Select a position on the grid under **Where's the image positioned?**"
+  },
+  {
+    "id": "50",
+    "question": "How can I add an element to my Wix member app using the Wix app?",
+    "answer": "To add an element to your Wix member app using the Wix app, follow these steps:\n\n1. Go to your site in the Wix app.\n2. Tap **Manage** ![](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8769cf44-f342-494c-b25f-cc98c9da3e82/2021/04/12/3fc0f98c-0997-47b3-b7bd-6ae31a67e078/ce9c0fe5-f60d-4448-8fc2-9ba4cf636f93.png) at the bottom.\n3. Tap **Mobile App**.\n4. (If needed) Switch to editing a different mobile app:\n   \n   1. Tap the mobile app name at the top.\n   2. Tap **Branded Mobile App** or tap the relevant mobile app (e.g. Spaces by Wix app).\n   \n   **Tip:** If you want to edit a different mobile app (e.g. Fit by Wix, Dine by Wix), choose the app as [your preferred member app](https://support.wix.com/en/article/wix-mobile-apps-choosing-your-preferred-member-app).\n5. Tap **Edit** under your site name or the name of your branded app.\n6. Tap the **Screen** drop-down at the top and choose the screen you want to edit.\n7. Tap **+ Add Element** in the relevant location.\n8. Choose the element you want to add.\n\n**Tip:** Tap the **Search** icon ![](https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/d6b40156-9694-4cfe-9209-54815ef9d6dc/2022/11/02/fae8f010-bde4-4a29-b1bc-ee72e2f64f8b/8f2de71c-df97-4078-b083-514c79b268f6.png) to look for specific elements.\n9. Add the relevant details to the element.\n10. Tap **Add** at the top right."
+  }
+]

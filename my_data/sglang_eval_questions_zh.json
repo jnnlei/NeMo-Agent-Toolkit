@@ -1,0 +1,252 @@
+[
+    {
+        "id": "1",
+        "question": "什么是 SGLang，它的主要用例是什么？",
+        "answer": "SGLang 是一个专为大型语言模型 (LLM) 和视觉语言模型 (VLM) 设计的高性能服务框架，旨在提供低延迟和高吞吐量的推理。其核心功能包括用于前缀缓存的 RadixAttention、推测解码、连续批处理和结构化输出。它支持广泛的模型（Llama、DeepSeek 等）和硬件（NVIDIA/AMD GPU、TPU、CPU）。其主要用例包括：1. 服务于需要快速推理的聊天机器人和生成式 AI 应用程序。2. 支持视觉语言模型 (VLM) 应用程序。3. 在生产环境中处理高吞吐量的批量推理。4. 开发具有复杂控制流的自定义 LLM 工作流。5. 研究和评估新模型及推理技术。"
+    },
+    {
+        "id": "2",
+        "question": "如何使用 pip 安装 SGLang？",
+        "answer": "您可以使用命令 `pip install \"sglang[all]\"` 通过 pip 安装 SGLang。这将安装 SGLang 包及其所有可选依赖项。"
+    },
+    {
+        "id": "3",
+        "question": "SGLang 是否支持 OpenAI 兼容的 API？",
+        "answer": "是的，SGLang 支持 OpenAI 兼容的 API。您可以启动一个提供 OpenAI 兼容端点的服务器，从而允许您使用标准的 OpenAI 客户端库与由 SGLang 服务的模型进行交互。"
+    },
+    {
+        "id": "4",
+        "question": "如何使用 SGLang 运行本地服务器？",
+        "answer": "要使用 SGLang 运行本地服务器，您可以使用命令 `python -m sglang.launch_server --model-path <path-to-model> --port 30000`。这将在指定端口上启动 SGLang 服务器，服务于 `<path-to-model>` 处的模型。"
+    },
+    {
+        "id": "5",
+        "question": "什么是 RadixAttention，它如何在 SGLang 中提高性能？",
+        "answer": "RadixAttention 是 SGLang 中使用的一种新颖的注意力机制，它实现了高效的前缀缓存。它以基数树结构组织 KV 缓存，允许多个请求共享其提示中的公共前缀。这显着减少了冗余计算和内存使用，从而提高了吞吐量并减少了延迟，特别是对于具有共享上下文的工作负载，如少样本学习或多轮对话。"
+    },
+    {
+        "id": "6",
+        "question": "如何在 SGLang 中使用离线引擎 API 进行批处理？",
+        "answer": "SGLang 中的离线引擎 API 允许您高效地处理批量请求，而无需 HTTP 服务器的开销。您可以使用 `sglang.Engine(model_path=...)` 初始化引擎，然后使用其 `generate` 方法处理提示列表。这非常适合高吞吐量的离线批量推理任务。"
+    },
+    {
+        "id": "7",
+        "question": "SGLang 支持哪些 NVIDIA GPU 架构？",
+        "answer": "SGLang 支持广泛的 NVIDIA GPU 架构，包括 Ampere (A100, A10)、Hopper (H100) 和 Blackwell (GB200, B300)。它还支持消费级 GPU，如 RTX 3090 和 4090。"
+    },
+    {
+        "id": "8",
+        "question": "我可以在 AMD GPU 上运行 SGLang 吗？如果可以，支持哪些型号？",
+        "answer": "是的，SGLang 支持 AMD GPU，特别是 ROCm 平台。它兼容 AMD MI300 和 MI250 系列 GPU。"
+    },
+    {
+        "id": "9",
+        "question": "如何在 SGLang 中启用推测解码 (Speculative Decoding)？",
+        "answer": "要在 SGLang 中启用推测解码，您可以在启动服务器时传递 `--speculative-algorithm` 和 `--speculative-draft-model-path` 参数。例如：`python -m sglang.launch_server --model-path <target-model> --speculative-algorithm EAGLE --speculative-draft-model-path <draft-model>`。"
+    },
+    {
+        "id": "10",
+        "question": "使用 SGLang 部署 DeepSeek 模型的步骤是什么？",
+        "answer": "要部署 DeepSeek 模型，您只需在启动服务器时指定 DeepSeek 模型路径：`python -m sglang.launch_server --model-path deepseek-ai/deepseek-coder-33b-instruct --trust-remote-code`。SGLang 内置了对 DeepSeek 模型的支持。"
+    },
+    {
+        "id": "11",
+        "question": "SGLang 如何处理结构化输出或 JSON 生成？",
+        "answer": "SGLang 支持结构化输出，允许您定义生成的输出必须遵守的正则表达式模式或 JSON 模式。这在解码过程中强制执行，确保模型的输出严格遵循指定的格式。"
+    },
+    {
+        "id": "12",
+        "question": "SGLang 是否支持多模态模型，如 LLaVA 或 Qwen-VL？",
+        "answer": "是的，SGLang 支持多模态模型，包括 LLaVA、Qwen-VL 等。您可以像纯文本模型一样服务它们，API 支持在文本提示的同时传递图像输入。"
+    },
+    {
+        "id": "13",
+        "question": "如何在 SGLang 中使用 LoRA (Low-Rank Adaptation) 服务？",
+        "answer": "SGLang 支持多 LoRA 服务。您可以加载基础模型，然后在运行时动态加载多个 LoRA 适配器。发送请求时，您可以通过 API 指定该特定请求使用的 LoRA 适配器。"
+    },
+    {
+        "id": "14",
+        "question": "SGLang 支持哪些量化方法（例如 FP8, AWQ, GPTQ）？",
+        "answer": "SGLang 支持多种量化方法，包括 FP8（在 H100 上）、AWQ 和 GPTQ。您可以在启动服务器时通过指定量化类型（例如 `--quantization awq` 或 `--quantization fp8`）来启用它们。"
+    },
+    {
+        "id": "15",
+        "question": "如何在 SGLang 中配置张量并行 (Tensor Parallelism)？",
+        "answer": "您可以在启动服务器时使用 `--tp-size`（或 `--tensor-parallel-size`）参数配置张量并行。例如，`--tp-size 4` 将使用张量并行在 4 个 GPU 上运行模型。"
+    },
+    {
+        "id": "16",
+        "question": "什么是 SGLang 原生 API，什么时候应该使用它而不是 OpenAI API？",
+        "answer": "SGLang 原生 API 提供了比标准 OpenAI API 更细粒度的生成过程控制。它允许控制缓存、高级批处理以及直接访问 SGLang 的特定优化。当您需要最高性能或访问标准 OpenAI 接口未提供的功能时，应使用它。"
+    },
+    {
+        "id": "17",
+        "question": "SGLang 如何实现前缀缓存 (Prefix Caching)？",
+        "answer": "SGLang 使用其 RadixAttention 机制实现前缀缓存。它自动检测不同请求之间的共享前缀，并将其 KV 缓存存储在基数树中。具有相同前缀的后续请求可以重用缓存的 KV 状态，跳过重新计算。"
+    },
+    {
+        "id": "18",
+        "question": "我可以将 SGLang 用于嵌入 (Embedding) 模型吗？",
+        "answer": "是的，SGLang 支持服务嵌入模型。您可以启动带有嵌入模型的服务器，并使用 OpenAI 兼容的 embeddings 端点获取文本的向量表示。"
+    },
+    {
+        "id": "19",
+        "question": "如何为 SGLang 设置多节点部署？",
+        "answer": "对于多节点部署，SGLang 通常依赖于像 Ray 这样的分布式框架。您需要在节点上配置 Ray 集群，然后启动 SGLang 服务器，指定要在可用节点上跨越的张量并行和流水线并行大小。"
+    },
+    {
+        "id": "20",
+        "question": "优化吞吐量的推荐服务器参数有哪些？",
+        "answer": "优化吞吐量的推荐参数通常包括增加批量大小 (`--max-num-reqs`)，如果使用多个 GPU 则启用张量并行 (`--tp-size`)，以及使用适当的量化 (`--quantization`) 以减少内存带宽使用。"
+    },
+    {
+        "id": "21",
+        "question": "SGLang 如何处理连续批处理 (Continuous Batching)？",
+        "answer": "SGLang 使用连续批处理（也称为迭代级调度）在先前的请求完成后立即将新请求动态添加到正在运行的批处理中，而不是等待整个批处理完成。这最大化了 GPU 利用率。"
+    },
+    {
+        "id": "22",
+        "question": "可以在 Docker 中使用 SGLang 吗？在哪里可以找到 Dockerfile？",
+        "answer": "是的，SGLang 提供官方 Docker 镜像。您可以在 SGLang GitHub 存储库和文档中找到 Dockerfile 以及构建/拉取镜像的说明。"
+    },
+    {
+        "id": "23",
+        "question": "如何在 SGLang 服务器上执行基准测试和性能分析？",
+        "answer": "SGLang 包含基准测试脚本（例如 `bench_serving.py`），允许您向服务器发送合成流量并测量延迟、吞吐量（代币/秒）和首字时间 (TTFT) 等指标。"
+    },
+    {
+        "id": "24",
+        "question": "SGLang Model Gateway（以前称为 Router）有什么用途？",
+        "answer": "SGLang Model Gateway (Router) 用于管理多个 SGLang 实例或模型。它可以根据可用性或特定规则将传入请求路由到不同的后端模型，为客户端提供统一的端点。"
+    },
+    {
+        "id": "25",
+        "question": "SGLang 如何支持推理模型的结构化输出？",
+        "answer": "对于推理模型，SGLang 可以使用其结构化输出功能将生成过程限制为遵循特定结构（如思维链格式后跟 JSON 格式的最终答案），确保推理过程与最终结果一起被正确捕获。"
+    },
+    {
+        "id": "26",
+        "question": "我可以在 SGLang 中使用自定义聊天模板吗？",
+        "answer": "是的，SGLang 允许您指定自定义聊天模板。您可以传递 Jinja2 模板或指定分词器支持的聊天模板格式，以确保模型接收正确对话格式的提示。"
+    },
+    {
+        "id": "27",
+        "question": "SGLang 如何与 Hugging Face 模型集成？",
+        "answer": "SGLang 旨在与 Hugging Face 生态系统兼容。它可以直接使用 Hugging Face 模型 ID 或本地路径加载模型，并使用 Hugging Face 分词器。"
+    },
+    {
+        "id": "28",
+        "question": "SGLang 中的分层 KV 缓存 (HiCache) 是什么？",
+        "answer": "分层 KV 缓存 (HiCache) 是 SGLang 中的一项功能，通过在内存层次结构的不同级别（例如 GPU 内存、CPU 内存）管理 KV 缓存来优化内存使用，从而允许更大的上下文窗口或更多并发请求。"
+    },
+    {
+        "id": "29",
+        "question": "如何在 SGLang 中使用工具解析器 (Tool Parser) 功能？",
+        "answer": "工具解析器功能使 SGLang 能够识别和解析模型生成的工具调用。您定义可用的工具及其模式，SGLang 可以将模型的输出解析为结构化的工具调用。"
+    },
+    {
+        "id": "30",
+        "question": "SGLang 是否支持奖励模型 (Reward Models)？如果支持，如何使用？",
+        "answer": "是的，SGLang 支持奖励模型。这些通常用于 RLHF（基于人类反馈的强化学习）工作流或重新排序生成的候选者。您可以服务它们来对文本输入进行评分。"
+    },
+    {
+        "id": "31",
+        "question": "通常使用哪些环境变量来配置 SGLang？",
+        "answer": "常见的环境变量包括 `SGLANG_PORT`、`SGLANG_HOST`、`NCCL_DEBUG`（用于调试通信），以及可能与 CUDA 设备选择相关的变量（`CUDA_VISIBLE_DEVICES`）。"
+    },
+    {
+        "id": "32",
+        "question": "如何在 SGLang 中启用和配置生产指标 (Production Metrics)？",
+        "answer": "SGLang 提供与 Prometheus 兼容的指标端点（通常位于 `/metrics`）。您可以启用此功能以抓取请求延迟、吞吐量、缓存使用率和错误率等指标进行监控。"
+    },
+    {
+        "id": "33",
+        "question": "SGLang 中的预填充-解码分离 (Prefill-Decode Disaggregation) 是什么？",
+        "answer": "预填充-解码分离是一种高级架构，其中预填充阶段（处理输入提示）和解码阶段（生成代币）由不同的 GPU 实例或集群处理。这允许独立扩展预填充和解码资源以优化性能。"
+    },
+    {
+        "id": "34",
+        "question": "如何在 SGLang 中使用推理解析器 (Reasoning Parser)？",
+        "answer": "推理解析器允许 SGLang 从模型的输出中解析结构化的推理步骤（如思维链），将推理过程与最终答案分开。"
+    },
+    {
+        "id": "35",
+        "question": "SGLang 是否支持 Google TPU？",
+        "answer": "是的，SGLang 具有对 Google TPU 的实验性或不断增加的支持，允许您在 TPU 硬件上运行高性能推理。"
+    },
+    {
+        "id": "36",
+        "question": "如何使用采样参数来控制生成的多样性？",
+        "answer": "您可以在 API 请求中使用 `temperature`、`top_p`、`top_k` 和 `frequency_penalty` 等采样参数来控制生成多样性。SGLang 遵守这些标准采样参数。"
+    },
+    {
+        "id": "37",
+        "question": "SGLang 运行时 (Runtime) 和前端语言 (Frontend Language) 之间有什么区别？",
+        "answer": "SGLang 运行时是负责执行模型和管理资源的高性能后端引擎。前端语言是一个高级 Python SDK/DSL，允许开发人员编写复杂的 LLM 应用程序（如链或代理），然后由运行时高效执行。"
+    },
+    {
+        "id": "38",
+        "question": "如何使用 SGLang 运行 Llama 3 模型？",
+        "answer": "要运行 Llama 3，请使用带有 Llama 3 模型路径的启动命令：`python -m sglang.launch_server --model-path meta-llama/Meta-Llama-3-8B-Instruct`。确保您有权访问 Hugging Face 上的模型。"
+    },
+    {
+        "id": "39",
+        "question": "我可以在 Intel Xeon CPU 或 XPU 上使用 SGLang 吗？",
+        "answer": "是的，SGLang 支持在 Intel Xeon 处理器上进行 CPU 推理，并且也在增加对 Intel XPU 的支持。"
+    },
+    {
+        "id": "40",
+        "question": "SGLang 如何处理不支持模型的 Transformers 回退 (Fallback)？",
+        "answer": "如果 SGLang 没有针对特定模型架构的高度优化内核，它可以回退到使用标准的 Hugging Face Transformers 实现，以确保模型仍然可以被服务，尽管性能可能较低。"
+    },
+    {
+        "id": "41",
+        "question": "如何在 SGLang 中使用来自 ModelScope 的模型？",
+        "answer": "您可以通过指定 ModelScope 模型 ID 或路径来使用 ModelScope 中的模型。SGLang 加载 ModelScope 模型的方式与其从 Hugging Face 加载模型的方式类似。"
+    },
+    {
+        "id": "42",
+        "question": "SGLang 中的检查点引擎集成 (Checkpoint Engine Integration) 是什么？",
+        "answer": "检查点引擎集成允许 SGLang 高效地加载和保存模型检查点，可能支持快速恢复或在模型版本之间切换。"
+    },
+    {
+        "id": "43",
+        "question": "SGLang 如何支持多 LoRA 批处理？",
+        "answer": "SGLang 通过允许同一批次中的不同请求使用不同的 LoRA 适配器来支持多 LoRA 批处理。运行时高效地管理每个请求的特定权重，而无需重新加载基础模型。"
+    },
+    {
+        "id": "44",
+        "question": "什么是分块预填充 (Chunked Prefill)，我该如何启用它？",
+        "answer": "分块预填充将长提示拆分为更小的块进行处理。这有助于降低峰值内存需求，并允许更好地交错预填充和解码步骤。通常通过像 `--enable-chunked-prefill` 这样的服务器参数启用。"
+    },
+    {
+        "id": "45",
+        "question": "如何解决启动 SGLang 服务器时的常见错误？",
+        "answer": "常见的故障排除步骤包括检查 GPU 内存可用性、确保 CUDA 驱动程序兼容、验证模型路径以及检查服务器日志中的特定错误消息。文档提供了常见问题的故障排除指南。"
+    },
+    {
+        "id": "46",
+        "question": "SGLang 如何确保确定性推理 (Deterministic Inference)？",
+        "answer": "SGLang 可以通过固定随机种子 (`--seed`) 并确保处理或避免 GPU 内核中的非确定性操作来确保确定性推理（可重现的结果）。"
+    },
+    {
+        "id": "47",
+        "question": "SGLang 中有哪些可观测性 (Observability) 功能？",
+        "answer": "SGLang 通过其兼容 Prometheus 的指标端点、请求跟踪功能和详细日志提供可观测性，允许您监控服务系统的健康状况和性能。"
+    },
+    {
+        "id": "48",
+        "question": "如何对 SGLang 服务器进行超参数调整？",
+        "answer": "超参数调整涉及尝试服务器参数，如批量大小、张量并行大小和内存分配比例，以找到适合您特定硬件和工作负载的最佳配置。SGLang 提供指南和基准测试来协助此过程。"
+    },
+    {
+        "id": "49",
+        "question": "SGLang 可以在 NVIDIA Jetson Orin 设备上运行吗？",
+        "answer": "是的，SGLang 支持 NVIDIA Jetson Orin 设备，使其适用于边缘 AI 应用程序。"
+    },
+    {
+        "id": "50",
+        "question": "如何为 SGLang 开源项目做贡献？",
+        "answer": "您可以通过在 GitHub 上 fork 存储库、提交包含新功能或错误修复的拉取请求、报告问题以及改进文档来做出贡献。该项目为开发人员提供了贡献指南。"
+    }
+]

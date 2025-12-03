@@ -1,0 +1,374 @@
+authentication: {}
+embedders:
+  milvus_embedder:
+    api_key: null
+    base_url: null
+    model_name: nvidia/nv-embedqa-e5-v5
+    truncate: END
+    type: nim
+eval:
+  evaluators:
+    accuracy:
+      input_obj_field: null
+      llm_name: nim_rag_eval_llm
+      metric: AnswerAccuracy
+      type: ragas
+    groundedness:
+      input_obj_field: null
+      llm_name: nim_rag_eval_llm
+      metric: ResponseGroundedness
+      type: ragas
+    relevance:
+      input_obj_field: null
+      llm_name: nim_rag_eval_llm
+      metric: ContextRelevance
+      type: ragas
+  general:
+    dataset:
+      file_path: my_data/wixqa_expertwritten_small.json
+      filter:
+        allowlist: null
+        denylist: null
+      id_key: id
+      remote_file_path: null
+      s3: null
+      structure:
+        answer_key: answer
+        disable: false
+        expected_trajectory_key: expected_intermediate_steps
+        generated_answer_key: generated_answer
+        question_key: question
+        trajectory_key: intermediate_steps
+      type: json
+    max_concurrency: 2
+    output:
+      cleanup: false
+      custom_pre_eval_process_function: null
+      custom_scripts: {}
+      dir: &id001 !!python/object/apply:pathlib._local.PosixPath
+      - eval_output
+      job_management:
+        append_job_id_to_output_dir: false
+        eviction_policy: !!python/object/apply:nat.data_models.evaluate.JobEvictionPolicy
+        - time_created
+        max_jobs: 0
+      remote_dir: null
+      s3: null
+      workflow_output_step_filter: null
+    output_dir: *id001
+    profiler: null
+    workflow_alias: null
+function_groups: {}
+functions:
+  add_memory:
+    description: 'Add any facts about user preferences to long term memory. Always
+      use this if users mention a preference.
+
+      The input to this tool should be a string that describes the user''s preference,
+      not the question or answer.
+
+      '
+    memory: !!python/object/new:nat.data_models.component_ref.MemoryRef
+    - saas_memory
+    type: add_memory
+  code_generation_tool:
+    description: 'Always call this tool to generate python code. Returns a code snippet
+      which MUST be included in your response.
+
+      '
+    llm_name: !!python/object/new:nat.data_models.component_ref.LLMRef
+    - nim_llm
+    programming_language: Python
+    type: code_generation
+    verbose: false
+  get_memory:
+    description: 'Always call this tool before calling any other tools, even if the
+      user does not mention to use it.
+
+      The question should be about user preferences which will help you format your
+      response.
+
+      For example: "How does the user like responses formatted?"
+
+      '
+    memory: !!python/object/new:nat.data_models.component_ref.MemoryRef
+    - saas_memory
+    type: get_memory
+  vllm_retriever_tool:
+    description: null
+    raise_errors: true
+    retriever: !!python/object/new:nat.data_models.component_ref.RetrieverRef
+    - vllm_retriever
+    topic: Retrieve information about vLLM
+    type: nat_retriever
+  web_search_tool:
+    api_key: null
+    max_results: 5
+    type: tavily_internet_search
+  wix_retriever_tool:
+    description: 'Retrieves information from the Wix Help Center knowledge base.
+
+      Use this tool for questions about website building, features, accounts, domains,
+      or support, even if "Wix" is not explicitly mentioned in the query.
+
+      Assume generic questions (e.g., "how to add a page", "change domain settings")
+      are referring to the Wix platform.
+
+      Topics covered include:
+
+      - Website building and editing
+
+      - Features and functionality
+
+      - Account and settings
+
+      - Apps and integrations
+
+      - Domains and email
+
+      - E-commerce and bookings
+
+      '
+    raise_errors: true
+    retriever: !!python/object/new:nat.data_models.component_ref.RetrieverRef
+    - wix_retriever
+    topic: Retrieve information about Wix features and support
+    type: nat_retriever
+  wix_retriever_tool_with_rerank:
+    description: 'Retrieves information from the Wix Help Center knowledge base.
+
+      Use this tool for questions about website building, features, accounts, domains,
+      or support, even if "Wix" is not explicitly mentioned in the query.
+
+      Assume generic questions (e.g., "how to add a page", "change domain settings")
+      are referring to the Wix platform.
+
+      Topics covered include:
+
+      - Website building and editing
+
+      - Features and functionality
+
+      - Account and settings
+
+      - Apps and integrations
+
+      - Domains and email
+
+      - E-commerce and bookings
+
+      '
+    raise_errors: true
+    retriever: !!python/object/new:nat.data_models.component_ref.RetrieverRef
+    - wix_retriever_with_rerank
+    topic: Retrieve information about Wix features and support with reranking
+    type: nat_retriever
+general:
+  front_end:
+    cors:
+      allow_credentials: false
+      allow_headers: []
+      allow_methods:
+      - GET
+      allow_origin_regex: null
+      allow_origins: null
+      expose_headers: []
+      max_age: 600
+    dask_log_level: WARNING
+    db_url: null
+    endpoints: []
+    evaluate:
+      description: Evaluates the performance and accuracy of the workflow on a dataset
+      method: POST
+      openai_api_path: null
+      openai_api_v1_path: null
+      path: /evaluate
+      websocket_path: null
+    host: localhost
+    max_running_async_jobs: 10
+    oauth2_callback_path: /auth/redirect
+    object_store: null
+    port: 8000
+    reload: false
+    root_path: ''
+    runner_class: null
+    scheduler_address: null
+    step_adaptor:
+      custom_event_types: []
+      mode: !!python/object/apply:nat.data_models.step_adaptor.StepAdaptorMode
+      - default
+    type: fastapi
+    use_gunicorn: false
+    workers: 1
+    workflow:
+      description: 'Executes the default NAT workflow from the loaded configuration '
+      method: POST
+      openai_api_path: /chat
+      openai_api_v1_path: /v1/chat/completions
+      path: /generate
+      websocket_path: /websocket
+  telemetry:
+    logging: {}
+    tracing:
+      weave:
+        attributes: null
+        entity: null
+        project: nat-simple
+        redact_keys: null
+        redact_pii: false
+        redact_pii_fields: null
+        type: weave
+        verbose: false
+  use_uvloop: null
+llms:
+  nim_llm:
+    api_key: null
+    api_type: !!python/object/apply:nat.data_models.llm.APITypeEnum
+    - chat_completion
+    base_url: null
+    max_tokens: 4096
+    model_name: meta/llama-3.3-70b-instruct
+    temperature: 0.3
+    thinking: null
+    top_p: 0.8
+    type: nim
+  nim_rag_eval_llm:
+    api_key: null
+    api_type: !!python/object/apply:nat.data_models.llm.APITypeEnum
+    - chat_completion
+    base_url: null
+    max_tokens: 8
+    model_name: meta/llama-3.1-70b-instruct
+    temperature: 0.0
+    thinking: null
+    top_p: 1.0
+    type: nim
+  nim_trajectory_eval_llm:
+    api_key: null
+    api_type: !!python/object/apply:nat.data_models.llm.APITypeEnum
+    - chat_completion
+    base_url: null
+    max_tokens: 1024
+    model_name: meta/llama-3.1-70b-instruct
+    temperature: 0.0
+    thinking: null
+    top_p: 1.0
+    type: nim
+memory:
+  saas_memory:
+    host: null
+    org_id: null
+    organization: null
+    project: null
+    project_id: null
+    type: mem0_memory
+object_stores: {}
+optimizer:
+  eval_metrics:
+    accuracy:
+      direction: maximize
+      evaluator_name: accuracy
+      weight: 0.8
+    relevance:
+      direction: maximize
+      evaluator_name: relevance
+      weight: 0.2
+  multi_objective_combination_mode: harmonic
+  numeric:
+    enabled: true
+    n_trials: 50
+    sampler: null
+  output_path: !!python/object/apply:pathlib._local.PosixPath
+  - optimizer_results
+  prompt:
+    enabled: true
+    ga_crossover_rate: 0.7
+    ga_diversity_lambda: 0.0
+    ga_elitism: 2
+    ga_generations: 3
+    ga_mutation_rate: 0.2
+    ga_offspring_size: 6
+    ga_parallel_evaluations: 8
+    ga_population_size: 8
+    ga_selection_method: tournament
+    ga_tournament_size: 3
+    prompt_population_init_function: prompt_optimizer
+    prompt_recombination_function: prompt_recombiner
+  reps_per_param_set: 1
+  target: null
+retrievers:
+  vllm_retriever:
+    collection_name: vllm_docs
+    connection_args: {}
+    content_field: text
+    description: null
+    embedding_model: milvus_embedder
+    output_fields: null
+    search_params:
+      metric_type: L2
+    top_k: 10
+    type: milvus_retriever
+    uri: !!python/object:pydantic.networks.HttpUrl
+      _url: !!python/object/new:pydantic_core._pydantic_core.Url
+      - http://localhost:19530/
+    vector_field: vector
+  wix_retriever:
+    collection_name: wix_collection
+    connection_args: {}
+    content_field: text
+    description: null
+    embedding_model: milvus_embedder
+    output_fields: null
+    search_params:
+      metric_type: L2
+    top_k: 10
+    type: milvus_retriever
+    uri: !!python/object:pydantic.networks.HttpUrl
+      _url: !!python/object/new:pydantic_core._pydantic_core.Url
+      - http://localhost:19530/
+    vector_field: vector
+  wix_retriever_with_rerank:
+    collection_name: wix_collection
+    content_field: text
+    embedding_model: milvus_embedder
+    expansion_factor: 3
+    reranker_model_name: nvidia/llama-3.2-nv-rerankqa-1b-v2
+    search_params:
+      metric_type: L2
+    top_k: 5
+    type: milvus_rerank_retriever
+    uri: !!python/object:pydantic.networks.HttpUrl
+      _url: !!python/object/new:pydantic_core._pydantic_core.Url
+      - http://localhost:19530/
+ttc_strategies: {}
+workflow:
+  additional_instructions: null
+  description: ReAct Agent Workflow
+  include_tool_input_schema_in_tool_description: true
+  llm_name: !!python/object/new:nat.data_models.component_ref.LLMRef
+  - nim_llm
+  log_response_max_chars: 1000
+  max_history: 15
+  max_tool_calls: 15
+  normalize_tool_input_quotes: true
+  parse_agent_response_max_retries: 1
+  pass_tool_call_errors_to_agent: true
+  retry_agent_response_parsing_errors: true
+  system_prompt: null
+  tool_call_max_retries: 1
+  tool_names:
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - vllm_retriever_tool
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - wix_retriever_tool_with_rerank
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - add_memory
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - get_memory
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - web_search_tool
+  - !!python/object/new:nat.data_models.component_ref.FunctionRef
+    - code_generation_tool
+  type: react_agent
+  verbose: true
+  workflow_alias: null

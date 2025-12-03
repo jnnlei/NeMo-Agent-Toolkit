@@ -1,0 +1,252 @@
+[
+    {
+        "id": "1",
+        "question": "What are the two primary deployment options available for NVIDIA NIM for Large Language Models?",
+        "answer": "NVIDIA NIM offers two primary deployment options: the Multi-LLM compatible NIM, which is a single container supporting a broad range of models for maximum flexibility, and the LLM-specific NIM, which are containers optimized for individual models or model families to deliver maximum performance."
+    },
+    {
+        "id": "2",
+        "question": "How does NVIDIA NIM handle model optimization when a container is first deployed?",
+        "answer": "When a NIM is first deployed, it inspects the local hardware configuration and the available optimized models in the model registry. It then automatically chooses the best version of the model for the available hardware. For supported NVIDIA GPUs, it downloads an optimized TensorRT-LLM engine; for others, it uses a non-optimized model with vLLM."
+    },
+    {
+        "id": "3",
+        "question": "What is the purpose of NIM Telemetry and is it enabled by default?",
+        "answer": "NIM Telemetry helps NVIDIA deliver a faster, more reliable experience by collecting anonymous system and NIM-level insights to identify bottlenecks and improve compatibility. It is an experimental feature and is disabled by default; users must explicitly enable it using environment variables."
+    },
+    {
+        "id": "4",
+        "question": "Which API standard does NVIDIA NIM use for its programming model?",
+        "answer": "NVIDIA NIM provides an OpenAI API compatible programming model, allowing developers to easily integrate it into existing workflows and applications that support the OpenAI standard, along with custom NVIDIA extensions for additional functionality."
+    },
+    {
+        "id": "5",
+        "question": "What are the security responsibilities of the user when using the Multi-LLM NIM container with models from Hugging Face?",
+        "answer": "When using the Multi-LLM NIM container with models sourced from non-NVIDIA locations like Hugging Face, the user is responsible for verifying the safety and integrity of the models. This includes ensuring weights are in safetensors format, conducting manual code reviews, and validating model signatures."
+    },
+    {
+        "id": "6",
+        "question": "Describe the process of performing a multi-node deployment for large models using NVIDIA NIM.",
+        "answer": "For models that are too large to fit on a single node, NVIDIA NIM supports multi-node deployment using Kubernetes. This involves configuring the Helm chart with the number of GPUs and nodes required, setting up a specialized network interface (like InfiniBand or RoCE) for inter-node communication, and ensuring the underlying cluster supports MPI operator for orchestration."
+    },
+    {
+        "id": "7",
+        "question": "What environment variable controls the maximum number of tokens allowed in a single request to NVIDIA NIM?",
+        "answer": "The environment variable `NIM_MAX_REQUEST_NUM_TOKENS` is used to control the maximum number of tokens (input + output) allowed in a single request. Adjusting this helps manage memory usage and prevents out-of-memory (OOM) errors on requests with extremely long contexts."
+    },
+    {
+        "id": "8",
+        "question": "How does NVIDIA NIM support Function Calling (Tool Calling)?",
+        "answer": "NVIDIA NIM supports Function Calling by allowing the model to detect when a user's prompt implies the need for an external tool. The model outputs a structured JSON object containing the tool name and arguments, which the client application can execute. The result is then fed back to the NIM to generate the final natural language response."
+    },
+    {
+        "id": "9",
+        "question": "What is the role of the KV Cache Reuse feature in NVIDIA NIM?",
+        "answer": "KV Cache Reuse (or prompt caching) improves performance for requests that share a common prefix (such as a long system prompt or few-shot examples). By caching the Key-Value states of the attention mechanism for the shared prefix, NIM avoids recomputing them for every request, significantly reducing latency and increasing throughput."
+    },
+    {
+        "id": "10",
+        "question": "List three high-performance features provided by NVIDIA NIM.",
+        "answer": "Three high-performance features provided by NVIDIA NIM include: 1) Scalable Deployment that scales from few to millions of users, 2) Advanced Language Model support with prebuilt optimized engines (TensorRT-LLM), and 3) Flexible Integration via OpenAI compatible APIs."
+    },
+    {
+        "id": "11",
+        "question": "What specific hardware requirement is needed to run BF16 precision models on NVIDIA NIM?",
+        "answer": "To run models with BF16 (BFloat16) precision on NVIDIA NIM, the underlying NVIDIA GPUs must have a CUDA compute capability of 8.0 or higher (e.g., Ampere architecture like A100 or newer)."
+    },
+    {
+        "id": "12",
+        "question": "Explain the difference between 'Optimized' and 'Generic' profiles in NVIDIA NIM.",
+        "answer": "Optimized profiles in NVIDIA NIM use pre-built TensorRT-LLM engines specifically tuned for a given model and GPU combination (e.g., Llama 3 on H100), offering the highest throughput and lowest latency. Generic profiles use a fallback runtime (typically vLLM) that works on a wider range of hardware but may not offer the same level of performance optimization."
+    },
+    {
+        "id": "13",
+        "question": "How can a user specify a specific model profile when launching a NIM container?",
+        "answer": "A user can specify a model profile by setting the `NIM_MODEL_PROFILE` environment variable to the unique identifier of the desired profile (e.g., `llama3-8b-instruct-fp8`) when launching the Docker container."
+    },
+    {
+        "id": "14",
+        "question": "What mechanisms does NVIDIA NIM use to ensure enterprise-grade security?",
+        "answer": "NVIDIA NIM ensures enterprise-grade security by using `safetensors` to prevent code execution from model weights, constantly monitoring and patching Common Vulnerabilities and Exposures (CVEs) in the container stack, and conducting rigorous internal penetration testing before release."
+    },
+    {
+        "id": "15",
+        "question": "Can NVIDIA NIM be deployed in an air-gapped environment? If so, how?",
+        "answer": "Yes, NVIDIA NIM can be deployed in an air-gapped environment. This requires downloading the container images and model artifacts (using the `nim download` command or by pulling specifically tagged images) on a machine with internet access, transferring them to the air-gapped network, and then launching the container pointing to the local model cache."
+    },
+    {
+        "id": "16",
+        "question": "What is the purpose of the 'Thinking Budget Control' feature in reasoning models supported by NIM?",
+        "answer": "For reasoning models (like DeepSeek-R1 or similar chain-of-thought models), 'Thinking Budget Control' allows users to limit or specify the amount of compute resources or tokens dedicated to the model's internal reasoning process (the 'thought' chain) before it generates the final visible response."
+    },
+    {
+        "id": "17",
+        "question": "How does NVIDIA NIM handle structured generation?",
+        "answer": "NVIDIA NIM supports structured generation by allowing users to provide a JSON schema or regex pattern. The inference engine constrains the model's output to strictly follow the defined structure, ensuring that the generated text (usually JSON) is syntactically valid and matches the required format."
+    },
+    {
+        "id": "18",
+        "question": "What is the recommended way to check the health of a running NIM service?",
+        "answer": "The recommended way to check the health of a running NIM service is to query the `/v1/health/ready` endpoint. A 200 OK response indicates that the service is fully initialized, the model is loaded, and it is ready to accept inference requests."
+    },
+    {
+        "id": "19",
+        "question": "What is LoRA and how does NVIDIA NIM support it?",
+        "answer": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique. NVIDIA NIM supports LoRA by allowing users to dynamically load LoRA adapters at runtime on top of a base model. This enables serving multiple fine-tuned variants from a single running base model instance, saving significant GPU memory."
+    },
+    {
+        "id": "20",
+        "question": "Describe the role of the sidecar container in a Kubernetes deployment of NVIDIA NIM.",
+        "answer": "In a Kubernetes deployment, a sidecar container is often used alongside the main NIM container to handle tasks such as metrics collection (exporting to Prometheus), log aggregation, or managing model downloads and caching (init containers) to ensure the main inference service starts smoothly."
+    },
+    {
+        "id": "21",
+        "question": "What are the benefits of participating in the NVIDIA Developer Program regarding NIM?",
+        "answer": "The NVIDIA Developer Program provides free access to self-hosting NVIDIA NIMs and microservices on up to 16 GPUs on any infrastructure (cloud, data center, or workstation). It is ideal for research, development, and testing purposes before moving to an enterprise license."
+    },
+    {
+        "id": "22",
+        "question": "How does NIM simplify the deployment of models compared to building a custom inference stack?",
+        "answer": "NIM abstracts away the complexity of inference internals such as execution engines, runtime operations, and model optimization. It provides a pre-packaged container that automatically selects the best engine (TRT-LLM or vLLM) for the hardware, saving developers from manually compiling engines or managing complex dependencies."
+    },
+    {
+        "id": "23",
+        "question": "What metrics can be monitored using NIM's per-request metrics feature?",
+        "answer": "NIM's per-request metrics feature allows monitoring of key performance indicators such as time-to-first-token (TTFT), inter-token latency (ITL), total request latency, and token throughput. These metrics help in analyzing the performance characteristics of specific requests or model configurations."
+    },
+    {
+        "id": "24",
+        "question": "How does OCI S3 Object Storage integration work with NVIDIA NIM?",
+        "answer": "NVIDIA NIM can integrate with OCI (Oracle Cloud Infrastructure) or generic S3-compatible object storage to load models directly from cloud buckets. This is useful for managing large model weights that are stored centrally, reducing the need to copy them to local disk storage on every node."
+    },
+    {
+        "id": "25",
+        "question": "What is the 'Repository Override' feature in NIM configuration?",
+        "answer": "Repository Override allows users to specify a custom path or source for model artifacts, bypassing the default NGC or Hugging Face locations. This is particularly useful when deploying custom fine-tuned models or when operating in environments with restricted internet access where models are hosted on internal servers."
+    },
+    {
+        "id": "26",
+        "question": "Does NVIDIA NIM support message roles other than 'user' and 'assistant'?",
+        "answer": "Yes, NVIDIA NIM supports various message roles as defined by the chat template of the underlying model, including 'system' for setting the behavior of the assistant, and potentially custom roles if the model architecture supports them."
+    },
+    {
+        "id": "27",
+        "question": "What is the significance of 'Prompt Embeds' in NIM?",
+        "answer": "Prompt Embeds allow users to pass pre-computed embeddings or soft prompts to the model instead of raw text tokens. This enables advanced techniques like prompt tuning or multimodal inputs where embeddings from another modality (like image embeddings) are directly fed into the LLM."
+    },
+    {
+        "id": "28",
+        "question": "How can developers benchmark the performance of a NIM deployment?",
+        "answer": "Developers can benchmark a NIM deployment using the included benchmarking tools or by sending synthetic requests to the `/v1/completions` or `/v1/chat/completions` endpoints while monitoring the metrics exposed at the `/metrics` endpoint. NVIDIA also provides `genai-perf` tools for rigorous performance testing."
+    },
+    {
+        "id": "29",
+        "question": "What is the difference between a Reward Model and a Generative Model in the context of NIM?",
+        "answer": "A Generative Model (like Llama 3) generates text based on a prompt. A Reward Model (used in RLHF or steering) takes a prompt and a response as input and outputs a scalar score indicating the quality or alignment of the response. NIM supports serving both types of models."
+    },
+    {
+        "id": "30",
+        "question": "How does NIM handle 'Custom Guided Decoding Backends'?",
+        "answer": "Custom Guided Decoding Backends allow developers to plug in specialized logic to control the token generation process. This goes beyond simple regex/JSON schemas and can involve complex constraints or integration with external knowledge bases to guide the beam search or sampling process."
+    },
+    {
+        "id": "31",
+        "question": "What is the default port for the NIM OpenAI-compatible API server?",
+        "answer": "The default port for the NIM API server is typically 8000. Users can access the API documentation at `http://localhost:8000/docs` and send requests to `http://localhost:8000/v1/`."
+    },
+    {
+        "id": "32",
+        "question": "Can I run multiple different NIM containers on the same GPU?",
+        "answer": "While it is technically possible to run multiple containers if GPU memory permits (using MIG or time-slicing), it is generally recommended to dedicate GPUs to a single NIM instance for predictable performance. Multi-LLM NIMs allow serving multiple models from a single container, which is a better approach for resource sharing."
+    },
+    {
+        "id": "33",
+        "question": "What is the `NGC_API_KEY` used for in NVIDIA NIM setup?",
+        "answer": "The `NGC_API_KEY` is used to authenticate with the NVIDIA NGC registry. It is required to pull the NIM container images and to download model artifacts that are gated or hosted on NGC."
+    },
+    {
+        "id": "34",
+        "question": "How does NVIDIA NIM support Llama Stack API?",
+        "answer": "NVIDIA NIM implements the Llama Stack API, which provides a standardized interface for interacting with Llama models. This ensures compatibility with the broader Llama ecosystem and tools built on top of the Llama Stack specifications."
+    },
+    {
+        "id": "35",
+        "question": "What is parameter-efficient fine-tuning (PEFT) in the context of NIM?",
+        "answer": "PEFT in NIM refers to techniques like LoRA or P-Tuning where only a small subset of parameters (adapters) are trained. NIM can serve these lightweight adapters on top of a frozen base model, allowing for efficient customization without the cost of full model fine-tuning."
+    },
+    {
+        "id": "36",
+        "question": "How does NIM ensure compatibility with different GPU architectures?",
+        "answer": "NIM containers include multiple backend engines (like different versions of TensorRT-LLM builds) or can compile engines JIT (Just-In-Time). At startup, it detects the specific GPU architecture (e.g., Hopper, Ampere) and selects or builds the appropriate engine version to ensure compatibility and optimal performance."
+    },
+    {
+        "id": "37",
+        "question": "What type of data does NIM Telemetry explicitly NOT collect?",
+        "answer": "NIM Telemetry explicitly does NOT collect the content of user prompts, generated responses, or any personally identifiable information (PII). It focuses solely on system performance metrics, error rates, and configuration metadata."
+    },
+    {
+        "id": "38",
+        "question": "How can I use NVIDIA NIM to perform sentiment analysis?",
+        "answer": "You can perform sentiment analysis by deploying a generic LLM NIM (like Llama 3) and providing it with a prompt that instructs the model to classify the sentiment of a given text (e.g., 'Classify the sentiment of the following text as Positive, Negative, or Neutral: ...'). Alternatively, you could fine-tune a model for this specific task and serve it via NIM."
+    },
+    {
+        "id": "39",
+        "question": "What is the `vLLM` library's role in NVIDIA NIM?",
+        "answer": "`vLLM` serves as the generic or fallback runtime in NVIDIA NIM. It is used when a highly optimized TensorRT-LLM engine is not available for the specific model or hardware configuration, ensuring that the model can still run efficiently with features like PagedAttention."
+    },
+    {
+        "id": "40",
+        "question": "Describe the 'Deploy with Helm' option for NVIDIA NIM.",
+        "answer": "'Deploy with Helm' is the standard method for deploying NIMs on Kubernetes clusters. NVIDIA provides Helm charts that automate the configuration of pods, services, ingress, and scaling policies, simplifying the management of NIM lifecycles in production environments."
+    },
+    {
+        "id": "41",
+        "question": "What is the significance of 'Notes on NIM Container Variants' in the documentation?",
+        "answer": "This section explains the different tags or variants of NIM images available (e.g., specific CUDA versions, developer vs. production builds). Choosing the correct variant is important for compatibility with the host driver version and for minimizing image size."
+    },
+    {
+        "id": "42",
+        "question": "How does NIM facilitate language translation tasks?",
+        "answer": "NIM facilitates language translation by serving powerful multilingual LLMs. Developers can simply send text to the API with a prompt like 'Translate the following English text to French:', and the NIM-managed model generates the translation with high accuracy and low latency."
+    },
+    {
+        "id": "43",
+        "question": "What is the relationship between NVIDIA AI Enterprise and NIM?",
+        "answer": "NVIDIA AI Enterprise is the software suite and support subscription that includes NVIDIA NIM. While NIMs can be trialed for free, an NVIDIA AI Enterprise license is required for production deployments to get enterprise-grade security, long-term support (LTS), and API stability guarantees."
+    },
+    {
+        "id": "44",
+        "question": "How does NIM handle concurrent requests?",
+        "answer": "NIM uses advanced scheduling techniques like continuous batching (or in-flight batching). Instead of waiting for a whole batch to finish, it dynamically inserts new requests into the running batch as soon as capacity becomes available, significantly improving throughput and GPU utilization under high concurrency."
+    },
+    {
+        "id": "45",
+        "question": "Can I use local disk storage for caching models in a NIM deployment?",
+        "answer": "Yes, by default, NIM caches downloaded models in the `~/.cache/nim` directory (or a path specified by `NIM_CACHE_PATH`). Mapping this directory to a persistent volume or local disk ensures that models don't need to be re-downloaded when containers are restarted."
+    },
+    {
+        "id": "46",
+        "question": "What is the 'Observability' feature in the context of NIM?",
+        "answer": "Observability in NIM refers to the built-in capability to expose metrics (via Prometheus), logs, and traces (via OpenTelemetry). This allows operations teams to visualize system health, track request flows, and debug latency issues in real-time using standard monitoring tools like Grafana."
+    },
+    {
+        "id": "47",
+        "question": "How does the 'Multi-LLM NIM' verify model integrity?",
+        "answer": "The Multi-LLM NIM relies on the user to verify model integrity, especially for models from external sources. However, it encourages the use of `safetensors` format and may perform basic checks to ensure the model files are valid and readable before attempting to load them."
+    },
+    {
+        "id": "48",
+        "question": "What is the advantage of using 'Prompt Embeds' over raw text?",
+        "answer": "Using Prompt Embeds reduces the computational overhead of tokenizing and processing fixed prompts repeatedly. It also allows for the injection of continuous vectors that might represent concepts not easily expressible in natural language, enabling more fine-grained control over model behavior."
+    },
+    {
+        "id": "49",
+        "question": "How do I enable the 'Deterministic Generation Mode' in NIM?",
+        "answer": "Deterministic Generation Mode can be enabled by setting a specific random seed in the request (e.g., `seed=42`) and ensuring that any non-deterministic CUDA operations are disabled via environment configuration. This ensures that the same input prompt always produces the exact same output tokens."
+    },
+    {
+        "id": "50",
+        "question": "What should I do if I encounter a 'CUDA Out of Memory' error with NIM?",
+        "answer": "If you encounter a 'CUDA Out of Memory' error, you should try: 1) Reducing the `max_batch_size`, 2) Limiting `NIM_MAX_REQUEST_NUM_TOKENS`, 3) Using a model profile with higher quantization (e.g., FP8 instead of FP16), or 4) Enabling tensor parallelism to distribute the model across more GPUs."
+    }
+]

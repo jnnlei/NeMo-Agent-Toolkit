@@ -220,3 +220,6 @@ examples/notebooks/examples/retail_sales_agent/deploy/volumes/
 
 # End of https://www.gitignore.io/api/vim,c++,cmake,python,synology
 /.idea
+
+# Ignore specific large files
+eval_output/local_run_20251127_073333/all_requests_profiler_traces.json
