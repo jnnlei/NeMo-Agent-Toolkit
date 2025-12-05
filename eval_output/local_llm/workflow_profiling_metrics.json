@@ -1,0 +1,761 @@
+{
+  "nested_stack_analysis": {
+    "concurrency": {
+      "timeline_segments": [
+        [
+          1764836100.1701272,
+          1764836100.1815238,
+          1
+        ],
+        [
+          1764836100.1815238,
+          1764836100.1945179,
+          2
+        ],
+        [
+          1764836100.1945179,
+          1764836100.2058775,
+          3
+        ],
+        [
+          1764836100.2058775,
+          1764836105.3578384,
+          4
+        ],
+        [
+          1764836105.3578384,
+          1764836105.3889961,
+          3
+        ],
+        [
+          1764836105.3889961,
+          1764836105.4642706,
+          2
+        ],
+        [
+          1764836105.4642706,
+          1764836105.5002964,
+          3
+        ],
+        [
+          1764836105.5002964,
+          1764836110.01238,
+          4
+        ],
+        [
+          1764836110.01238,
+          1764836110.0456924,
+          3
+        ],
+        [
+          1764836110.0456924,
+          1764836110.0466237,
+          4
+        ],
+        [
+          1764836110.0466237,
+          1764836110.048361,
+          5
+        ],
+        [
+          1764836110.048361,
+          1764836112.5316043,
+          6
+        ],
+        [
+          1764836112.5316043,
+          1764836112.5321186,
+          5
+        ],
+        [
+          1764836112.5321186,
+          1764836112.533027,
+          4
+        ],
+        [
+          1764836112.533027,
+          1764836112.5508592,
+          3
+        ],
+        [
+          1764836112.5508592,
+          1764836115.6815763,
+          4
+        ],
+        [
+          1764836115.6815763,
+          1764836115.7199714,
+          3
+        ],
+        [
+          1764836115.7199714,
+          1764836115.7538483,
+          3
+        ],
+        [
+          1764836115.7538483,
+          1764836117.6442876,
+          4
+        ],
+        [
+          1764836117.6442876,
+          1764836117.672333,
+          3
+        ],
+        [
+          1764836117.672333,
+          1764836117.8020456,
+          2
+        ],
+        [
+          1764836117.8020456,
+          1764836117.8243325,
+          3
+        ],
+        [
+          1764836117.8243325,
+          1764836119.8736928,
+          4
+        ],
+        [
+          1764836119.8736928,
+          1764836119.8994324,
+          3
+        ],
+        [
+          1764836119.8994324,
+          1764836119.9281156,
+          3
+        ],
+        [
+          1764836119.9281156,
+          1764836122.0008376,
+          4
+        ],
+        [
+          1764836122.0008376,
+          1764836122.0252082,
+          3
+        ],
+        [
+          1764836122.0252082,
+          1764836122.1563568,
+          2
+        ],
+        [
+          1764836122.1563568,
+          1764836122.1828713,
+          3
+        ],
+        [
+          1764836122.1828713,
+          1764836122.3022418,
+          4
+        ],
+        [
+          1764836122.3022418,
+          1764836122.3268125,
+          3
+        ],
+        [
+          1764836122.3268125,
+          1764836122.327706,
+          4
+        ],
+        [
+          1764836122.327706,
+          1764836122.3338113,
+          5
+        ],
+        [
+          1764836122.3338113,
+          1764836123.294826,
+          6
+        ],
+        [
+          1764836123.294826,
+          1764836123.2953267,
+          5
+        ],
+        [
+          1764836123.2953267,
+          1764836123.2961822,
+          4
+        ],
+        [
+          1764836123.2961822,
+          1764836123.3126888,
+          3
+        ],
+        [
+          1764836123.3126888,
+          1764836126.8679938,
+          4
+        ],
+        [
+          1764836126.8679938,
+          1764836126.8978972,
+          3
+        ],
+        [
+          1764836126.8978972,
+          1764836126.8991919,
+          3
+        ],
+        [
+          1764836126.8991919,
+          1764836126.921198,
+          4
+        ],
+        [
+          1764836126.921198,
+          1764836126.9393857,
+          3
+        ],
+        [
+          1764836126.9393857,
+          1764836130.657782,
+          4
+        ],
+        [
+          1764836130.657782,
+          1764836130.6906056,
+          3
+        ],
+        [
+          1764836130.6906056,
+          1764836130.7708912,
+          2
+        ],
+        [
+          1764836130.7708912,
+          1764836130.7974572,
+          3
+        ],
+        [
+          1764836130.7974572,
+          1764836132.5554738,
+          4
+        ],
+        [
+          1764836132.5554738,
+          1764836132.5852733,
+          3
+        ],
+        [
+          1764836132.5852733,
+          1764836133.6522772,
+          2
+        ],
+        [
+          1764836133.6522772,
+          1764836133.6697783,
+          3
+        ],
+        [
+          1764836133.6697783,
+          1764836137.4231188,
+          4
+        ],
+        [
+          1764836137.4231188,
+          1764836137.4526618,
+          3
+        ],
+        [
+          1764836137.4526618,
+          1764836137.5178354,
+          2
+        ],
+        [
+          1764836137.5178354,
+          1764836137.5426416,
+          3
+        ],
+        [
+          1764836137.5426416,
+          1764836141.1769862,
+          4
+        ],
+        [
+          1764836141.1769862,
+          1764836141.206343,
+          3
+        ],
+        [
+          1764836141.206343,
+          1764836145.7235942,
+          2
+        ],
+        [
+          1764836145.7235942,
+          1764836145.7545335,
+          1
+        ]
+      ],
+      "p50": 4.0,
+      "p90": 4.0,
+      "p95": 6.0,
+      "p99": 6.0
+    },
+    "node_metrics": {
+      "96736b55-7740-4f59-aca0-aae14a37626b": {
+        "uuid": "96736b55-7740-4f59-aca0-aae14a37626b",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836100.1701272,
+        "end_time": 1764836105.3889961,
+        "duration": 5.218868970870972,
+        "self_time": 0.05554842948913574,
+        "subtree_time": 5.218868970870972,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 5.218868970870972
+      },
+      "b4580b7c-7a57-45a6-bdf5-c0d6084ddd08": {
+        "uuid": "b4580b7c-7a57-45a6-bdf5-c0d6084ddd08",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836100.1945179,
+        "end_time": 1764836105.3578384,
+        "duration": 5.163320541381836,
+        "self_time": 5.163320541381836,
+        "subtree_time": 5.163320541381836,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 5.163320541381836
+      },
+      "20da5ad5-55c7-4ee3-bd0c-313f01fc47fa": {
+        "uuid": "20da5ad5-55c7-4ee3-bd0c-313f01fc47fa",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836100.1815238,
+        "end_time": 1764836117.672333,
+        "duration": 17.490809202194214,
+        "self_time": 0.10354399681091309,
+        "subtree_time": 17.490809202194214,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 17.490809202194214
+      },
+      "79ff3608-7dda-4f0a-9719-5edf5c3ac327": {
+        "uuid": "79ff3608-7dda-4f0a-9719-5edf5c3ac327",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836100.2058775,
+        "end_time": 1764836110.01238,
+        "duration": 9.806502342224121,
+        "self_time": 9.806502342224121,
+        "subtree_time": 9.806502342224121,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 9.806502342224121
+      },
+      "e32112d7-7e28-4600-b142-a3ab69bf4775": {
+        "uuid": "e32112d7-7e28-4600-b142-a3ab69bf4775",
+        "operation_type": "TOOL",
+        "operation_name": "web_search_tool",
+        "start_time": 1764836110.0456924,
+        "end_time": 1764836112.533027,
+        "duration": 2.4873344898223877,
+        "self_time": 0.0018396377563476562,
+        "subtree_time": 2.4873344898223877,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 2.4873344898223877
+      },
+      "f55a2f42-1000-466b-b47b-edd8004e3627": {
+        "uuid": "f55a2f42-1000-466b-b47b-edd8004e3627",
+        "operation_type": "FUNCTION",
+        "operation_name": "web_search_tool",
+        "start_time": 1764836110.0466237,
+        "end_time": 1764836112.5321186,
+        "duration": 2.48549485206604,
+        "self_time": 0.0022516250610351562,
+        "subtree_time": 2.48549485206604,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 2.48549485206604
+      },
+      "69191714-f3c8-4353-9829-4f833de79052": {
+        "uuid": "69191714-f3c8-4353-9829-4f833de79052",
+        "operation_type": "TOOL",
+        "operation_name": "tavily_search",
+        "start_time": 1764836110.048361,
+        "end_time": 1764836112.5316043,
+        "duration": 2.483243227005005,
+        "self_time": 2.483243227005005,
+        "subtree_time": 2.483243227005005,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 2.483243227005005
+      },
+      "dfa9b4e0-059c-4efd-9d2f-426c8fbb50d5": {
+        "uuid": "dfa9b4e0-059c-4efd-9d2f-426c8fbb50d5",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836112.5508592,
+        "end_time": 1764836117.6442876,
+        "duration": 5.093428373336792,
+        "self_time": 5.093428373336792,
+        "subtree_time": 5.093428373336792,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 5.093428373336792
+      },
+      "5ad31cb2-87d7-435e-a9ef-e7a00898b982": {
+        "uuid": "5ad31cb2-87d7-435e-a9ef-e7a00898b982",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836105.4642706,
+        "end_time": 1764836122.0252082,
+        "duration": 16.560937643051147,
+        "self_time": 6.379657745361328,
+        "subtree_time": 22.753504037857056,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 22.753504037857056
+      },
+      "e38da73e-7037-4d0f-81c6-5b9920e8f75a": {
+        "uuid": "e38da73e-7037-4d0f-81c6-5b9920e8f75a",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836105.5002964,
+        "end_time": 1764836115.6815763,
+        "duration": 10.18127989768982,
+        "self_time": 10.18127989768982,
+        "subtree_time": 10.18127989768982,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 10.18127989768982
+      },
+      "a6479762-ade7-4d8f-85fa-a2db256b8a99": {
+        "uuid": "a6479762-ade7-4d8f-85fa-a2db256b8a99",
+        "operation_type": "TOOL",
+        "operation_name": "get_memory",
+        "start_time": 1764836115.7199714,
+        "end_time": 1764836115.7199714,
+        "duration": 0.0,
+        "self_time": 0.0,
+        "subtree_time": 6.192566394805908,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 6.192566394805908
+      },
+      "5ae28e12-1d8c-4f40-bc01-f10f44fdffbf": {
+        "uuid": "5ae28e12-1d8c-4f40-bc01-f10f44fdffbf",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836115.7538483,
+        "end_time": 1764836119.8736928,
+        "duration": 4.119844436645508,
+        "self_time": 4.119844436645508,
+        "subtree_time": 4.119844436645508,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 4.119844436645508
+      },
+      "132102d3-f810-43f1-aed7-8c5d07168e45": {
+        "uuid": "132102d3-f810-43f1-aed7-8c5d07168e45",
+        "operation_type": "TOOL",
+        "operation_name": "get_memory",
+        "start_time": 1764836119.8994324,
+        "end_time": 1764836119.8994324,
+        "duration": 0.0,
+        "self_time": 0.0,
+        "subtree_time": 2.0727219581604004,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 2.0727219581604004
+      },
+      "1388b061-fab1-406f-8c43-0f7e8a75ba91": {
+        "uuid": "1388b061-fab1-406f-8c43-0f7e8a75ba91",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836119.9281156,
+        "end_time": 1764836122.0008376,
+        "duration": 2.0727219581604004,
+        "self_time": 2.0727219581604004,
+        "subtree_time": 2.0727219581604004,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 2.0727219581604004
+      },
+      "cb736d48-9df7-480a-a374-4b62fdcfcba3": {
+        "uuid": "cb736d48-9df7-480a-a374-4b62fdcfcba3",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836117.8020456,
+        "end_time": 1764836132.5852733,
+        "duration": 14.783227682113647,
+        "self_time": 5.780643701553345,
+        "subtree_time": 20.421321868896484,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 20.421321868896484
+      },
+      "ece12482-cedd-4534-bbe7-ed4732423635": {
+        "uuid": "ece12482-cedd-4534-bbe7-ed4732423635",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836117.8243325,
+        "end_time": 1764836122.3022418,
+        "duration": 4.477909326553345,
+        "self_time": 4.477909326553345,
+        "subtree_time": 4.477909326553345,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 4.477909326553345
+      },
+      "69b24a90-5fb2-4092-949a-af4073505081": {
+        "uuid": "69b24a90-5fb2-4092-949a-af4073505081",
+        "operation_type": "TOOL",
+        "operation_name": "web_search_tool",
+        "start_time": 1764836122.3268125,
+        "end_time": 1764836123.2961822,
+        "duration": 0.969369649887085,
+        "self_time": 0.0017490386962890625,
+        "subtree_time": 0.969369649887085,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.969369649887085
+      },
+      "397c8b1a-0477-4223-9413-2b2b0b5ec354": {
+        "uuid": "397c8b1a-0477-4223-9413-2b2b0b5ec354",
+        "operation_type": "FUNCTION",
+        "operation_name": "web_search_tool",
+        "start_time": 1764836122.327706,
+        "end_time": 1764836123.2953267,
+        "duration": 0.9676206111907959,
+        "self_time": 0.006605863571166992,
+        "subtree_time": 0.9676206111907959,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.9676206111907959
+      },
+      "285bb2da-950e-4fef-85f2-264f88180245": {
+        "uuid": "285bb2da-950e-4fef-85f2-264f88180245",
+        "operation_type": "TOOL",
+        "operation_name": "tavily_search",
+        "start_time": 1764836122.3338113,
+        "end_time": 1764836123.294826,
+        "duration": 0.9610147476196289,
+        "self_time": 0.9610147476196289,
+        "subtree_time": 0.9610147476196289,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.9610147476196289
+      },
+      "221324bc-a0a0-41e9-bbcc-baadb3c9d6bd": {
+        "uuid": "221324bc-a0a0-41e9-bbcc-baadb3c9d6bd",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836123.3126888,
+        "end_time": 1764836126.8679938,
+        "duration": 3.555305004119873,
+        "self_time": 3.555305004119873,
+        "subtree_time": 3.555305004119873,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 3.555305004119873
+      },
+      "e71e0b9c-b57b-4c2a-b4b6-e2255ac09acd": {
+        "uuid": "e71e0b9c-b57b-4c2a-b4b6-e2255ac09acd",
+        "operation_type": "TOOL",
+        "operation_name": "wix_retriever_tool",
+        "start_time": 1764836126.8978972,
+        "end_time": 1764836126.8978972,
+        "duration": 0.0,
+        "self_time": 0.0,
+        "subtree_time": 5.638094186782837,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 5.638094186782837
+      },
+      "0dbe0876-4854-4b09-b875-9e855106591b": {
+        "uuid": "0dbe0876-4854-4b09-b875-9e855106591b",
+        "operation_type": "FUNCTION",
+        "operation_name": "wix_retriever_tool",
+        "start_time": 1764836126.8991919,
+        "end_time": 1764836126.921198,
+        "duration": 0.02200603485107422,
+        "self_time": 0.02200603485107422,
+        "subtree_time": 0.02200603485107422,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.02200603485107422
+      },
+      "b491784c-2ee5-4364-bd25-b88304acbc2a": {
+        "uuid": "b491784c-2ee5-4364-bd25-b88304acbc2a",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836126.9393857,
+        "end_time": 1764836132.5554738,
+        "duration": 5.616088151931763,
+        "self_time": 5.616088151931763,
+        "subtree_time": 5.616088151931763,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 5.616088151931763
+      },
+      "a006ea5b-87bc-40dc-a636-fdb5050c64f7": {
+        "uuid": "a006ea5b-87bc-40dc-a636-fdb5050c64f7",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836122.1563568,
+        "end_time": 1764836130.6906056,
+        "duration": 8.53424882888794,
+        "self_time": 0.05933809280395508,
+        "subtree_time": 8.53424882888794,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 8.53424882888794
+      },
+      "8e85ddfa-f7aa-485f-8d66-573001be3d5c": {
+        "uuid": "8e85ddfa-f7aa-485f-8d66-573001be3d5c",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836122.1828713,
+        "end_time": 1764836130.657782,
+        "duration": 8.474910736083984,
+        "self_time": 8.474910736083984,
+        "subtree_time": 8.474910736083984,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 8.474910736083984
+      },
+      "2862245c-812f-4f0f-b8c4-5f23e7e2e8dd": {
+        "uuid": "2862245c-812f-4f0f-b8c4-5f23e7e2e8dd",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836130.7708912,
+        "end_time": 1764836137.4526618,
+        "duration": 6.68177056312561,
+        "self_time": 0.056108951568603516,
+        "subtree_time": 6.68177056312561,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 6.68177056312561
+      },
+      "739648de-bcb3-4684-a7df-83f81ee99593": {
+        "uuid": "739648de-bcb3-4684-a7df-83f81ee99593",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836130.7974572,
+        "end_time": 1764836137.4231188,
+        "duration": 6.625661611557007,
+        "self_time": 6.625661611557007,
+        "subtree_time": 6.625661611557007,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 6.625661611557007
+      },
+      "61826f4e-77c8-43ed-9467-447c6525400e": {
+        "uuid": "61826f4e-77c8-43ed-9467-447c6525400e",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836133.6522772,
+        "end_time": 1764836141.206343,
+        "duration": 7.554065704345703,
+        "self_time": 0.04685783386230469,
+        "subtree_time": 7.554065704345703,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 7.554065704345703
+      },
+      "608cfff1-1af1-40e0-8302-8a3a8441994f": {
+        "uuid": "608cfff1-1af1-40e0-8302-8a3a8441994f",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836133.6697783,
+        "end_time": 1764836141.1769862,
+        "duration": 7.507207870483398,
+        "self_time": 7.507207870483398,
+        "subtree_time": 7.507207870483398,
+        "concurrency_midpoint": 3.0,
+        "bottleneck_score": 7.507207870483398
+      },
+      "ab03ae88-9c20-415e-999d-0692607b030d": {
+        "uuid": "ab03ae88-9c20-415e-999d-0692607b030d",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836137.5178354,
+        "end_time": 1764836145.7545335,
+        "duration": 8.236698150634766,
+        "self_time": 0.055745601654052734,
+        "subtree_time": 8.236698150634766,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.236698150634766
+      },
+      "1fce7859-df48-4a3d-9be7-fbfe2b468b58": {
+        "uuid": "1fce7859-df48-4a3d-9be7-fbfe2b468b58",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836137.5426416,
+        "end_time": 1764836145.7235942,
+        "duration": 8.180952548980713,
+        "self_time": 8.180952548980713,
+        "subtree_time": 8.180952548980713,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 8.180952548980713
+      }
+    },
+    "top_bottlenecks": [
+      {
+        "uuid": "5ad31cb2-87d7-435e-a9ef-e7a00898b982",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836105.4642706,
+        "end_time": 1764836122.0252082,
+        "duration": 16.560937643051147,
+        "self_time": 6.379657745361328,
+        "subtree_time": 22.753504037857056,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 22.753504037857056
+      },
+      {
+        "uuid": "cb736d48-9df7-480a-a374-4b62fdcfcba3",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836117.8020456,
+        "end_time": 1764836132.5852733,
+        "duration": 14.783227682113647,
+        "self_time": 5.780643701553345,
+        "subtree_time": 20.421321868896484,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 20.421321868896484
+      },
+      {
+        "uuid": "20da5ad5-55c7-4ee3-bd0c-313f01fc47fa",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1764836100.1815238,
+        "end_time": 1764836117.672333,
+        "duration": 17.490809202194214,
+        "self_time": 0.10354399681091309,
+        "subtree_time": 17.490809202194214,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 17.490809202194214
+      },
+      {
+        "uuid": "e38da73e-7037-4d0f-81c6-5b9920e8f75a",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836105.5002964,
+        "end_time": 1764836115.6815763,
+        "duration": 10.18127989768982,
+        "self_time": 10.18127989768982,
+        "subtree_time": 10.18127989768982,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 10.18127989768982
+      },
+      {
+        "uuid": "79ff3608-7dda-4f0a-9719-5edf5c3ac327",
+        "operation_type": "LLM",
+        "operation_name": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+        "start_time": 1764836100.2058775,
+        "end_time": 1764836110.01238,
+        "duration": 9.806502342224121,
+        "self_time": 9.806502342224121,
+        "subtree_time": 9.806502342224121,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 9.806502342224121
+      }
+    ]
+  },
+  "concurrency_spike_analysis": {
+    "concurrency_distribution": {
+      "1": 6.72631573677063,
+      "2": 35.35850262641907,
+      "3": 3.444257974624634
+    },
+    "p50_concurrency": 2.0,
+    "p90_concurrency": 2.0,
+    "p95_concurrency": 3.0,
+    "p99_concurrency": 3.0,
+    "spike_threshold": 7,
+    "spike_intervals": [],
+    "correlation_stats": {
+      "avg_prompt_tokens": 0.0,
+      "avg_total_tokens": 0.0
+    },
+    "average_latency_by_concurrency": {
+      "2": 5.653983116149902,
+      "3": 3.416448402404785,
+      "0": 0.0,
+      "1": 6.602668285369873
+    }
+  }
+}

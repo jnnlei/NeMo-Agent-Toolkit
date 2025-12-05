@@ -45,7 +45,7 @@ retrievers:
     collection_name: "wix_collection"
     embedding_model: milvus_embedder
     reranker_model_name: "nvidia/llama-3.2-nv-rerankqa-1b-v2"    
-    top_k: 5                        # 最终返回给 Agent 的文档数
+    top_k: 6                        # 最终返回给 Agent 的文档数
     expansion_factor: 3        # 初始检索 5*3=15 个文档进行 rerank
 
 functions:
