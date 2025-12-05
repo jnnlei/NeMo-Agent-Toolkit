@@ -14,9 +14,10 @@ docker compose -f examples/deploy/docker-compose.milvus.yml up -d
 # then run NeMo-Agent-Toolkit/scripts/bootstrap_milvus.sh to bootstrap the data
 
 # add the api keys
-export NVIDIA_API_KEY=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
-export MEM0_API_KEY=m0-w3WNdSPofqjsO7ghRK3dqEjzkbTvmrgTDqkyjpwn
-export TAVILY_API_KEY=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
+if [ -f .env ]; then
+    source .env
+    echo "Loaded keys from .env"
+fi
 
 # run the workflow
 nat run --config_file examples/RAG/simple_rag/configs/milvus_memory_rag_tools_config.yml --input "What are the GPU configuration options for running Qwen2.5 72B Instruct?"
