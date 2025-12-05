@@ -1,0 +1,252 @@
+[
+    {
+        "id": "1",
+        "question": "What is SGLang and what are its primary use cases?",
+        "answer": "SGLang is a high-performance serving framework designed for large language models (LLMs) and vision-language models (VLMs), aiming to deliver low-latency and high-throughput inference. Its core features include RadixAttention for prefix caching, speculative decoding, continuous batching, and structured outputs. It supports a wide range of models (Llama, DeepSeek, etc.) and hardware (NVIDIA/AMD GPUs, TPUs, CPUs). Its primary use cases include: 1. Serving chatbots and generative AI applications requiring fast inference. 2. Powering Vision-Language Model (VLM) applications. 3. Handling high-throughput batch inference in production. 4. Developing custom LLM workflows with complex control flows. 5. Research and benchmarking of new models and inference techniques."
+    },
+    {
+        "id": "2",
+        "question": "How do I install SGLang using pip?",
+        "answer": "You can install SGLang using pip with the command `pip install \"sglang[all]\"`. This installs the SGLang package along with all its optional dependencies."
+    },
+    {
+        "id": "3",
+        "question": "Does SGLang support OpenAI-compatible APIs?",
+        "answer": "Yes, SGLang supports OpenAI-compatible APIs. You can launch a server that provides an OpenAI-compatible endpoint, allowing you to use standard OpenAI client libraries to interact with models served by SGLang."
+    },
+    {
+        "id": "4",
+        "question": "How can I run a local server with SGLang?",
+        "answer": "To run a local server with SGLang, you can use the command `python -m sglang.launch_server --model-path <path-to-model> --port 30000`. This starts an SGLang server on the specified port serving the model located at `<path-to-model>`."
+    },
+    {
+        "id": "5",
+        "question": "What is RadixAttention and how does it improve performance in SGLang?",
+        "answer": "RadixAttention is a novel attention mechanism used in SGLang that enables efficient prefix caching. It organizes the KV cache in a radix tree structure, allowing multiple requests to share common prefixes in their prompts. This significantly reduces redundant computation and memory usage, thereby improving throughput and reducing latency, especially for workloads with shared contexts like few-shot learning or multi-turn conversations."
+    },
+    {
+        "id": "6",
+        "question": "How do I use the Offline Engine API in SGLang for batch processing?",
+        "answer": "The Offline Engine API in SGLang allows you to process a batch of requests efficiently without the overhead of an HTTP server. You can initialize an engine using `sglang.Engine(model_path=...)` and then use its `generate` method to process a list of prompts. This is ideal for high-throughput offline batch inference tasks."
+    },
+    {
+        "id": "7",
+        "question": "Which NVIDIA GPU architectures are supported by SGLang?",
+        "answer": "SGLang supports a wide range of NVIDIA GPU architectures, including Ampere (A100, A10), Hopper (H100), and Blackwell (GB200, B300). It also supports consumer GPUs like the RTX 3090 and 4090."
+    },
+    {
+        "id": "8",
+        "question": "Can I run SGLang on AMD GPUs? If so, which models?",
+        "answer": "Yes, SGLang supports AMD GPUs, specifically the ROCm platform. It is compatible with AMD MI300 and MI250 series GPUs."
+    },
+    {
+        "id": "9",
+        "question": "How do I enable speculative decoding in SGLang?",
+        "answer": "To enable speculative decoding in SGLang, you can pass the `--speculative-algorithm` and `--speculative-draft-model-path` arguments when launching the server. For example: `python -m sglang.launch_server --model-path <target-model> --speculative-algorithm EAGLE --speculative-draft-model-path <draft-model>`."
+    },
+    {
+        "id": "10",
+        "question": "What are the steps to serve a DeepSeek model using SGLang?",
+        "answer": "To serve a DeepSeek model, you simply need to specify the DeepSeek model path when launching the server: `python -m sglang.launch_server --model-path deepseek-ai/deepseek-coder-33b-instruct --trust-remote-code`. SGLang has built-in support for DeepSeek models."
+    },
+    {
+        "id": "11",
+        "question": "How does SGLang handle structured outputs or JSON generation?",
+        "answer": "SGLang supports structured outputs by allowing you to define a regex pattern or a JSON schema that the generated output must adhere to. This is enforced during the decoding process, ensuring that the model's output strictly follows the specified format."
+    },
+    {
+        "id": "12",
+        "question": "Does SGLang support multi-modal models like LLaVA or Qwen-VL?",
+        "answer": "Yes, SGLang supports multi-modal models including LLaVA, Qwen-VL, and others. You can serve them similarly to text-only models, and the API supports passing image inputs along with text prompts."
+    },
+    {
+        "id": "13",
+        "question": "How can I use LoRA (Low-Rank Adaptation) serving with SGLang?",
+        "answer": "SGLang supports multi-LoRA serving. You can load a base model and then dynamically load multiple LoRA adapters at runtime. When sending a request, you can specify which LoRA adapter to use for that specific request via the API."
+    },
+    {
+        "id": "14",
+        "question": "What quantization methods (e.g., FP8, AWQ, GPTQ) does SGLang support?",
+        "answer": "SGLang supports various quantization methods including FP8 (on H100), AWQ, and GPTQ. You can enable them by specifying the quantization type (e.g., `--quantization awq` or `--quantization fp8`) when launching the server."
+    },
+    {
+        "id": "15",
+        "question": "How do I configure tensor parallelism in SGLang?",
+        "answer": "You can configure tensor parallelism by using the `--tp-size` (or `--tensor-parallel-size`) argument when launching the server. For example, `--tp-size 4` will run the model across 4 GPUs using tensor parallelism."
+    },
+    {
+        "id": "16",
+        "question": "What is the SGLang Native API and when should I use it over the OpenAI API?",
+        "answer": "The SGLang Native API provides more fine-grained control over the generation process compared to the standard OpenAI API. It allows for features like caching control, advanced batching, and direct access to SGLang's specific optimizations. You should use it when you need maximum performance or access to features not exposed by the standard OpenAI interface."
+    },
+    {
+        "id": "17",
+        "question": "How does SGLang implement prefix caching?",
+        "answer": "SGLang implements prefix caching using its RadixAttention mechanism. It automatically detects shared prefixes across different requests and stores their KV cache in a radix tree. Subsequent requests with the same prefix can reuse the cached KV states, skipping the re-computation."
+    },
+    {
+        "id": "18",
+        "question": "Can I use SGLang for embedding models?",
+        "answer": "Yes, SGLang supports serving embedding models. You can launch a server with an embedding model and use the OpenAI-compatible embeddings endpoint to get vector representations of text."
+    },
+    {
+        "id": "19",
+        "question": "How do I set up a multi-node deployment for SGLang?",
+        "answer": "For multi-node deployment, SGLang typically relies on distributed frameworks like Ray. You would configure a Ray cluster across your nodes and then launch the SGLang server, specifying the number of tensor parallel and pipeline parallel size to span across the available nodes."
+    },
+    {
+        "id": "20",
+        "question": "What are the recommended server arguments for optimizing throughput?",
+        "answer": "Recommended arguments for optimizing throughput often include increasing the batch size (`--max-num-reqs`), enabling tensor parallelism (`--tp-size`) if using multiple GPUs, and using appropriate quantization (`--quantization`) to reduce memory bandwidth usage."
+    },
+    {
+        "id": "21",
+        "question": "How does SGLang handle continuous batching?",
+        "answer": "SGLang uses continuous batching (also known as iteration-level scheduling) to dynamically add new requests to the running batch as soon as previous requests finish, rather than waiting for the entire batch to complete. This maximizes GPU utilization."
+    },
+    {
+        "id": "22",
+        "question": "Is it possible to use SGLang with Docker? Where can I find the Dockerfile?",
+        "answer": "Yes, SGLang provides official Docker images. You can find the Dockerfile and instructions for building/pulling images in the SGLang GitHub repository and documentation."
+    },
+    {
+        "id": "23",
+        "question": "How do I perform benchmarking and profiling on an SGLang server?",
+        "answer": "SGLang includes benchmarking scripts (e.g., `bench_serving.py`) that allow you to send synthetic traffic to the server and measure metrics like latency, throughput (tokens/sec), and time-to-first-token (TTFT)."
+    },
+    {
+        "id": "24",
+        "question": "What is the SGLang Model Gateway (formerly Router) used for?",
+        "answer": "The SGLang Model Gateway (Router) is used to manage multiple SGLang instances or models. It can route incoming requests to different backend models based on availability or specific rules, providing a unified endpoint for clients."
+    },
+    {
+        "id": "25",
+        "question": "How does SGLang support structured outputs for reasoning models?",
+        "answer": "For reasoning models, SGLang can constrain the generation process to follow a specific structure (like a chain-of-thought format followed by a final answer in JSON) using its structured output capabilities, ensuring the reasoning process is captured correctly alongside the final result."
+    },
+    {
+        "id": "26",
+        "question": "Can I use custom chat templates with SGLang?",
+        "answer": "Yes, SGLang allows you to specify custom chat templates. You can pass a Jinja2 template or specify the chat template format supported by the tokenizer to ensure the model receives the prompt in the correct conversational format."
+    },
+    {
+        "id": "27",
+        "question": "How does SGLang integrate with Hugging Face models?",
+        "answer": "SGLang is designed to be compatible with the Hugging Face ecosystem. It can load models directly using their Hugging Face model IDs or local paths, and it uses Hugging Face tokenizers."
+    },
+    {
+        "id": "28",
+        "question": "What is Hierarchical KV Caching (HiCache) in SGLang?",
+        "answer": "Hierarchical KV Caching (HiCache) is a feature in SGLang that optimizes memory usage by managing the KV cache across different levels of the memory hierarchy (e.g., GPU memory, CPU memory), allowing for larger context windows or more concurrent requests."
+    },
+    {
+        "id": "29",
+        "question": "How do I use the Tool Parser feature in SGLang?",
+        "answer": "The Tool Parser feature enables SGLang to identify and parse tool calls generated by the model. You define the available tools and their schemas, and SGLang can parse the model's output into structured tool invocations."
+    },
+    {
+        "id": "30",
+        "question": "Does SGLang support reward models? If so, how?",
+        "answer": "Yes, SGLang supports reward models. These are typically used in RLHF (Reinforcement Learning from Human Feedback) workflows or for re-ranking generated candidates. You can serve them to score text inputs."
+    },
+    {
+        "id": "31",
+        "question": "What environment variables are commonly used to configure SGLang?",
+        "answer": "Common environment variables include `SGLANG_PORT`, `SGLANG_HOST`, `NCCL_DEBUG` (for debugging communication), and potentially variables related to CUDA device selection (`CUDA_VISIBLE_DEVICES`)."
+    },
+    {
+        "id": "32",
+        "question": "How do I enable and configure production metrics in SGLang?",
+        "answer": "SGLang provides a metrics endpoint (usually at `/metrics`) compatible with Prometheus. You can enable this to scrape metrics like request latency, throughput, cache usage, and error rates for monitoring."
+    },
+    {
+        "id": "33",
+        "question": "What is prefill-decode disaggregation in SGLang?",
+        "answer": "Prefill-decode disaggregation is an advanced architecture where the prefill phase (processing the input prompt) and the decode phase (generating tokens) are handled by different GPU instances or clusters. This allows for independent scaling of prefill and decode resources to optimize performance."
+    },
+    {
+        "id": "34",
+        "question": "How can I use the Reasoning Parser in SGLang?",
+        "answer": "The Reasoning Parser allows SGLang to parse structured reasoning steps (like Chain-of-Thought) from the model's output, separating the reasoning process from the final answer."
+    },
+    {
+        "id": "35",
+        "question": "Does SGLang support Google TPUs?",
+        "answer": "Yes, SGLang has experimental or increasing support for Google TPUs, allowing you to run high-performance inference on TPU hardware."
+    },
+    {
+        "id": "36",
+        "question": "How do I use sampling parameters to control generation diversity?",
+        "answer": "You can control generation diversity using sampling parameters like `temperature`, `top_p`, `top_k`, and `frequency_penalty` in your API requests. SGLang respects these standard sampling parameters."
+    },
+    {
+        "id": "37",
+        "question": "What is the difference between the SGLang Runtime and the Frontend Language?",
+        "answer": "The SGLang Runtime is the high-performance backend engine responsible for executing the model and managing resources. The Frontend Language is a high-level Python SDK/DSL that allows developers to write complex LLM applications (like chains or agents) which are then executed efficiently by the runtime."
+    },
+    {
+        "id": "38",
+        "question": "How do I run Llama 3 models using SGLang?",
+        "answer": "To run Llama 3, use the launch command with the Llama 3 model path: `python -m sglang.launch_server --model-path meta-llama/Meta-Llama-3-8B-Instruct`. Ensure you have access to the model on Hugging Face."
+    },
+    {
+        "id": "39",
+        "question": "Can I use SGLang with Intel Xeon CPUs or XPU?",
+        "answer": "Yes, SGLang supports CPU inference on Intel Xeon processors and is also adding support for Intel XPUs."
+    },
+    {
+        "id": "40",
+        "question": "How does SGLang handle Transformers fallback for unsupported models?",
+        "answer": "If SGLang doesn't have a highly optimized kernel for a specific model architecture, it can fall back to using the standard Hugging Face Transformers implementation to ensure the model can still be served, albeit potentially with lower performance."
+    },
+    {
+        "id": "41",
+        "question": "How do I use models from ModelScope with SGLang?",
+        "answer": "You can use models from ModelScope by specifying the ModelScope model ID or path. SGLang can load models from ModelScope similar to how it loads from Hugging Face."
+    },
+    {
+        "id": "42",
+        "question": "What is the Checkpoint Engine Integration in SGLang?",
+        "answer": "Checkpoint Engine integration allows SGLang to efficiently load and save model checkpoints, potentially supporting fast recovery or switching between model versions."
+    },
+    {
+        "id": "43",
+        "question": "How does SGLang support multi-LoRA batching?",
+        "answer": "SGLang supports multi-LoRA batching by allowing different requests in the same batch to use different LoRA adapters. The runtime manages the specific weights for each request efficiently without reloading the base model."
+    },
+    {
+        "id": "44",
+        "question": "What is chunked prefill and how do I enable it?",
+        "answer": "Chunked prefill splits long prompts into smaller chunks for processing. This helps in reducing the peak memory requirement and allows for better interleaving of prefill and decode steps. It is often enabled via a server argument like `--enable-chunked-prefill`."
+    },
+    {
+        "id": "45",
+        "question": "How do I troubleshoot common errors when starting the SGLang server?",
+        "answer": "Common troubleshooting steps include checking GPU memory availability, ensuring CUDA drivers are compatible, verifying model paths, and checking the server logs for specific error messages. The documentation provides a troubleshooting guide for common issues."
+    },
+    {
+        "id": "46",
+        "question": "How does SGLang ensure deterministic inference?",
+        "answer": "SGLang can ensure deterministic inference (reproducible results) by fixing the random seed (`--seed`) and ensuring that non-deterministic operations in the GPU kernels are handled or avoided when strict determinism is required."
+    },
+    {
+        "id": "47",
+        "question": "What are the observability features available in SGLang?",
+        "answer": "SGLang offers observability through its Prometheus-compatible metrics endpoint, request tracing capabilities, and detailed logging, allowing you to monitor the health and performance of the serving system."
+    },
+    {
+        "id": "48",
+        "question": "How do I perform hyperparameter tuning for the SGLang server?",
+        "answer": "Hyperparameter tuning involves experimenting with server arguments like batch size, tensor parallel size, and memory allocation fractions to find the optimal configuration for your specific hardware and workload. SGLang provides guides and benchmarks to assist with this."
+    },
+    {
+        "id": "49",
+        "question": "Can SGLang run on NVIDIA Jetson Orin devices?",
+        "answer": "Yes, SGLang supports NVIDIA Jetson Orin devices, making it suitable for edge AI applications."
+    },
+    {
+        "id": "50",
+        "question": "How do I contribute to the SGLang open-source project?",
+        "answer": "You can contribute by forking the repository on GitHub, submitting pull requests with new features or bug fixes, reporting issues, and improving documentation. The project provides a contribution guide for developers."
+    }
+]

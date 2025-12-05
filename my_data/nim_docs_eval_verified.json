@@ -1,0 +1,123 @@
+[
+    {
+        "id": "1",
+        "question": "What are the two primary deployment options available for NVIDIA NIM for Large Language Models?",
+        "ground_truth": "NVIDIA NIM offers two primary deployment options: the Multi-LLM compatible NIM, which is a single container supporting a broad range of models for maximum flexibility, and the LLM-specific NIM, which are containers optimized for individual models or model families to deliver maximum performance.",
+        "source_excerpt": "NVIDIA NIM for Large Language Models (LLMs) is available in two options: Multi-LLM compatible NIM: A single container that enables the deployment of a broad range of models... LLM-specific NIM: Each container is focused on individual models or model families..."
+    },
+    {
+        "id": "2",
+        "question": "How does NVIDIA NIM handle model optimization when a container is first deployed?",
+        "ground_truth": "When a NIM is first deployed, it inspects the local hardware configuration and the available optimized models in the model registry. It then automatically chooses the best version of the model for the available hardware. For supported NVIDIA GPUs, it downloads an optimized TensorRT-LLM engine; for others, it uses a non-optimized model with vLLM.",
+        "source_excerpt": "When a NIM is first deployed, NIM inspects the local hardware configuration and the available optimized model in the model registry, then automatically chooses the best version of the model for the available hardware. For a subset of NVIDIA GPUs... NIM downloads the optimized TRT engine... For all other NVIDIA GPUs, NIM downloads a non-optimized model and runs it using the vLLM library."
+    },
+    {
+        "id": "3",
+        "question": "What is the purpose of NIM Telemetry and is it enabled by default?",
+        "ground_truth": "NIM Telemetry helps NVIDIA deliver a faster, more reliable experience by collecting anonymous system and NIM-level insights to identify bottlenecks and improve compatibility. It is an experimental feature and is disabled by default; users must explicitly enable it using environment variables.",
+        "source_excerpt": "NIM Telemetry is an experimental feature and is disabled by default. To enable or configure telemetry collection, refer to NIM Telemetry settings."
+    },
+    {
+        "id": "4",
+        "question": "Which API standard does NVIDIA NIM use for its programming model?",
+        "ground_truth": "NVIDIA NIM provides an OpenAI API compatible programming model, allowing developers to easily integrate it into existing workflows and applications that support the OpenAI standard, along with custom NVIDIA extensions for additional functionality.",
+        "source_excerpt": "Developers are provided with an OpenAI API compatible programming model and custom NVIDIA extensions for additional functionality."
+    },
+    {
+        "id": "5",
+        "question": "What are the security responsibilities of the user when using the Multi-LLM NIM container with models from Hugging Face?",
+        "ground_truth": "When using the Multi-LLM NIM container with models sourced from non-NVIDIA locations like Hugging Face, the user is responsible for verifying the safety and integrity of the models. This includes ensuring weights are in safetensors format, conducting manual code reviews, and validating model signatures.",
+        "source_excerpt": "NVIDIA cannot guarantee the security of any models hosted on non-NVIDIA systems such as HuggingFace... We strongly recommend that before attempting to load it, you manually verify the safety of any model not provided by NVIDIA, through such mechanisms as a) ensuring that the model weights are serialized using the safetensors format..."
+    },
+    {
+        "id": "6",
+        "question": "What are the security advantages of using LLM-specific NIM containers?",
+        "ground_truth": "For LLM-specific NIM containers, NVIDIA curates, security scans, and provides both the models and containers. A security scan report is available for each container in the NGC catalog, detailing CVE severity and providing a security rating.",
+        "source_excerpt": "LLM-specific NIM container: NVIDIA curates, security scans, and provides both models and containers... A security scan report is available for each container within the NGC catalog..."
+    },
+    {
+        "id": "7",
+        "question": "What are the key benefits of using NIM Telemetry?",
+        "ground_truth": "Key benefits include enhancing performance and reliability, improving compatibility across deployments, accelerating troubleshooting and bug resolution, informing smarter optimizations for future releases, and protecting user privacy by collecting only minimal, anonymous metadata.",
+        "source_excerpt": "Benefits: Enhances performance and reliability... Improves compatibility across deployments... Accelerates troubleshooting and bug resolution... Informs smarter optimizations and future releases... Protects user privacy and data security..."
+    },
+    {
+        "id": "8",
+        "question": "How does NVIDIA NIM support Function Calling (Tool Calling)?",
+        "ground_truth": "NVIDIA NIM supports Function Calling as a key feature, allowing the model to interact with external tools and APIs.",
+        "source_excerpt": "Use Key Features: ... Function (Tool) Calling..."
+    },
+    {
+        "id": "9",
+        "question": "What is the role of the KV Cache Reuse feature in NVIDIA NIM?",
+        "ground_truth": "KV Cache Reuse allows the system to reuse previously computed key-value pairs for shared prefixes, improving efficiency and performance during generation.",
+        "source_excerpt": "Configure Your NIM: ... KV Cache Reuse..."
+    },
+    {
+        "id": "10",
+        "question": "List three high-performance features provided by NVIDIA NIM.",
+        "ground_truth": "Three high-performance features provided by NVIDIA NIM include: 1) Scalable Deployment, 2) Advanced Language Model support with prebuilt optimized engines, and 3) Flexible Integration via OpenAI compatible APIs.",
+        "source_excerpt": "NIM offers the following high performance features: Scalable Deployment... Advanced Language Model support... Flexible Integration..."
+    },
+    {
+        "id": "11",
+        "question": "What specific hardware requirement is needed to run BF16 precision models on NVIDIA NIM?",
+        "ground_truth": "To run models with BF16 (BFloat16) precision on NVIDIA NIM, the underlying NVIDIA GPUs must have a CUDA compute capability of 8.0 or higher.",
+        "source_excerpt": "homogeneous NVIDIA GPUs with sufficient aggregate memory and CUDA compute capability > 7.0 (8.0 for bfloat16)."
+    },
+    {
+        "id": "12",
+        "question": "Explain the difference between 'Optimized' and 'Generic' profiles in NVIDIA NIM.",
+        "ground_truth": "Optimized profiles in NVIDIA NIM use pre-built engines (like TensorRT-LLM) specifically tuned for a given model and GPU combination. Generic profiles use a fallback runtime (typically vLLM) that works on a wider range of hardware but may not be as performant.",
+        "source_excerpt": "NIM downloads the optimized TRT engine and runs an inference using the TRT-LLM library. For all other NVIDIA GPUs, NIM downloads a non-optimized model and runs it using the vLLM library."
+    },
+    {
+        "id": "13",
+        "question": "How can a user specify a specific model profile when launching a NIM container?",
+        "ground_truth": "A user can specify a model profile to control the runtime engine selection, as NIM supports Model Profiles configuration.",
+        "source_excerpt": "Work with Models: Model Profiles..."
+    },
+    {
+        "id": "14",
+        "question": "What mechanisms does NVIDIA NIM use to ensure enterprise-grade security?",
+        "ground_truth": "NVIDIA NIM ensures enterprise-grade security by using `safetensors` to prevent code execution from model weights, constantly monitoring and patching Common Vulnerabilities and Exposures (CVEs) in the container stack, and conducting rigorous internal penetration testing.",
+        "source_excerpt": "Enterprise-Grade Security emphasizes security by using safetensors, constantly monitoring and patching CVEs in our stack and conducting internal penetration tests."
+    },
+    {
+        "id": "15",
+        "question": "Can NVIDIA NIM be deployed in an air-gapped environment?",
+        "ground_truth": "Yes, NVIDIA NIM supports Air Gap Deployment.",
+        "source_excerpt": "Deploy NIM: ... Air Gap Deployment..."
+    },
+    {
+        "id": "16",
+        "question": "What is the purpose of the 'Thinking Budget Control' feature in reasoning models supported by NIM?",
+        "ground_truth": "Thinking Budget Control allows users to manage the computational resources dedicated to the reasoning process of the model.",
+        "source_excerpt": "Use Key Features: ... Thinking Budget Control..."
+    },
+    {
+        "id": "17",
+        "question": "How does NVIDIA NIM handle structured generation?",
+        "ground_truth": "NVIDIA NIM supports Structured Generation as a key feature to control the output format.",
+        "source_excerpt": "Use Key Features: ... Structured Generation..."
+    },
+    {
+        "id": "18",
+        "question": "How does NVIDIA NIM support fine-tuned models?",
+        "ground_truth": "NVIDIA NIM supports Fine-Tuned Models and Parameter-Efficient Fine-Tuning (PEFT) such as LoRA.",
+        "source_excerpt": "Work with Models: ... Fine-Tuned Models... Use Key Features: ... Parameter-Efficient Fine-Tuning..."
+    },
+    {
+        "id": "19",
+        "question": "What is LoRA and how does NVIDIA NIM support it?",
+        "ground_truth": "LoRA is a Parameter-Efficient Fine-Tuning technique supported by NVIDIA NIM, allowing for efficient customization of models.",
+        "source_excerpt": "Use Key Features: ... Parameter-Efficient Fine-Tuning..."
+    },
+    {
+        "id": "20",
+        "question": "Does NVIDIA NIM support prompt embeddings?",
+        "ground_truth": "Yes, NVIDIA NIM supports Prompt Embeds as a feature.",
+        "source_excerpt": "Use Key Features: ... Prompt Embeds..."
+    }
+]
+
