@@ -1,0 +1,24 @@
+
+
+
+No calls found.
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 0
+Total time observed: 0.00 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+
+Percentiles => p50=0.0, p90=0.0, p95=0.0, p99=0.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+No calls or no concurrency data.
