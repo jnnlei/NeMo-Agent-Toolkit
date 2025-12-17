@@ -1,0 +1,96 @@
+{
+  "confidence_intervals": {
+    "workflow_run_time_confidence_intervals": {
+      "n": 3,
+      "mean": 9.686420202255249,
+      "ninetieth_interval": [
+        6.328513116510618,
+        13.04432728799988
+      ],
+      "ninety_fifth_interval": [
+        5.685509632006327,
+        13.687330772504172
+      ],
+      "ninety_ninth_interval": [
+        4.42808059564238,
+        14.944759808868117
+      ],
+      "p90": 13.28193802833557,
+      "p95": 13.859317517280578,
+      "p99": 14.321221108436585
+    },
+    "llm_latency_confidence_intervals": {
+      "n": 21,
+      "mean": 1.3218279679616292,
+      "ninetieth_interval": [
+        0.9741935729843549,
+        1.6694623629389034
+      ],
+      "ninety_fifth_interval": [
+        0.9076252845844514,
+        1.7360306513388069
+      ],
+      "ninety_ninth_interval": [
+        0.7774472983801954,
+        1.8662086375430629
+      ],
+      "p90": 3.2563178539276123,
+      "p95": 3.5916378498077393,
+      "p99": 3.6452913761138914
+    },
+    "throughput_estimate_confidence_interval": {
+      "n": 3,
+      "mean": 0.2078037655501324,
+      "ninetieth_interval": [
+        0.010443969384699076,
+        0.4051635617155658
+      ],
+      "ninety_fifth_interval": [
+        0.0,
+        0.44295586310894663
+      ],
+      "ninety_ninth_interval": [
+        0.0,
+        0.5168608080560024
+      ],
+      "p90": 0,
+      "p95": 0,
+      "p99": 0
+    }
+  },
+  "common_prefixes": {
+    "": {
+      "total_calls": 2020,
+      "prefix_info": []
+    },
+    "meta/llama-3.3-70b-instruct": {
+      "total_calls": 42,
+      "prefix_info": [
+        {
+          "prefix": "[{'content': 'Answer the following questions as best you can.\\nYou may communicate and collaborate with various experts to answer the questions.\\n\\ndata_analysis_agent: A helpful assistant that can answer questions about the retail sales CSV data.\\nUse the tools to answer the questions.\\nInput is a single string.. . Arguments must be provided as a valid JSON object following this format: {\\'messages\\': FieldInfo(annotation=Union[list[Message], NoneType], required=False, default=None, description=\\'A non-empty conversation of messages to process.\\', metadata=[typing.Annotated[list[nat.data_models.api_server.Message], Len(min_length=1, max_length=None)]]), \\'input_message\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, description=\\'A single input message to process. Useful for functions that do not require a conversation\\')}\\ndata_visualization_agent: You are a data visualization expert.\\nYou can only create plots and visualizations based on user requests.\\nOnly use available tools to generate plots.\\nYou cannot analyze any data.. . Arguments must be provided as a valid JSON object following this format: {\\'messages\\': FieldInfo(annotation=Union[list[Message], NoneType], required=False, default=None, description=\\'A non-empty conversation of messages to process.\\', metadata=[typing.Annotated[list[nat.data_models.api_server.Message], Len(min_length=1, max_length=None)]]), \\'input_message\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, description=\\'A single input message to process. Useful for functions that do not require a conversation\\')}\\nrag_agent: An assistant that can only answer questions about products.\\nUse the product_catalog_rag tool to answer questions about products.\\nDo not make up any information.. . Arguments must be provided as a valid JSON object following this format: {\\'messages\\': FieldInfo(annotation=Union[list[Message], NoneType], required=False, default=None, description=\\'A non-empty conversation of messages to process.\\', metadata=[typing.Annotated[list[nat.data_models.api_server.Message], Len(min_length=1, max_length=None)]]), \\'input_message\\': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, description=\\'A single input message to process. Useful for functions that do not require a conversation\\')}\\n\\nYou may respond in one of two formats.\\nUse the following format exactly to communicate with an expert:\\n\\nQuestion: the input question you must answer\\nThought: you should always think about what to do\\nAction: the action to take, should be one of [data_analysis_agent,data_visualization_agent,rag_agent]\\nAction Input: the input to the action (if there is no required input, include \"Action Input: None\")\\nObservation: wait for the expert to respond, do not assume the expert\\'s response\\n\\n... (this Thought/Action/Action Input/Observation can repeat N times.)\\nUse the following format once you have the final answer:\\n\\nThought: I now know the final answer\\nFinal Answer: the final answer to the original input question\\n', 'additional_kwargs': {}, 'response_metadata': {}, 'type': 'system', 'name': None, 'id': None}, {'content': '\\nPrevious conversation history:\\n\\n\\nQuestion: ",
+          "prefix_length": 3234,
+          "calls_count": 8,
+          "calls_percentage": 0.19047619047619047
+        },
+        {
+          "prefix": "[{'content': '\\nAnswer the following questions as best you can. You may ask the human to use the following tools:\\n\\n",
+          "prefix_length": 117,
+          "calls_count": 6,
+          "calls_percentage": 0.14285714285714285
+        }
+      ]
+    }
+  },
+  "token_uniqueness": {
+    "meta/llama-3.3-70b-instruct": {
+      "p90": 164.00000000000003,
+      "p95": 233.04999999999967,
+      "p99": 387.4099999999996
+    }
+  },
+  "workflow_runtimes": {
+    "p90": 13.28193802833557,
+    "p95": 13.859317517280578,
+    "p99": 14.321221108436584
+  }
+}

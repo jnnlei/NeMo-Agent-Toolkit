@@ -1,0 +1,1128 @@
+{
+  "nested_stack_analysis": {
+    "concurrency": {
+      "timeline_segments": [
+        [
+          1765872293.2570763,
+          1765872293.2596178,
+          1
+        ],
+        [
+          1765872293.2596178,
+          1765872293.2609928,
+          2
+        ],
+        [
+          1765872293.2609928,
+          1765872293.2648778,
+          3
+        ],
+        [
+          1765872293.2648778,
+          1765872293.2667239,
+          4
+        ],
+        [
+          1765872293.2667239,
+          1765872293.26851,
+          5
+        ],
+        [
+          1765872293.26851,
+          1765872294.1266253,
+          6
+        ],
+        [
+          1765872294.1266253,
+          1765872294.1297803,
+          5
+        ],
+        [
+          1765872294.1297803,
+          1765872294.1303976,
+          6
+        ],
+        [
+          1765872294.1303976,
+          1765872294.134755,
+          7
+        ],
+        [
+          1765872294.134755,
+          1765872294.2344794,
+          8
+        ],
+        [
+          1765872294.2344794,
+          1765872294.2363505,
+          7
+        ],
+        [
+          1765872294.2363505,
+          1765872294.236913,
+          8
+        ],
+        [
+          1765872294.236913,
+          1765872294.239976,
+          9
+        ],
+        [
+          1765872294.239976,
+          1765872294.2533793,
+          10
+        ],
+        [
+          1765872294.2533793,
+          1765872294.256137,
+          9
+        ],
+        [
+          1765872294.256137,
+          1765872294.2567112,
+          10
+        ],
+        [
+          1765872294.2567112,
+          1765872294.2591593,
+          11
+        ],
+        [
+          1765872294.2591593,
+          1765872294.8075259,
+          12
+        ],
+        [
+          1765872294.8075259,
+          1765872294.8085425,
+          11
+        ],
+        [
+          1765872294.8085425,
+          1765872294.8088994,
+          12
+        ],
+        [
+          1765872294.8088994,
+          1765872294.8107224,
+          13
+        ],
+        [
+          1765872294.8107224,
+          1765872294.810888,
+          12
+        ],
+        [
+          1765872294.810888,
+          1765872294.8138149,
+          11
+        ],
+        [
+          1765872294.8138149,
+          1765872294.8759584,
+          12
+        ],
+        [
+          1765872294.8759584,
+          1765872294.8769453,
+          11
+        ],
+        [
+          1765872294.8769453,
+          1765872294.8772905,
+          12
+        ],
+        [
+          1765872294.8772905,
+          1765872294.8782847,
+          13
+        ],
+        [
+          1765872294.8782847,
+          1765872294.8784149,
+          12
+        ],
+        [
+          1765872294.8784149,
+          1765872294.881027,
+          11
+        ],
+        [
+          1765872294.881027,
+          1765872294.995673,
+          12
+        ],
+        [
+          1765872294.995673,
+          1765872294.9980063,
+          11
+        ],
+        [
+          1765872294.9980063,
+          1765872294.9986484,
+          12
+        ],
+        [
+          1765872294.9986484,
+          1765872295.212513,
+          13
+        ],
+        [
+          1765872295.212513,
+          1765872298.4688308,
+          14
+        ],
+        [
+          1765872298.4688308,
+          1765872298.4694097,
+          13
+        ],
+        [
+          1765872298.4694097,
+          1765872298.4695823,
+          12
+        ],
+        [
+          1765872298.4695823,
+          1765872298.4725196,
+          11
+        ],
+        [
+          1765872298.4725196,
+          1765872298.4726648,
+          10
+        ],
+        [
+          1765872298.4726648,
+          1765872298.4729588,
+          9
+        ],
+        [
+          1765872298.4729588,
+          1765872298.4746335,
+          10
+        ],
+        [
+          1765872298.4746335,
+          1765872298.475086,
+          11
+        ],
+        [
+          1765872298.475086,
+          1765872298.4764857,
+          12
+        ],
+        [
+          1765872298.4764857,
+          1765872298.476651,
+          11
+        ],
+        [
+          1765872298.476651,
+          1765872298.4768362,
+          10
+        ],
+        [
+          1765872298.4768362,
+          1765872298.4769351,
+          9
+        ],
+        [
+          1765872298.4769351,
+          1765872298.481938,
+          8
+        ],
+        [
+          1765872298.481938,
+          1765872298.483053,
+          9
+        ],
+        [
+          1765872298.483053,
+          1765872299.1305826,
+          10
+        ],
+        [
+          1765872299.1305826,
+          1765872299.1314318,
+          9
+        ],
+        [
+          1765872299.1314318,
+          1765872299.131519,
+          8
+        ],
+        [
+          1765872299.131519,
+          1765872299.1332836,
+          7
+        ],
+        [
+          1765872299.1332836,
+          1765872299.2163615,
+          8
+        ],
+        [
+          1765872299.2163615,
+          1765872299.2204928,
+          7
+        ],
+        [
+          1765872299.2204928,
+          1765872300.2426395,
+          6
+        ],
+        [
+          1765872300.2426395,
+          1765872300.2457318,
+          5
+        ],
+        [
+          1765872300.2457318,
+          1765872300.2465916,
+          6
+        ],
+        [
+          1765872300.2465916,
+          1765872300.2519455,
+          7
+        ],
+        [
+          1765872300.2519455,
+          1765872300.301249,
+          8
+        ],
+        [
+          1765872300.301249,
+          1765872300.3039496,
+          7
+        ],
+        [
+          1765872300.3039496,
+          1765872300.3041298,
+          6
+        ],
+        [
+          1765872300.3041298,
+          1765872300.3065066,
+          5
+        ],
+        [
+          1765872300.3065066,
+          1765872301.1036093,
+          6
+        ],
+        [
+          1765872301.1036093,
+          1765872301.106694,
+          5
+        ],
+        [
+          1765872301.106694,
+          1765872301.1072304,
+          6
+        ],
+        [
+          1765872301.1072304,
+          1765872301.8762038,
+          7
+        ],
+        [
+          1765872301.8762038,
+          1765872301.876823,
+          6
+        ],
+        [
+          1765872301.876823,
+          1765872301.8831923,
+          5
+        ],
+        [
+          1765872301.8831923,
+          1765872301.9176905,
+          6
+        ],
+        [
+          1765872301.9176905,
+          1765872301.9222949,
+          5
+        ],
+        [
+          1765872301.9222949,
+          1765872302.5249643,
+          4
+        ],
+        [
+          1765872302.5249643,
+          1765872302.528785,
+          3
+        ],
+        [
+          1765872302.528785,
+          1765872303.3475292,
+          4
+        ],
+        [
+          1765872303.3475292,
+          1765872303.350764,
+          3
+        ],
+        [
+          1765872303.350764,
+          1765872303.3514068,
+          4
+        ],
+        [
+          1765872303.3514068,
+          1765872303.5184655,
+          5
+        ],
+        [
+          1765872303.5184655,
+          1765872303.5187151,
+          4
+        ],
+        [
+          1765872303.5187151,
+          1765872303.521098,
+          3
+        ],
+        [
+          1765872303.521098,
+          1765872304.13811,
+          4
+        ],
+        [
+          1765872304.13811,
+          1765872304.1407888,
+          3
+        ],
+        [
+          1765872304.1407888,
+          1765872304.140987,
+          2
+        ],
+        [
+          1765872304.140987,
+          1765872304.1434352,
+          1
+        ],
+        [
+          1765872304.1434352,
+          1765872305.2622359,
+          2
+        ],
+        [
+          1765872305.2622359,
+          1765872305.265924,
+          1
+        ],
+        [
+          1765872305.265924,
+          1765872305.2668257,
+          2
+        ],
+        [
+          1765872305.2668257,
+          1765872305.2724829,
+          3
+        ],
+        [
+          1765872305.2724829,
+          1765872305.7887664,
+          4
+        ],
+        [
+          1765872305.7887664,
+          1765872305.7899885,
+          3
+        ],
+        [
+          1765872305.7899885,
+          1765872305.7901227,
+          2
+        ],
+        [
+          1765872305.7901227,
+          1765872305.7925935,
+          1
+        ],
+        [
+          1765872305.7925935,
+          1765872307.6896214,
+          2
+        ],
+        [
+          1765872307.6896214,
+          1765872307.6932955,
+          1
+        ]
+      ],
+      "p50": 6.0,
+      "p90": 14.0,
+      "p95": 14.0,
+      "p99": 14.0
+    },
+    "node_metrics": {
+      "112b5f76-ab79-4592-a8cb-d8d47c2aff6f": {
+        "uuid": "112b5f76-ab79-4592-a8cb-d8d47c2aff6f",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2570763,
+        "end_time": 1765872307.6932955,
+        "duration": 14.436219215393066,
+        "self_time": 0.026810646057128906,
+        "subtree_time": 14.436219215393066,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 14.436219215393066
+      },
+      "5b7dc04c-c9ab-48c4-8861-4279a684b4f0": {
+        "uuid": "5b7dc04c-c9ab-48c4-8861-4279a684b4f0",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872293.2648778,
+        "end_time": 1765872294.2344794,
+        "duration": 0.9696016311645508,
+        "self_time": 0.9696016311645508,
+        "subtree_time": 0.9696016311645508,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.9696016311645508
+      },
+      "83d32922-7164-48a2-bcb4-22d766d18969": {
+        "uuid": "83d32922-7164-48a2-bcb4-22d766d18969",
+        "operation_type": "TOOL",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872294.2363505,
+        "end_time": 1765872299.131519,
+        "duration": 4.8951685428619385,
+        "self_time": 0.0006496906280517578,
+        "subtree_time": 4.8951685428619385,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 4.8951685428619385
+      },
+      "284a81ff-f406-4efa-b844-64dfdaba2275": {
+        "uuid": "284a81ff-f406-4efa-b844-64dfdaba2275",
+        "operation_type": "FUNCTION",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872294.236913,
+        "end_time": 1765872299.1314318,
+        "duration": 4.894518852233887,
+        "self_time": 0.016371488571166992,
+        "subtree_time": 4.894518852233887,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 4.894518852233887
+      },
+      "223b618a-846d-421c-ad39-f9552a4599ba": {
+        "uuid": "223b618a-846d-421c-ad39-f9552a4599ba",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872294.239976,
+        "end_time": 1765872294.8075259,
+        "duration": 0.5675499439239502,
+        "self_time": 0.5675499439239502,
+        "subtree_time": 0.5675499439239502,
+        "concurrency_midpoint": 12.0,
+        "bottleneck_score": 0.5675499439239502
+      },
+      "b2250c7e-9585-449a-b02a-0fe23512c6e2": {
+        "uuid": "b2250c7e-9585-449a-b02a-0fe23512c6e2",
+        "operation_type": "TOOL",
+        "operation_name": "total_product_sales_data",
+        "start_time": 1765872294.8085425,
+        "end_time": 1765872294.810888,
+        "duration": 0.002345561981201172,
+        "self_time": 0.000522613525390625,
+        "subtree_time": 0.002345561981201172,
+        "concurrency_midpoint": 13.0,
+        "bottleneck_score": 0.002345561981201172
+      },
+      "b8c2110c-527f-4883-ba91-94070ce3e648": {
+        "uuid": "b8c2110c-527f-4883-ba91-94070ce3e648",
+        "operation_type": "FUNCTION",
+        "operation_name": "total_product_sales_data",
+        "start_time": 1765872294.8088994,
+        "end_time": 1765872294.8107224,
+        "duration": 0.0018229484558105469,
+        "self_time": 0.0018229484558105469,
+        "subtree_time": 0.0018229484558105469,
+        "concurrency_midpoint": 13.0,
+        "bottleneck_score": 0.0018229484558105469
+      },
+      "1bc49710-8f50-4b74-8134-5a8f2d317491": {
+        "uuid": "1bc49710-8f50-4b74-8134-5a8f2d317491",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872294.8138149,
+        "end_time": 1765872298.4725196,
+        "duration": 3.6587047576904297,
+        "self_time": 3.6587047576904297,
+        "subtree_time": 3.6587047576904297,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 3.6587047576904297
+      },
+      "6b454cae-957e-4f79-9d27-854937956960": {
+        "uuid": "6b454cae-957e-4f79-9d27-854937956960",
+        "operation_type": "TOOL",
+        "operation_name": "total_product_sales_data",
+        "start_time": 1765872298.4746335,
+        "end_time": 1765872298.476651,
+        "duration": 0.002017498016357422,
+        "self_time": 0.0006177425384521484,
+        "subtree_time": 0.002017498016357422,
+        "concurrency_midpoint": 12.0,
+        "bottleneck_score": 0.002017498016357422
+      },
+      "f5da4c4b-832c-415b-b600-ea028c9509af": {
+        "uuid": "f5da4c4b-832c-415b-b600-ea028c9509af",
+        "operation_type": "FUNCTION",
+        "operation_name": "total_product_sales_data",
+        "start_time": 1765872298.475086,
+        "end_time": 1765872298.4764857,
+        "duration": 0.0013997554779052734,
+        "self_time": 0.0013997554779052734,
+        "subtree_time": 0.0013997554779052734,
+        "concurrency_midpoint": 12.0,
+        "bottleneck_score": 0.0013997554779052734
+      },
+      "e1cdeeb6-b86a-4ef8-afb9-02aab6b02b09": {
+        "uuid": "e1cdeeb6-b86a-4ef8-afb9-02aab6b02b09",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872298.483053,
+        "end_time": 1765872299.1305826,
+        "duration": 0.6475296020507812,
+        "self_time": 0.6475296020507812,
+        "subtree_time": 0.6475296020507812,
+        "concurrency_midpoint": 10.0,
+        "bottleneck_score": 0.6475296020507812
+      },
+      "a7e2c9ae-dc15-42ac-b49a-e8d99483cca2": {
+        "uuid": "a7e2c9ae-dc15-42ac-b49a-e8d99483cca2",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872299.1332836,
+        "end_time": 1765872300.2426395,
+        "duration": 1.1093559265136719,
+        "self_time": 1.1093559265136719,
+        "subtree_time": 1.1093559265136719,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 1.1093559265136719
+      },
+      "c0646cb7-5685-4239-bc92-f353e0c7b92d": {
+        "uuid": "c0646cb7-5685-4239-bc92-f353e0c7b92d",
+        "operation_type": "TOOL",
+        "operation_name": "data_visualization_agent",
+        "start_time": 1765872300.2457318,
+        "end_time": 1765872304.140987,
+        "duration": 3.8952550888061523,
+        "self_time": 0.0010578632354736328,
+        "subtree_time": 3.8952550888061523,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 3.8952550888061523
+      },
+      "3455724c-e7ca-4571-8f87-29a161c7b36b": {
+        "uuid": "3455724c-e7ca-4571-8f87-29a161c7b36b",
+        "operation_type": "FUNCTION",
+        "operation_name": "data_visualization_agent",
+        "start_time": 1765872300.2465916,
+        "end_time": 1765872304.1407888,
+        "duration": 3.8941972255706787,
+        "self_time": 0.026925086975097656,
+        "subtree_time": 3.8941972255706787,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 3.8941972255706787
+      },
+      "d2d3cc67-64e7-4962-9b72-76b16ac00ccb": {
+        "uuid": "d2d3cc67-64e7-4962-9b72-76b16ac00ccb",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872300.2519455,
+        "end_time": 1765872301.1036093,
+        "duration": 0.8516638278961182,
+        "self_time": 0.8516638278961182,
+        "subtree_time": 0.8516638278961182,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.8516638278961182
+      },
+      "5fadebaf-3de5-43d0-b3c2-f6f824ef08d1": {
+        "uuid": "5fadebaf-3de5-43d0-b3c2-f6f824ef08d1",
+        "operation_type": "TOOL",
+        "operation_name": "plot_average_daily_revenue",
+        "start_time": 1765872301.106694,
+        "end_time": 1765872301.876823,
+        "duration": 0.7701289653778076,
+        "self_time": 0.0011556148529052734,
+        "subtree_time": 0.7701289653778076,
+        "concurrency_midpoint": 7.0,
+        "bottleneck_score": 0.7701289653778076
+      },
+      "edf22aa2-9e17-468f-a3f9-48e1f44f6d59": {
+        "uuid": "edf22aa2-9e17-468f-a3f9-48e1f44f6d59",
+        "operation_type": "FUNCTION",
+        "operation_name": "plot_average_daily_revenue",
+        "start_time": 1765872301.1072304,
+        "end_time": 1765872301.8762038,
+        "duration": 0.7689733505249023,
+        "self_time": 0.7689733505249023,
+        "subtree_time": 0.7689733505249023,
+        "concurrency_midpoint": 7.0,
+        "bottleneck_score": 0.7689733505249023
+      },
+      "e98fcc3b-459a-4a89-9af6-fb55ce5d8321": {
+        "uuid": "e98fcc3b-459a-4a89-9af6-fb55ce5d8321",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872301.8831923,
+        "end_time": 1765872302.5249643,
+        "duration": 0.6417720317840576,
+        "self_time": 0.6417720317840576,
+        "subtree_time": 0.6417720317840576,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.6417720317840576
+      },
+      "a305c5f7-9c8a-4287-906b-46a2bef8e610": {
+        "uuid": "a305c5f7-9c8a-4287-906b-46a2bef8e610",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872302.528785,
+        "end_time": 1765872303.3475292,
+        "duration": 0.8187441825866699,
+        "self_time": 0.8187441825866699,
+        "subtree_time": 0.8187441825866699,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.8187441825866699
+      },
+      "243273ac-e083-4bfa-892c-d3c2e61642b4": {
+        "uuid": "243273ac-e083-4bfa-892c-d3c2e61642b4",
+        "operation_type": "TOOL",
+        "operation_name": "plot_average_daily_revenue",
+        "start_time": 1765872303.350764,
+        "end_time": 1765872303.5187151,
+        "duration": 0.16795110702514648,
+        "self_time": 0.0008924007415771484,
+        "subtree_time": 0.16795110702514648,
+        "concurrency_midpoint": 5.0,
+        "bottleneck_score": 0.16795110702514648
+      },
+      "3f196544-fc03-41ed-b4df-599afd1ece33": {
+        "uuid": "3f196544-fc03-41ed-b4df-599afd1ece33",
+        "operation_type": "FUNCTION",
+        "operation_name": "plot_average_daily_revenue",
+        "start_time": 1765872303.3514068,
+        "end_time": 1765872303.5184655,
+        "duration": 0.16705870628356934,
+        "self_time": 0.16705870628356934,
+        "subtree_time": 0.16705870628356934,
+        "concurrency_midpoint": 5.0,
+        "bottleneck_score": 0.16705870628356934
+      },
+      "6b2ace54-c445-4a82-a38c-d80af90e4aa1": {
+        "uuid": "6b2ace54-c445-4a82-a38c-d80af90e4aa1",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872303.521098,
+        "end_time": 1765872304.13811,
+        "duration": 0.6170120239257812,
+        "self_time": 0.6170120239257812,
+        "subtree_time": 0.6170120239257812,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.6170120239257812
+      },
+      "a95bddff-b89d-4dbf-9dae-4b63daad2af9": {
+        "uuid": "a95bddff-b89d-4dbf-9dae-4b63daad2af9",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872304.1434352,
+        "end_time": 1765872305.2622359,
+        "duration": 1.1188006401062012,
+        "self_time": 1.1188006401062012,
+        "subtree_time": 1.1188006401062012,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 1.1188006401062012
+      },
+      "879dc0d9-4ccf-4647-a541-e3dc628ceefa": {
+        "uuid": "879dc0d9-4ccf-4647-a541-e3dc628ceefa",
+        "operation_type": "TOOL",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872305.265924,
+        "end_time": 1765872305.7901227,
+        "duration": 0.5241987705230713,
+        "self_time": 0.001035928726196289,
+        "subtree_time": 0.5241987705230713,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.5241987705230713
+      },
+      "ddfcb9ee-fd61-4ded-96da-4abde821e9f2": {
+        "uuid": "ddfcb9ee-fd61-4ded-96da-4abde821e9f2",
+        "operation_type": "FUNCTION",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872305.2668257,
+        "end_time": 1765872305.7899885,
+        "duration": 0.523162841796875,
+        "self_time": 0.006879329681396484,
+        "subtree_time": 0.523162841796875,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.523162841796875
+      },
+      "4d5edf40-615b-4d34-af32-d6b8ca89467c": {
+        "uuid": "4d5edf40-615b-4d34-af32-d6b8ca89467c",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872305.2724829,
+        "end_time": 1765872305.7887664,
+        "duration": 0.5162835121154785,
+        "self_time": 0.5162835121154785,
+        "subtree_time": 0.5162835121154785,
+        "concurrency_midpoint": 4.0,
+        "bottleneck_score": 0.5162835121154785
+      },
+      "7bec88bf-da03-46cf-8f37-40c51985ba30": {
+        "uuid": "7bec88bf-da03-46cf-8f37-40c51985ba30",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872305.7925935,
+        "end_time": 1765872307.6896214,
+        "duration": 1.8970279693603516,
+        "self_time": 1.8970279693603516,
+        "subtree_time": 1.8970279693603516,
+        "concurrency_midpoint": 2.0,
+        "bottleneck_score": 1.8970279693603516
+      },
+      "04675e7d-4f96-4399-944e-f12571e8adff": {
+        "uuid": "04675e7d-4f96-4399-944e-f12571e8adff",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2596178,
+        "end_time": 1765872301.9222949,
+        "duration": 8.66267704963684,
+        "self_time": 0.016844749450683594,
+        "subtree_time": 8.66267704963684,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 8.66267704963684
+      },
+      "6973ea47-5fe5-4249-b493-a0f984717c19": {
+        "uuid": "6973ea47-5fe5-4249-b493-a0f984717c19",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872293.2667239,
+        "end_time": 1765872294.2533793,
+        "duration": 0.9866554737091064,
+        "self_time": 0.9866554737091064,
+        "subtree_time": 0.9866554737091064,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.9866554737091064
+      },
+      "98ee0a69-20d8-4f97-a4a8-6e6759910f4e": {
+        "uuid": "98ee0a69-20d8-4f97-a4a8-6e6759910f4e",
+        "operation_type": "TOOL",
+        "operation_name": "rag_agent",
+        "start_time": 1765872294.256137,
+        "end_time": 1765872300.3041298,
+        "duration": 6.047992944717407,
+        "self_time": 0.0007545948028564453,
+        "subtree_time": 6.047992944717407,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 6.047992944717407
+      },
+      "5d3d2616-cd94-4cb1-aa0d-15af77fba8a6": {
+        "uuid": "5d3d2616-cd94-4cb1-aa0d-15af77fba8a6",
+        "operation_type": "FUNCTION",
+        "operation_name": "rag_agent",
+        "start_time": 1765872294.2567112,
+        "end_time": 1765872300.3039496,
+        "duration": 6.047238349914551,
+        "self_time": 0.010858535766601562,
+        "subtree_time": 6.047238349914551,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 6.047238349914551
+      },
+      "ae2ef446-0112-47a4-837d-17110be2dd15": {
+        "uuid": "ae2ef446-0112-47a4-837d-17110be2dd15",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872294.2591593,
+        "end_time": 1765872294.995673,
+        "duration": 0.736513614654541,
+        "self_time": 0.736513614654541,
+        "subtree_time": 0.736513614654541,
+        "concurrency_midpoint": 12.0,
+        "bottleneck_score": 0.736513614654541
+      },
+      "54fe7438-55b3-43f1-87e4-9ae964c3deb0": {
+        "uuid": "54fe7438-55b3-43f1-87e4-9ae964c3deb0",
+        "operation_type": "TOOL",
+        "operation_name": "product_catalog_rag",
+        "start_time": 1765872294.9980063,
+        "end_time": 1765872298.4695823,
+        "duration": 3.471575975418091,
+        "self_time": 0.0008146762847900391,
+        "subtree_time": 3.471575975418091,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 3.471575975418091
+      },
+      "a1e1ac9c-7f7e-4def-9b61-30624d14b121": {
+        "uuid": "a1e1ac9c-7f7e-4def-9b61-30624d14b121",
+        "operation_type": "FUNCTION",
+        "operation_name": "product_catalog_rag",
+        "start_time": 1765872294.9986484,
+        "end_time": 1765872298.4694097,
+        "duration": 3.470761299133301,
+        "self_time": 0.21444344520568848,
+        "subtree_time": 3.470761299133301,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 3.470761299133301
+      },
+      "231bc066-0a22-424f-b9dd-f1a52b497de2": {
+        "uuid": "231bc066-0a22-424f-b9dd-f1a52b497de2",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872295.212513,
+        "end_time": 1765872298.4688308,
+        "duration": 3.2563178539276123,
+        "self_time": 3.2563178539276123,
+        "subtree_time": 3.2563178539276123,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 3.2563178539276123
+      },
+      "4f0cb035-c01c-413c-bf19-7af17ea5a11f": {
+        "uuid": "4f0cb035-c01c-413c-bf19-7af17ea5a11f",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872298.4729588,
+        "end_time": 1765872300.301249,
+        "duration": 1.8282902240753174,
+        "self_time": 1.8282902240753174,
+        "subtree_time": 1.8282902240753174,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 1.8282902240753174
+      },
+      "04e229b6-fd19-4b3a-b87e-e3907266a589": {
+        "uuid": "04e229b6-fd19-4b3a-b87e-e3907266a589",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872300.3065066,
+        "end_time": 1765872301.9176905,
+        "duration": 1.6111838817596436,
+        "self_time": 1.6111838817596436,
+        "subtree_time": 1.6111838817596436,
+        "concurrency_midpoint": 7.0,
+        "bottleneck_score": 1.6111838817596436
+      },
+      "d7ffa155-c6e9-4b41-b791-47208ee38222": {
+        "uuid": "d7ffa155-c6e9-4b41-b791-47208ee38222",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2609928,
+        "end_time": 1765872299.2204928,
+        "duration": 5.959500074386597,
+        "self_time": 0.019806385040283203,
+        "subtree_time": 5.959500074386597,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 5.959500074386597
+      },
+      "1de8f0c5-0c6b-477c-9cba-771f2f9b4fca": {
+        "uuid": "1de8f0c5-0c6b-477c-9cba-771f2f9b4fca",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872293.26851,
+        "end_time": 1765872294.1266253,
+        "duration": 0.8581151962280273,
+        "self_time": 0.8581151962280273,
+        "subtree_time": 0.8581151962280273,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 0.8581151962280273
+      },
+      "bb0842f1-76de-4f16-a3f2-48fc842d9015": {
+        "uuid": "bb0842f1-76de-4f16-a3f2-48fc842d9015",
+        "operation_type": "TOOL",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872294.1297803,
+        "end_time": 1765872298.4769351,
+        "duration": 4.347154855728149,
+        "self_time": 0.0007162094116210938,
+        "subtree_time": 4.347154855728149,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 4.347154855728149
+      },
+      "60b6babe-30a2-465d-acda-95fd6c25f013": {
+        "uuid": "60b6babe-30a2-465d-acda-95fd6c25f013",
+        "operation_type": "FUNCTION",
+        "operation_name": "data_analysis_agent",
+        "start_time": 1765872294.1303976,
+        "end_time": 1765872298.4768362,
+        "duration": 4.346438646316528,
+        "self_time": 0.01212763786315918,
+        "subtree_time": 4.346438646316528,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 4.346438646316528
+      },
+      "eaccba2f-e9d3-49e8-a5b7-adebb6f4648b": {
+        "uuid": "eaccba2f-e9d3-49e8-a5b7-adebb6f4648b",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872294.134755,
+        "end_time": 1765872294.8759584,
+        "duration": 0.7412035465240479,
+        "self_time": 0.7412035465240479,
+        "subtree_time": 0.7412035465240479,
+        "concurrency_midpoint": 12.0,
+        "bottleneck_score": 0.7412035465240479
+      },
+      "732c1fd5-af80-4892-a943-f173e3770d35": {
+        "uuid": "732c1fd5-af80-4892-a943-f173e3770d35",
+        "operation_type": "TOOL",
+        "operation_name": "sales_per_day",
+        "start_time": 1765872294.8769453,
+        "end_time": 1765872294.8784149,
+        "duration": 0.0014696121215820312,
+        "self_time": 0.0004754066467285156,
+        "subtree_time": 0.0014696121215820312,
+        "concurrency_midpoint": 13.0,
+        "bottleneck_score": 0.0014696121215820312
+      },
+      "72a2856e-50d7-474f-8c32-e4e7c7b077bb": {
+        "uuid": "72a2856e-50d7-474f-8c32-e4e7c7b077bb",
+        "operation_type": "FUNCTION",
+        "operation_name": "sales_per_day",
+        "start_time": 1765872294.8772905,
+        "end_time": 1765872294.8782847,
+        "duration": 0.0009942054748535156,
+        "self_time": 0.0009942054748535156,
+        "subtree_time": 0.0009942054748535156,
+        "concurrency_midpoint": 13.0,
+        "bottleneck_score": 0.0009942054748535156
+      },
+      "d96329d4-f0a4-4f5f-a1fd-3d96fe51a128": {
+        "uuid": "d96329d4-f0a4-4f5f-a1fd-3d96fe51a128",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872294.881027,
+        "end_time": 1765872298.4726648,
+        "duration": 3.5916378498077393,
+        "self_time": 3.5916378498077393,
+        "subtree_time": 3.5916378498077393,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 3.5916378498077393
+      },
+      "f8e18ae1-8555-4514-9932-e35e48a83bf0": {
+        "uuid": "f8e18ae1-8555-4514-9932-e35e48a83bf0",
+        "operation_type": "LLM",
+        "operation_name": "meta/llama-3.3-70b-instruct",
+        "start_time": 1765872298.481938,
+        "end_time": 1765872299.2163615,
+        "duration": 0.7344236373901367,
+        "self_time": 0.7344236373901367,
+        "subtree_time": 0.7344236373901367,
+        "concurrency_midpoint": 10.0,
+        "bottleneck_score": 0.7344236373901367
+      }
+    },
+    "top_bottlenecks": [
+      {
+        "uuid": "112b5f76-ab79-4592-a8cb-d8d47c2aff6f",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2570763,
+        "end_time": 1765872307.6932955,
+        "duration": 14.436219215393066,
+        "self_time": 0.026810646057128906,
+        "subtree_time": 14.436219215393066,
+        "concurrency_midpoint": 6.0,
+        "bottleneck_score": 14.436219215393066
+      },
+      {
+        "uuid": "04675e7d-4f96-4399-944e-f12571e8adff",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2596178,
+        "end_time": 1765872301.9222949,
+        "duration": 8.66267704963684,
+        "self_time": 0.016844749450683594,
+        "subtree_time": 8.66267704963684,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 8.66267704963684
+      },
+      {
+        "uuid": "98ee0a69-20d8-4f97-a4a8-6e6759910f4e",
+        "operation_type": "TOOL",
+        "operation_name": "rag_agent",
+        "start_time": 1765872294.256137,
+        "end_time": 1765872300.3041298,
+        "duration": 6.047992944717407,
+        "self_time": 0.0007545948028564453,
+        "subtree_time": 6.047992944717407,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 6.047992944717407
+      },
+      {
+        "uuid": "5d3d2616-cd94-4cb1-aa0d-15af77fba8a6",
+        "operation_type": "FUNCTION",
+        "operation_name": "rag_agent",
+        "start_time": 1765872294.2567112,
+        "end_time": 1765872300.3039496,
+        "duration": 6.047238349914551,
+        "self_time": 0.010858535766601562,
+        "subtree_time": 6.047238349914551,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 6.047238349914551
+      },
+      {
+        "uuid": "d7ffa155-c6e9-4b41-b791-47208ee38222",
+        "operation_type": "FUNCTION",
+        "operation_name": "<workflow>",
+        "start_time": 1765872293.2609928,
+        "end_time": 1765872299.2204928,
+        "duration": 5.959500074386597,
+        "self_time": 0.019806385040283203,
+        "subtree_time": 5.959500074386597,
+        "concurrency_midpoint": 14.0,
+        "bottleneck_score": 5.959500074386597
+      }
+    ]
+  },
+  "concurrency_spike_analysis": {
+    "concurrency_distribution": {
+      "1": 3.037905216217041,
+      "2": 2.747128963470459,
+      "3": 3.509124517440796,
+      "4": 0.2426445484161377,
+      "5": 0.678786039352417,
+      "6": 0.9442293643951416,
+      "7": 3.2563178539276123,
+      "0": 0.008607149124145508
+    },
+    "p50_concurrency": 3.0,
+    "p90_concurrency": 7.0,
+    "p95_concurrency": 7.0,
+    "p99_concurrency": 7.0,
+    "spike_threshold": 7,
+    "spike_intervals": [
+      {
+        "start_time": 1765872295.212513,
+        "end_time": 1765872298.4688308,
+        "concurrency": 7,
+        "active_uuids": [
+          "bb0842f1-76de-4f16-a3f2-48fc842d9015",
+          "54fe7438-55b3-43f1-87e4-9ae964c3deb0",
+          "231bc066-0a22-424f-b9dd-f1a52b497de2",
+          "1bc49710-8f50-4b74-8134-5a8f2d317491",
+          "d96329d4-f0a4-4f5f-a1fd-3d96fe51a128",
+          "83d32922-7164-48a2-bcb4-22d766d18969",
+          "98ee0a69-20d8-4f97-a4a8-6e6759910f4e"
+        ]
+      }
+    ],
+    "correlation_stats": {
+      "avg_prompt_tokens": 789.3333333333334,
+      "avg_total_tokens": 896.6666666666666
+    },
+    "average_latency_by_concurrency": {
+      "3": 1.1231243908405304,
+      "7": 4.18122182573591,
+      "6": 0.40981645584106446,
+      "5": 0.4613235791524251,
+      "2": 1.025888102395194,
+      "1": 1.5079143047332764
+    }
+  }
+}
