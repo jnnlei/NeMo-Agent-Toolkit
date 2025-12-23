@@ -1,0 +1,74 @@
+
+
+
+=== Multi-Example Nested Call Profiling Report ===
+Total calls (across all examples): 31
+
+-- Concurrency Distribution (all examples) --
+p50=4.0, p90=4.0, p95=6.0, p99=6.0
+
+-- Top 5 Calls by Bottleneck Score (subtree_time) --
+1) UUID=5ad31cb2-87d7-435e-a9ef-e7a00898b982, FUNCTION '<workflow>', dur=16.56, self_time=6.38, subtree_time=22.75, concurrency=4.0, score=22.75
+2) UUID=cb736d48-9df7-480a-a374-4b62fdcfcba3, FUNCTION '<workflow>', dur=14.78, self_time=5.78, subtree_time=20.42, concurrency=4.0, score=20.42
+3) UUID=20da5ad5-55c7-4ee3-bd0c-313f01fc47fa, FUNCTION '<workflow>', dur=17.49, self_time=0.10, subtree_time=17.49, concurrency=4.0, score=17.49
+4) UUID=e38da73e-7037-4d0f-81c6-5b9920e8f75a, LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1', dur=10.18, self_time=10.18, subtree_time=10.18, concurrency=6.0, score=10.18
+5) UUID=79ff3608-7dda-4f0a-9719-5edf5c3ac327, LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1', dur=9.81, self_time=9.81, subtree_time=9.81, concurrency=4.0, score=9.81
+
+-- Full Tree(s) (All Examples) --
+- FUNCTION '<workflow>' (uuid=96736b55-7740-4f59-aca0-aae14a37626b, start=1764836100.17, end=1764836105.39, dur=5.22)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=b4580b7c-7a57-45a6-bdf5-c0d6084ddd08, start=1764836100.19, end=1764836105.36, dur=5.16)
+- FUNCTION '<workflow>' (uuid=20da5ad5-55c7-4ee3-bd0c-313f01fc47fa, start=1764836100.18, end=1764836117.67, dur=17.49)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=79ff3608-7dda-4f0a-9719-5edf5c3ac327, start=1764836100.21, end=1764836110.01, dur=9.81)
+  - TOOL 'web_search_tool' (uuid=e32112d7-7e28-4600-b142-a3ab69bf4775, start=1764836110.05, end=1764836112.53, dur=2.49)
+    - FUNCTION 'web_search_tool' (uuid=f55a2f42-1000-466b-b47b-edd8004e3627, start=1764836110.05, end=1764836112.53, dur=2.49)
+      - TOOL 'tavily_search' (uuid=69191714-f3c8-4353-9829-4f833de79052, start=1764836110.05, end=1764836112.53, dur=2.48)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=dfa9b4e0-059c-4efd-9d2f-426c8fbb50d5, start=1764836112.55, end=1764836117.64, dur=5.09)
+- FUNCTION '<workflow>' (uuid=5ad31cb2-87d7-435e-a9ef-e7a00898b982, start=1764836105.46, end=1764836122.03, dur=16.56)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=e38da73e-7037-4d0f-81c6-5b9920e8f75a, start=1764836105.50, end=1764836115.68, dur=10.18)
+  - TOOL 'get_memory' (uuid=a6479762-ade7-4d8f-85fa-a2db256b8a99, start=1764836115.72, end=1764836115.72, dur=0.00)
+    - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=5ae28e12-1d8c-4f40-bc01-f10f44fdffbf, start=1764836115.75, end=1764836119.87, dur=4.12)
+    - TOOL 'get_memory' (uuid=132102d3-f810-43f1-aed7-8c5d07168e45, start=1764836119.90, end=1764836119.90, dur=0.00)
+      - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=1388b061-fab1-406f-8c43-0f7e8a75ba91, start=1764836119.93, end=1764836122.00, dur=2.07)
+- FUNCTION '<workflow>' (uuid=cb736d48-9df7-480a-a374-4b62fdcfcba3, start=1764836117.80, end=1764836132.59, dur=14.78)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=ece12482-cedd-4534-bbe7-ed4732423635, start=1764836117.82, end=1764836122.30, dur=4.48)
+  - TOOL 'web_search_tool' (uuid=69b24a90-5fb2-4092-949a-af4073505081, start=1764836122.33, end=1764836123.30, dur=0.97)
+    - FUNCTION 'web_search_tool' (uuid=397c8b1a-0477-4223-9413-2b2b0b5ec354, start=1764836122.33, end=1764836123.30, dur=0.97)
+      - TOOL 'tavily_search' (uuid=285bb2da-950e-4fef-85f2-264f88180245, start=1764836122.33, end=1764836123.29, dur=0.96)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=221324bc-a0a0-41e9-bbcc-baadb3c9d6bd, start=1764836123.31, end=1764836126.87, dur=3.56)
+  - TOOL 'wix_retriever_tool' (uuid=e71e0b9c-b57b-4c2a-b4b6-e2255ac09acd, start=1764836126.90, end=1764836126.90, dur=0.00)
+    - FUNCTION 'wix_retriever_tool' (uuid=0dbe0876-4854-4b09-b875-9e855106591b, start=1764836126.90, end=1764836126.92, dur=0.02)
+    - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=b491784c-2ee5-4364-bd25-b88304acbc2a, start=1764836126.94, end=1764836132.56, dur=5.62)
+- FUNCTION '<workflow>' (uuid=a006ea5b-87bc-40dc-a636-fdb5050c64f7, start=1764836122.16, end=1764836130.69, dur=8.53)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=8e85ddfa-f7aa-485f-8d66-573001be3d5c, start=1764836122.18, end=1764836130.66, dur=8.47)
+- FUNCTION '<workflow>' (uuid=2862245c-812f-4f0f-b8c4-5f23e7e2e8dd, start=1764836130.77, end=1764836137.45, dur=6.68)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=739648de-bcb3-4684-a7df-83f81ee99593, start=1764836130.80, end=1764836137.42, dur=6.63)
+- FUNCTION '<workflow>' (uuid=61826f4e-77c8-43ed-9467-447c6525400e, start=1764836133.65, end=1764836141.21, dur=7.55)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=608cfff1-1af1-40e0-8302-8a3a8441994f, start=1764836133.67, end=1764836141.18, dur=7.51)
+- FUNCTION '<workflow>' (uuid=ab03ae88-9c20-415e-999d-0692607b030d, start=1764836137.52, end=1764836145.75, dur=8.24)
+  - LLM 'nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1' (uuid=1fce7859-df48-4a3d-9be7-fbfe2b468b58, start=1764836137.54, end=1764836145.72, dur=8.18)
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 20
+Total time observed: 45.53 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+  concurrency=1: 6.73 time
+  concurrency=2: 35.36 time
+  concurrency=3: 3.44 time
+
+Percentiles => p50=2.0, p90=2.0, p95=3.0, p99=3.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+  concurrency=0 => avg_latency=0.00
+  concurrency=1 => avg_latency=6.60
+  concurrency=2 => avg_latency=5.65
+  concurrency=3 => avg_latency=3.42

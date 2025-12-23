@@ -87,13 +87,24 @@ class MilvusRerankRetriever(Retriever):
         # Convert to Document objects
         candidates = []
         for hit in search_results[0]:
+            # 兼容处理：PyMilvus 返回的可能是 Hit 对象（属性访问）也可能是字典
+            if hasattr(hit, 'id'):
+                doc_id = hit.id
+                distance = hit.distance
+                # hit.entity 通常是一个类似于字典的对象
+                content = hit.entity.get(self.content_field, "")
+            else:
+                doc_id = hit['id']
+                distance = hit['distance']
+                content = hit['entity'].get(self.content_field, "")
+
             doc = Document(
-                page_content=hit['entity'].get(self.content_field, ""),
+                page_content=content,
                 metadata={
-                    'distance': hit['distance'],
-                    'id': hit['id'],
+                    'distance': distance,
+                    'id': doc_id,
                 },
-                document_id=str(hit['id'])
+                document_id=str(doc_id)
             )
             candidates.append(doc)
         
