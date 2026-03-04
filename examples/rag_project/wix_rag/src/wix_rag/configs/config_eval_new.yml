@@ -42,11 +42,6 @@ retrievers:
     expansion_factor: 3        # 初始检索 5*3=15 个文档进行 rerank
 
 functions:
-  vllm_retriever_tool:
-    _type: nat_retriever
-    retriever: vllm_retriever
-    topic: Retrieve information about vLLM
-    
   wix_retriever_tool:
     _type: nat_retriever
     retriever: wix_retriever
@@ -160,7 +155,6 @@ embedders:
 workflow:
   _type: react_agent
   tool_names:
-    - vllm_retriever_tool
     # - wix_retriever_tool  
     - wix_retriever_tool_with_rerank
     - add_memory
@@ -239,78 +233,33 @@ eval:
     verbose: true
     max_concurrency: 2
     output:
-      dir: eval_output
+      dir: eval_output_new
       cleanup: false
     dataset:
       _type: json
-      file_path: my_data/wixqa_expertwritten_small.json
+      file_path: my_data/wixqa_expertwritten_tiny.json
     profiler:
-      # Compute inter query token uniqueness
       token_uniqueness_forecast: true
-      # Compute expected workflow runtime
       workflow_runtime_forecast: true
-      # Compute inference optimization metrics
       compute_llm_metrics: true
-      # Avoid dumping large text into the output CSV (helpful to not break structure)
       csv_exclude_io_text: true
-      # Idenitfy common prompt prefixes
       prompt_caching_prefixes:
         enable: true
         min_frequency: 0.1
       bottleneck_analysis:
-        # Can also be simple_stack
         enable_nested_stack: true
       concurrency_spike_analysis:
         enable: true
         spike_threshold: 7
 
   evaluators:
-    accuracy:
-      _type: ragas
-      metric: AnswerAccuracy
-      llm_name: nim_rag_eval_llm
-    groundedness:
-      _type: ragas
-      metric: ResponseGroundedness
-      llm_name: nim_rag_eval_llm
-    relevance:
-      _type: ragas
-      metric: ContextRelevance
-      llm_name: nim_rag_eval_llm
-    trajectory_accuracy:
-      _type: trajectory
-      llm_name: nim_trajectory_eval_llm
-
-optimizer:
-  output_path: "optimizer_results"
-  # Numeric (Optuna)
-  numeric:
-    enabled: false
-    n_trials: 12
-    sampler: grid
-  # Prompt (Genetic Algorithm)
-  prompt:
-    enabled: true
-    prompt_population_init_function: "prompt_optimizer"
-    prompt_recombination_function: "prompt_recombiner"  # optional
-    ga_population_size: 8
-    ga_generations: 3
-    ga_offspring_size: 6        # optional; defaults to pop_size - elitism
-    ga_crossover_rate: 0.7
-    ga_mutation_rate: 0.2
-    ga_elitism: 2
-    ga_selection_method: "tournament"  # or "roulette"
-    ga_tournament_size: 3
-    ga_parallel_evaluations: 8
-    ga_diversity_lambda: 0.0
-  # Evaluation
-  reps_per_param_set: 1
-  eval_metrics:
-    accuracy:
-      evaluator_name: "accuracy"
-      direction: "maximize"
-      weight: 0.8
-    relevance:
-      evaluator_name: "relevance"
-      direction: "maximize"
-      weight: 0.2
+    # Answer Quality - deterministic metrics
+    exact_match:
+      _type: exact_match
+    token_f1:
+      _type: token_f1
+    rouge_l:
+      _type: rouge_l
+    bert_score:
+      _type: bert_score
+      model_type: "microsoft/deberta-xlarge-mnli"

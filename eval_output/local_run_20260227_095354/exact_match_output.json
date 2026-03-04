@@ -1,0 +1,85 @@
+{
+  "average_score": 0.0,
+  "eval_output_items": [
+    {
+      "id": 1,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "yes you can start accepting payments on your site while your wix payments account is still under verification customers can complete their purchases but you will not be able to receive payouts to your bank account until your account is fully verified make sure to complete verification process within 30 days to avoid suspension of your payment capabilities",
+        "expected_normalized": "you can start accepting payments on your site using wix paymentshttpssupportwixcomenarticleaboutwixpayments almost immediately however we need to verify your identity before your account can be fully activated"
+      }
+    },
+    {
+      "id": 2,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "free domain voucher is only available with firsttime purchase of yearly premium plan and must be claimed within two months of purchase it does not appear at checkout because it is not applied during payment process — instead you must claim it afterward from your wix account here’s what to do 1 go to premium vouchers pagehttpswwwwixcomaccountpremiumvouchers in your wix dashboard 2 look for free domain voucher and click “claim voucher” or “get your domain” 3 follow prompts to select and register your free domain important notes voucher cannot be applied retroactively — if you already purchased domain you cannot use this voucher for it voucher is only valid for new domain purchases and cannot be used to renew existing domain if you don’t see voucher ensure you purchased yearly plan not monthly and that it’s your first time upgrading to premium plan voucher availability may vary by country if voucher still doesn’t appear try clearing your browser cache or contact wix support directly for assistance as noted in your previous preferences",
+        "expected_normalized": "when you purchase yearly premium plan free domain voucher is not immediately visible at checkout instead voucher becomes available after you complete purchase of plan you can then claim voucher by visiting premium vouchers pagehttpsmanagewixcomaccountvouchersreferraladditionalinfo7btheir in your wix account voucher is valid for two months from date of purchase and you can use it to register domain for free for one year if you have already purchased plan and still do not see voucher ensure that you meet all eligibility criteria such as not having purchased monthly plan or domain prior to plan if issues persist you can contact wix customer carehttpssupportwixcomenarticlecontactingwixcustomercareforsupport for further assistance"
+      }
+    },
+    {
+      "id": 3,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "to upgrade your email plan on wix you must move to highertier premium plan that includes business email services business plan which includes up to 300 business emails starts at 39 per month billed annually if youre currently on lower plan like core 29month or light 17month upgrading to business plan will give you professional email hosting note that wix only allows upgrades to highertier plans not downgrades and renewal pricing may vary after promotional periods for most accurate pricing check your wix account under upgrade section",
+        "expected_normalized": "to upgrade your email marketing plan go to email marketinghttpswwwwixcommyaccountsiteselectorbuttontextemail20marketing20dashboardtitleselect20a20siteautoselectonsinglesitetrueactionurlhttpswwwwixcomdashboard7b7bmetasiteid7d7dshoutout in your sites dashboard under monthly balance click upgrade choose plan that works best for you and checkout"
+      }
+    },
+    {
+      "id": 4,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "yes wix store function can be used to sell services but not directly through wix stores instead wix provides wix bookings dedicated tool for selling services such as massages fitness classes or consultations with wix bookings clients can book and pay for your services directly through your website you can also combine services with physical or digital products in same order for servicebased businesses wix bookings is recommended solution",
+        "expected_normalized": "wix stores gives you all tools you need to create sleek professional online store and grow your ecommerce business wix bookings however is easytouse scheduling system that lets your members book and pay for httpssupportwixcomenarticlewixbookingsaboutgettingpaidonline services online so you can focus on managing your business whether you offer services like workshops courses or private sessions online or inperson wix bookings has you covered"
+      }
+    },
+    {
+      "id": 5,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "to add discounts to your service prices when customers pay for plan on wix follow these steps 1 open your site in wix app 2 tap manage icon ⚙️ 3 go to marketing coupons 4 tap add coupon 5 choose your discount type discount enter fixed dollar amount to subtract eg 20 off discount enter percentage eg 20 off 6 tap next 7 enter unique coupon code your customers will use at checkout eg “plan20off” 8 give your coupon name this appears in your dashboard 9 tap next then select specific pricing plans or services discount should apply to 10 save coupon customers will then see and enter this coupon code when purchasing plan note discounts apply to plan price itself not any setup fees 💡 tip you can also display this coupon on your plans pricing page to encourage signups for more visibility add banner or callout like “use code plan20off for 20 off your first month” if you need to apply discounts to individual services within invoice not plans you’ll need to manually adjust price as wix doesn’t support peritem discounts on invoices yet",
+        "expected_normalized": "to add discounts to your service prices when customers pay for plan you can create discount coupons for your pricing plans you can choose to offer price discount or percentage discount coupon you can also choose whether your discount coupons apply to specific plan or to all your pricing plans your clients redeem coupon at checkout to take advantage of discounted plans note discount coupons for pricing plans cover plans themselves but not any setup fees you may have enabled to create discount coupons for your pricing plans 1 go to pricing plans in your sites dashboard 2 click more actions icon at top 3 click create coupon 4 select type of coupon you want to offer discount offer fixed monetary discount amount discount offer percentage discount 5 enter coupon code clients use to redeem coupon 6 enter coupon name for your own records 7 click apply to dropdown and choose relevant pricing plans all plans this is applied to all your available pricing plans specific plan click pricing plan dropdown and select relevant plan 8 choose how coupon works with your pricing plans first billing cycle coupon offers onetime discount at start of pricing plan all billing cycles coupon offers recurring discount every time your client is charged custom you choose how your coupons work with recurring payments eg give discount for first 4 billing cycles 9 select dates coupon is valid between 10 optional select limit total number of uses for this coupon checkbox and enter number of times coupon can be used 11 optional select limit to one use per customer checkbox if you want clients to be able to use coupon only one time 12 click create coupon"
+      }
+    },
+    {
+      "id": 6,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "to change order of items in cms collection on your wix site follow these steps 1 go to your wix editor and open cms section 2 select relevant collection you want to reorder 3 switch to table layout view 4 look for reorder icon usually sixdot handle or drag icon next to each item 5 click and drag reorder icon to move items up or down to your desired order ⚠️ important notes this draganddrop reorder feature may not be available in all wix accounts eg older or mobileonly versions if you don’t see reorder icon try refreshing page clearing your browser cache using desktop browser instead of wix mobile app if issue persists check if you’re using supported plan or contact wix support directly as this feature might be restricted in your account type you mentioned earlier that basic troubleshooting helped — so if above doesn’t work try logging out and back in or test in incognito window to rule out browser issues",
+        "expected_normalized": "to change order of items within cms collection on your wix site you should follow these steps 1 go to cms in your sites dashboard or editor 2 click on relevant collection 3 if you have multiple collection views select view you want to sort items in 4 click sort at top of your collection 5 click add sort 6 choose field you want to sort by from sort by dropdown menu 7 select sorting order eg z lowhigh oldestnewest 8 click add sort 9 to apply this order to your live site enable mirror on site toggle at top of collection if these steps did not work ensure that mirror on site feature is enabled as this is necessary for order in your collection view to be reflected on your live site additionally check if there are any sort conditions added to datasets as these can override order set in your mirrored collection view for more detailed guidance you can refer to wix support article on mirroring item orderhttpssupportwixcomenarticlecmsmirroring orderofitemsinyourcollectiontoyoursitesconnectedelements"
+      }
+    },
+    {
+      "id": 7,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "to sync your wix hotels app with ical calendar such as google calendar airbnb or vrbo follow these steps 1 go to your wix dashboard and open wix hotels by hotelrunner section 2 navigate to channel manager 3 select external platform you want to sync with eg airbnb vrbo or homeaway 4 enable ical integration — this will push your available dates from wix to external calendar 5 note integration is oneway your availability will sync from wix to external calendar but reservations and rates from external platform will not sync back you must manually update any bookings received on airbnb vrbo etc in your wix hotels dashboard for best results manage your rates and restrictions directly on external platform’s extranet and regularly check both calendars to avoid double bookings if you need to sync twoway data consider using full channel manager integration instead of ical",
+        "expected_normalized": "to sync your hotel app with your calendars using ical link you can import reservations from external services like airbnb homeaway and vrbo to your wix hotels reservation calendar this is oneway sync from ical to wix calendar to import your external calendar 1 locate your ical url httpssupportwixcomenarticlefindingyouricalurl 2 go to your dashboard httpssupportwixcomenarticleaccessingyoursitesdashboard 3 click hotels tab 4 click to expand reservations tab 5 select ical 6 click choose type dropdown menu and select room type 7 paste your ical url into url field 8 optional click add calendar to add another room type and paste ical url in url field 9 click save please note that you can only import from services that allow you to export your calendar in ical format sync is one way only from ical to wix calendar if you have multiple room types you must add different ical url for each room type imported rates do not appear in calendar rates can be viewed by clicking on reservation in calendar and scrolling down to payment details section this feature is not compatible with wix hotels channel manager if you want to connect channel manager please delete all urls in this tab before doing so"
+      }
+    },
+    {
+      "id": 8,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "since your domain is connected to wix via pointing you cannot add txt record through wix you must log in to your domain registrar’s control panel eg godaddy namecheap google domains etc where your dns settings are managed there add txt record provided by google workspace exactly as instructed in your google admin console after adding it allow up to 48 hours for dns propagation then return to google workspace to complete verification if you’re unsure which registrar you used check your domain purchase confirmation email or use whois lookup tool",
+        "expected_normalized": "to verify your domain with google workspace by adding txt record you need to manage your dns settings with your domain host not wix since your domain is connected via pointing follow these steps 1 log in to your domain host account where your dns records are managed 2 add txt record provided by google workspace to your domains dns settings 3 after adding txt record return to google admin console and click verify"
+      }
+    },
+    {
+      "id": 9,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "if you cant access your old email to reset your password but have recovery phone number added to your wix account you can recover your account using sms code here’s how 1 go to wix login page and click on “forgot password” 2 enter any email address you think you might have used to sign up or leave it blank if unsure 3 select option to recover your account using your recovery phone number 4 wix will send onetime sms code to your registered mobile number 5 enter code to verify your identity and gain access to your account 6 once logged in you can update your password and if needed change your email address under account settings tip if you’re unsure which email is linked to your account use wix email locator tool by entering your website url to find your login email",
+        "expected_normalized": "if youve previously added recovery phone number to your wix account you can get onetime sms code sent to your mobile phone to recover your wix account to recover your account 1 go to wix log in page httpsuserswixcomsignin 2 click forgot email 3 select cant access my login email 4 click next 5 enter email address associated with your wix account 6 click next 7 select send me code to my phone number ending with xxxx and click next 8 enter onetime verification code sent to your phone under enter code here 9 click verify 10 enter new password and retype it 11 click save new password after you recover your account you should change email address of your account httpssupportwixcomenarticlechanging emailaddressofyourwixaccount to one that you are able to access to change your email address 1 go to account settings in your wix account 2 click account email field 3 enter your wix account password in popup 4 enter your new account email address 5 retype your new email account email address to confirm it 6 click next 7 check your email account for email from wix 8 copy 6digit confirmation code 9 go back to account settings in your wix account 10 paste code into popup 11 click submit"
+      }
+    },
+    {
+      "id": 10,
+      "score": 0.0,
+      "reasoning": {
+        "predicted_normalized": "it looks like you’ve already confirmed you have paypal business account and updated your business location — great if paypal connection option is still missing try these steps 1 refresh your browser and clear your cache or try in incognito window 2 go to your wix dashboard → payments → check if paypal appears as option under “add payment method” 3 ensure your site is set up as wix store paypal is only available for ecommerce sites not basic websites 4 confirm your countryregion supports paypal integration — some regions have limited payment options 5 if still missing try disconnecting and reconnecting your paypal account via paypal dashboard → log into paypal → settings → connected apps → remove wix → return to wix and reconnect if none of these work contact wix support directly — there may be temporary system issue or accountspecific restriction let me know if you’d like help checking your site type or navigating payments section",
+        "expected_normalized": "there are 2 main reasons for payment providers not appearing in accept payments tab 1 different payment providers are available in different locations paypal is available in around 200 countries please check following link to make sure paypal is available in your location visit paypal httpswwwpaypalcompnwebappsmppcountryworldwide 2 if you began onboarding with wix payments you may have selected prohibited product or service if so this may remove option to onboard with other payment providers who prohibit similar items for more information please see our checklist for restricted products services when setting up your payments httpssupportwixcomenarticlecheckingforrestrictedproductsserviceswhensettingupyourpayments if you mistakenly completed cbd declaration or selected restricted productservice please contact wix customer care httpswwwwixcomcontact"
+      }
+    }
+  ]
+}
