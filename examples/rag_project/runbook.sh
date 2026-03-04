@@ -9,6 +9,9 @@ uv sync --all-groups --all-extras
 # API key
 source .env
 
+# install the wix rag project
+uv pip install -e examples/rag_project/wix_rag
+
 # cd src/milvus_rag_with_memory
 # uv pip install -e .
 
@@ -27,7 +30,7 @@ fi
 # run the workflow
 nat run --config_file examples/RAG/simple_rag/configs/milvus_memory_rag_tools_config.yml --input "What are the GPU configuration options for running Qwen2.5 72B Instruct?"
 
-nat run --config_file examples/RAG/simple_rag/configs/wix_config.yml --input "How do I change my site's color palette in ADI?"
+nat run --config_file examples/rag_project/wix_rag/src/wix_rag/configs/config_eval.yml --input "How do I change my site's color palette in ADI?"
 
 # start the server
 nat serve --config_file examples/RAG/simple_rag/configs/milvus_memory_rag_tools_config.yml
@@ -92,6 +95,11 @@ nat eval --config_file examples/RAG/simple_rag/configs/milvus_memory_rag_tools_c
 
 nat eval --config_file examples/RAG/simple_rag/configs/wix_config.yml \
   --override eval.general.output.dir "${LOCAL_OUTPUT_DIR}"
+
+# skip the workflow and evaluate the results
+nat eval --config_file examples/rag_project/wix_rag/src/wix_rag/configs/config_eval_new.yml \
+  --dataset eval_output/workflow_output.json \
+  --skip_workflow
 
 tmux attach -t wix_eval
 

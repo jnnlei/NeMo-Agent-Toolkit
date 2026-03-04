@@ -42,11 +42,6 @@ retrievers:
     expansion_factor: 3        # 初始检索 5*3=15 个文档进行 rerank
 
 functions:
-  vllm_retriever_tool:
-    _type: nat_retriever
-    retriever: vllm_retriever
-    topic: Retrieve information about vLLM
-    
   wix_retriever_tool:
     _type: nat_retriever
     retriever: wix_retriever
@@ -160,7 +155,6 @@ embedders:
 workflow:
   _type: react_agent
   tool_names:
-    - vllm_retriever_tool
     # - wix_retriever_tool  
     - wix_retriever_tool_with_rerank
     - add_memory

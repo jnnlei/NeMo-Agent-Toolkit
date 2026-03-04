@@ -1,0 +1,115 @@
+
+
+
+=== Multi-Example Nested Call Profiling Report ===
+Total calls (across all examples): 72
+
+-- Concurrency Distribution (all examples) --
+p50=4.0, p90=5.0, p95=6.0, p99=7.0
+
+-- Top 5 Calls by Bottleneck Score (subtree_time) --
+1) UUID=b653916b-40a5-43ee-9b19-0a34eb1581e5, FUNCTION '<workflow>', dur=11.62, self_time=0.22, subtree_time=11.62, concurrency=4.0, score=11.62
+2) UUID=1db2deca-680f-4bf1-928d-a227d0043985, FUNCTION '<workflow>', dur=11.23, self_time=0.15, subtree_time=11.23, concurrency=5.0, score=11.23
+3) UUID=a2360ae6-1fd1-4941-b4c8-06c16f00fce4, FUNCTION '<workflow>', dur=9.87, self_time=0.15, subtree_time=9.87, concurrency=4.0, score=9.87
+4) UUID=dfb2689f-4dd3-42cc-a040-f54071e39c7b, FUNCTION '<workflow>', dur=8.27, self_time=0.13, subtree_time=8.27, concurrency=2.0, score=8.27
+5) UUID=7398cd7b-c940-422f-aa8d-b2ff37e1998c, FUNCTION '<workflow>', dur=8.20, self_time=0.16, subtree_time=8.20, concurrency=4.0, score=8.20
+
+-- Full Tree(s) (All Examples) --
+- FUNCTION '<workflow>' (uuid=c51ae80a-af35-460d-a4b3-eeb5c04a372e, start=1772187284.03, end=1772187289.36, dur=5.33)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=055c28ae-71b7-418f-9424-b7c5d72869f6, start=1772187284.07, end=1772187285.84, dur=1.77)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=2c145942-c562-4002-bdfa-2e0f69b4c784, start=1772187285.85, end=1772187287.06, dur=1.20)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=9f1aeccc-43ad-41bb-93fe-9c0595aa25e9, start=1772187285.86, end=1772187287.05, dur=1.19)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=5e529725-994c-430e-886a-22773c4f1f9a, start=1772187287.08, end=1772187289.34, dur=2.27)
+- FUNCTION '<workflow>' (uuid=1db2deca-680f-4bf1-928d-a227d0043985, start=1772187284.04, end=1772187295.27, dur=11.23)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=09f8b861-3ff8-41dd-bfc3-1eb3a985c1a6, start=1772187284.08, end=1772187285.36, dur=1.28)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=0ba55d04-2e50-4a1b-ac5a-a51ea12f4c77, start=1772187285.39, end=1772187286.60, dur=1.21)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=74d03ce6-5cbd-4f33-92b9-8a389b5ac007, start=1772187285.39, end=1772187286.59, dur=1.21)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=72243eed-7065-4293-ac9d-a091029b7b97, start=1772187286.61, end=1772187289.27, dur=2.66)
+  - TOOL 'get_memory' (uuid=7d0b2244-53e2-4610-baf7-951611ec3564, start=1772187289.29, end=1772187289.98, dur=0.69)
+    - FUNCTION 'get_memory' (uuid=a26ee531-8213-4a6b-9889-bd068665ccef, start=1772187289.29, end=1772187289.98, dur=0.69)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=7938f1b8-49fd-4d62-a5e8-17fa777693e3, start=1772187290.01, end=1772187295.24, dur=5.23)
+- FUNCTION '<workflow>' (uuid=b653916b-40a5-43ee-9b19-0a34eb1581e5, start=1772187289.43, end=1772187301.04, dur=11.62)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=a68a37c9-23dd-4dbc-a2e0-020f5da49098, start=1772187289.47, end=1772187292.24, dur=2.77)
+  - TOOL 'get_memory' (uuid=1ba3bd6c-f38a-4e4e-a0fd-3e5775e1dbdb, start=1772187292.26, end=1772187292.69, dur=0.43)
+    - FUNCTION 'get_memory' (uuid=580ec54a-1c9a-46c8-b6ce-b69fe2138c17, start=1772187292.26, end=1772187292.68, dur=0.42)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=136907ea-86c2-4627-81bb-c41757f81c66, start=1772187292.71, end=1772187293.89, dur=1.18)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=2ae07787-9d13-4a2f-a5d9-6a3f4a0f5f7d, start=1772187293.91, end=1772187295.11, dur=1.19)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=74095afb-5b16-497e-b28e-9620c677c46a, start=1772187293.92, end=1772187295.10, dur=1.18)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=1cf6b840-5392-4400-9d28-01b58f6f13d0, start=1772187295.14, end=1772187297.48, dur=2.34)
+  - TOOL 'web_search_tool' (uuid=bfe28229-a78e-4ab1-93b8-5239e9491af4, start=1772187297.50, end=1772187298.54, dur=1.04)
+    - FUNCTION 'web_search_tool' (uuid=b792e68d-6854-4a7f-b9b0-dceedcf0333d, start=1772187297.50, end=1772187298.53, dur=1.03)
+      - TOOL 'tavily_search' (uuid=a6b68fd6-431a-4b22-917a-2111d221f556, start=1772187297.50, end=1772187298.53, dur=1.03)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=73b89875-3f9a-4d22-85fb-aca54e049364, start=1772187298.56, end=1772187301.01, dur=2.45)
+- FUNCTION '<workflow>' (uuid=04d84a71-0547-40da-8e43-bac3b0a9f149, start=1772187295.33, end=1772187300.29, dur=4.96)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=5c20002f-098b-4ef0-91ce-6004d8a12178, start=1772187295.35, end=1772187297.00, dur=1.64)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=2c69e76a-1e94-463a-b047-781ad93877c2, start=1772187297.02, end=1772187298.25, dur=1.23)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=fe9b64e9-c8a9-4c9d-80bd-8f0bcf60197a, start=1772187297.02, end=1772187298.24, dur=1.22)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=dfcedddf-7a88-408e-929a-2a622aa5fd74, start=1772187298.27, end=1772187300.27, dur=2.00)
+- FUNCTION '<workflow>' (uuid=a2360ae6-1fd1-4941-b4c8-06c16f00fce4, start=1772187300.34, end=1772187310.21, dur=9.87)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=f32f1ad0-7a91-4ac4-817f-325dea360bef, start=1772187300.37, end=1772187302.05, dur=1.67)
+  - TOOL 'get_memory' (uuid=9366a2d0-a92c-460f-8001-dc41d65061bc, start=1772187302.06, end=1772187302.39, dur=0.33)
+    - FUNCTION 'get_memory' (uuid=f695198f-0013-463a-a028-87610b373d99, start=1772187302.07, end=1772187302.39, dur=0.32)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=d4f1f86c-6b36-49c7-8138-b92460dd7002, start=1772187302.41, end=1772187304.38, dur=1.97)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=2673ad45-dc30-4609-8241-d715e0daa0ea, start=1772187304.40, end=1772187305.10, dur=0.70)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=50cab295-fac9-4ca5-8580-c2559f94ee63, start=1772187304.40, end=1772187305.10, dur=0.69)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=db747d6d-e44c-4638-96a1-66d3203c3030, start=1772187305.14, end=1772187310.18, dur=5.05)
+- FUNCTION '<workflow>' (uuid=7398cd7b-c940-422f-aa8d-b2ff37e1998c, start=1772187301.12, end=1772187309.31, dur=8.20)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=cb1a9b95-4059-4db9-867b-875970467da4, start=1772187301.14, end=1772187302.58, dur=1.44)
+  - TOOL 'get_memory' (uuid=02b35eb9-65b7-4a95-a7fa-b662444a4a95, start=1772187302.60, end=1772187302.90, dur=0.30)
+    - FUNCTION 'get_memory' (uuid=aa1579f8-2134-4e74-9eaf-958799efc8af, start=1772187302.60, end=1772187302.89, dur=0.29)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=662ed579-369e-46e4-99ce-64953f720be6, start=1772187302.91, end=1772187303.90, dur=0.99)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=03263b23-188a-4238-a6bb-629b92665b6e, start=1772187303.92, end=1772187305.16, dur=1.24)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=74ba3a59-af07-4c85-a5e0-77e0f18e7714, start=1772187303.92, end=1772187305.15, dur=1.23)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=ffca920e-50b4-47cc-a255-9f48e83ad1cf, start=1772187305.19, end=1772187309.28, dur=4.08)
+- FUNCTION '<workflow>' (uuid=b68a7b34-cec4-4c93-9e04-82d6f5596043, start=1772187309.38, end=1772187317.21, dur=7.82)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=4818c012-63c8-4c85-a09f-588c0f5c27f1, start=1772187309.41, end=1772187310.86, dur=1.45)
+  - TOOL 'get_memory' (uuid=75e95db1-cfd9-4fb5-a38d-8acb240b1e47, start=1772187310.89, end=1772187311.22, dur=0.33)
+    - FUNCTION 'get_memory' (uuid=683fd1f2-dc67-413a-a4bd-6ad82475e817, start=1772187310.89, end=1772187311.22, dur=0.33)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=5b9f0466-47cf-4a17-a504-353170a755e9, start=1772187311.24, end=1772187313.27, dur=2.03)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=b8433973-a4e4-494f-b885-0126ec7c21e4, start=1772187313.29, end=1772187314.00, dur=0.71)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=beb9b49a-dda6-453a-8d95-d4d6e8937e17, start=1772187313.29, end=1772187313.99, dur=0.70)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=999f3c6b-64da-49d8-853c-ed2791ae83a7, start=1772187314.03, end=1772187317.18, dur=3.15)
+- FUNCTION '<workflow>' (uuid=3736e580-ba45-468e-b2dc-102e47d76363, start=1772187310.29, end=1772187315.06, dur=4.77)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=6a051e4a-8ba9-408f-85c4-1b6135e07622, start=1772187310.31, end=1772187311.91, dur=1.59)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=76ff5270-e651-407b-87b7-48a1481aa605, start=1772187311.93, end=1772187312.63, dur=0.71)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=76c55b81-271d-4bed-a961-40266b2e0b1b, start=1772187311.93, end=1772187312.63, dur=0.70)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=57bfeefc-fc6c-4b1b-8385-c4df9f379361, start=1772187312.66, end=1772187315.03, dur=2.37)
+- FUNCTION '<workflow>' (uuid=ec7d6b15-5b2b-406f-b913-e681cca10212, start=1772187315.10, end=1772187319.65, dur=4.55)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=c1ef9327-a577-48c8-993e-a72856b7c020, start=1772187315.14, end=1772187316.57, dur=1.43)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=604c89d1-3c22-4b07-b457-4adb140aa205, start=1772187316.59, end=1772187317.32, dur=0.72)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=d0a18f3f-55e2-472d-bdda-d575397aa2eb, start=1772187316.60, end=1772187317.31, dur=0.71)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=6a2f0e3b-09d7-44a9-948d-eb60a546cc7c, start=1772187317.33, end=1772187319.63, dur=2.30)
+- FUNCTION '<workflow>' (uuid=dfb2689f-4dd3-42cc-a040-f54071e39c7b, start=1772187317.28, end=1772187325.54, dur=8.27)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=cb56d704-4e88-4edd-9af0-27602e358e76, start=1772187317.29, end=1772187318.96, dur=1.67)
+  - TOOL 'get_memory' (uuid=337c2f4b-505f-43be-be65-1ab04ffd660c, start=1772187318.98, end=1772187319.30, dur=0.32)
+    - FUNCTION 'get_memory' (uuid=39d4bfd2-0153-4256-ae94-665f9a167d48, start=1772187318.98, end=1772187319.30, dur=0.32)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=4ee46472-d9cb-430a-881f-90c57ba48d20, start=1772187319.32, end=1772187320.54, dur=1.21)
+  - TOOL 'wix_retriever_tool_with_rerank' (uuid=20dbd5b8-8842-4396-991e-5ca738b7c51b, start=1772187320.56, end=1772187321.25, dur=0.69)
+    - FUNCTION 'wix_retriever_tool_with_rerank' (uuid=52d6dcf1-ac87-4bc8-ac92-4b777c028918, start=1772187320.56, end=1772187321.25, dur=0.68)
+  - LLM 'qwen/qwen3-next-80b-a3b-instruct' (uuid=585ecf9d-a717-48ec-8622-fbc37b4f82e4, start=1772187321.28, end=1772187325.51, dur=4.23)
+
+
+=== Concurrency Spike Analysis ===
+Total calls in dataset: 45
+Total time observed: 41.44 units (sum of concurrency timeline)
+
+-- Concurrency Distribution --
+  concurrency=0: 0.05 time
+  concurrency=1: 7.50 time
+  concurrency=2: 32.89 time
+  concurrency=3: 1.01 time
+
+Percentiles => p50=2.0, p90=2.0, p95=2.0, p99=3.0
+Spike threshold chosen: 7
+
+-- Detected Spike Intervals --
+No intervals exceed concurrency spike threshold.
+
+-- Correlation Stats for Spiked Calls --
+Avg prompt_tokens in spike calls: 0.0
+Avg total_tokens in spike calls : 0.0
+
+-- Average Latency by Midpoint Concurrency --
+  concurrency=1 => avg_latency=2.05
+  concurrency=2 => avg_latency=1.71
+  concurrency=3 => avg_latency=1.10
